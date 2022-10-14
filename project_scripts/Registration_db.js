@@ -8,7 +8,7 @@ import {
   query,
   where,
   collection,
-  Timestamp
+  Timestamp,
 } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAJ1mrcBYnl_M2bG7vfpSwlcm5NnpzsohQ",
@@ -68,15 +68,15 @@ async function add_to_db() {
       details: {
         Name: data.name_register,
         Email_ID: data.email_register,
-        Phone: data.phone_register
+        Phone: data.phone_register,
       },
     })
       .then((docRef) => {
         console.log("Document has been added successfully");
         setTimeout(myURL, 100);
-         function myURL(){
-            location.href='Homepage.html';
-         }
+        function myURL() {
+          location.href = "Homepage.html";
+        }
       })
       .catch((error) => {
         console.log(error);
@@ -89,10 +89,16 @@ function Validate() {
   var Password = document.getElementById("txtPassword").value;
   console.log(Password);
   var ConfirmPassword = document.getElementById("txtConfirmPassword").value;
-  if (Password === ConfirmPassword) {
-    return true;
+  var decimal =
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+  if (Password.match(decimal)) {
+    if (Password === ConfirmPassword) {
+      return true;
+    }
+    alert("Passwords do not match.");
+    return false;
   }
-  alert("Passwords do not match.");
+  alert("Password doesn't contain enough characters.");
   return false;
 }
 
