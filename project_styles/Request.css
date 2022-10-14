@@ -91,6 +91,9 @@ form .data input:focus{
   font-size: large;
   margin: 25px 0;
 }
+.container .Requireddate{
+  color: #fff;  
+}
 form .btn{
   margin: 30px 0;
   height: 45px;
