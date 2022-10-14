@@ -88,7 +88,7 @@ async function add_to_db() {
 function Validate() {
   var Password = document.getElementById("txtPassword").value;
   console.log(Password);
-  var ConfirmPassword = document.getElementById("txtConfirmPassword").value;
+  var ConfirmPassword = document.getElementById("textConfirmPassword").value;
   var decimal =
     /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
   if (Password.match(decimal)) {
