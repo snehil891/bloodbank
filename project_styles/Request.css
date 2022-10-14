@@ -8,7 +8,7 @@
 body{
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/Blood.gif);
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/request_page.gif);
   background-size: 100%;
   display: block;
   margin-left: auto;
