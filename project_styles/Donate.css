@@ -3,7 +3,7 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: "system.ui";
+  font-family: "system-ui";
 }
 body {
   height: 100vh;
@@ -19,18 +19,17 @@ body {
   font-size: 20px;
   font-weight: 500;
   opacity: 0.7;
-  color: #993f3f;
+  color:#fff;
   cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .show-btn:hover {
   opacity: 1;
 }
-
 .show-btn,
 .container {
+  border-radius: 25px;
   position: absolute;
-  top: 3%;
+  top: 7%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -41,16 +40,17 @@ input[type="checkbox"] {
 .container {
   display: none;
   top: 50%;
-  background: rgb(97, 93, 100);
+  background: rgb(23, 7, 29);
   width: 410px;
   padding: 30px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
+  border-radius: 1px;
 }
 #show:checked ~ .container {
   display: block;
 }
 .container .close-btn {
+  color:rgb(255, 255, 255);
   position: absolute;
   right: 20px;
   top: 15px;
@@ -58,9 +58,10 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 .container .close-btn:hover {
-  color: #993f3f;
+  color: rgb(152, 0, 0);
 }
 .container .text {
+  color: #fff;
   font-size: 35px;
   font-weight: 600;
   text-align: center;
@@ -81,31 +82,24 @@ form .data input {
   width: 100%;
   padding-left: 10px;
   font-size: 17px;
-  border: 1px solid silver;
-  border-radius: 5px;
 }
 form .data input:focus {
-  border-color: #993f3f;
+  border-color: #fff;
   border-bottom-width: 2px;
 }
-
-.gender {
-  font-size: 20%;
-  height: 35%;
-  word-spacing: 3%;
-}
 .container form .Gender {
-  border-radius: 25px;
+  color: #fff;
   height: 40px;
   font-size: medium;
-  margin: 2px;
+  margin: 25px 0;
   word-spacing: 3px;
-  line-height: 27px;
+}
+.container form .dob{
+  color: #fff;
 }
 form .btn {
-  border-radius: 25px;
   margin: 30px 0;
-  height: 55px;
+  height: 45px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -116,19 +110,18 @@ form .btn .inner {
   position: absolute;
   left: -100%;
   z-index: -1;
-  background: -webkit-linear-gradient(right, #e46756, #ea1c01, #5681e4, #ea0101);
-  transition: all 0.4s;
+  background: rgb(163, 178, 255); 
 }
 
 form .btn:hover .inner {
-  left: 0;
+  background: red;
 }
 form .btn button {
   height: 100%;
   width: 100%;
   background: none;
   border: none;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -147,7 +140,7 @@ form .btn button {
   color: #fff;
   text-decoration: none;
   padding: 6px 20px;
-  font-family: "system.ui";
+  font-family: "system-ui";
   font-size: 15px;
   font-weight: lighter;
 }

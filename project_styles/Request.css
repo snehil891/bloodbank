@@ -90,6 +90,7 @@ form .data input:focus{
   height: 40px;
   font-size: large;
   margin: 25px 0;
+  word-spacing: 3%;
 }
 .container .Requireddate{
   color: #fff;  
@@ -110,7 +111,7 @@ form .btn .inner{
   background: rgb(163, 178, 255);
 }
 form .btn:hover .inner{
-  left: 0;
+  background: red;
 }
 form .btn button{
   height: 100%;
