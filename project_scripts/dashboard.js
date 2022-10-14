@@ -35,7 +35,7 @@ async function change_donate_html(blood_group) {
     const dateTwo = new Date(rows[i].Date_of_creation);
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time / (1000 * 60 * 60 * 24));
-    if (days > 5) {
+    if (days > 90) {
       html += "<tr bgcolor=\"green\">";
       html += "<td>" + rows[i].Name + "</td>";
       html += "<td>" + rows[i].Blood_group + "</td>";
@@ -46,7 +46,7 @@ async function change_donate_html(blood_group) {
 
       html += "</tr>";
     }
-    if (days < 5) {
+    if (days < 90) {
       html += "<tr bgcolor=\"red\">";
       html += "<td>" + rows[i].Name + "</td>";
       html += "<td>" + rows[i].Blood_group + "</td>";
