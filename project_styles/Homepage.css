@@ -3,6 +3,10 @@ html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "system.ui";
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
 }
 header {
   position: fixed;
@@ -140,15 +144,21 @@ ul li a:hover {
 .bgimg-1 {
   background-image: url("../project_assets/Homepage_blood.gif");
   min-height: 100%;
+  justify-content: center;
+  display: flex;
 }
 .bgimg-2 {
   background-image: url("../project_assets/bloodbank.jpg");
   min-height: 600px;
+  justify-content: center;
+  display: flex;
 }
 
 .bgimg-3 {
   background-image: url("../project_assets/Blood-Banks-in-Visakhapatnam.jpg");
   min-height: 1000px;
+  justify-content: center;
+  display: flex;
 }
 .bg-about{
   text-align: center;
@@ -244,26 +254,44 @@ ul li a:hover {
   color: #fff;
   padding: 30px 0;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
     background-attachment: scroll;
+    background-size:cover ;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
   }
 
   header {
     padding: 20px 0px;
     margin: 0;
+    background-size:cover ;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
   }
 
   header ul li a {
     padding: 2px 1px;
     font-weight: none;
     font-size: 14px;
+    background-size:cover ;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: flex-end;
   }
   .sticky {
     padding: 2px 2px;
     font-weight: none;
+    background-size:cover ;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: flex-end;
   }
 }
 @keyframes animate{
