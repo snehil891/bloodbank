@@ -2,7 +2,7 @@
 *{
 	margin:0px;
 	padding:0px;
-	box-sizing: border-box;
+
 	font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     background-color: #ddd;
@@ -49,17 +49,21 @@ h2{
 	height:200px;
     display:block;
     margin:auto;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 .image-sec img{
     width:250px;
     height:300px;
-    display:block;
+    display:flex;
+    justify-content: center;
     margin-left:auto;
     margin-right:auto;
 }
 .row-1{
-    padding:30px;
+    padding:0px;
+    margin-right:230px;
+    margin-left:5px;
+    float:left;
 }
 .row-2{
     padding:0px;

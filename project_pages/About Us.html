@@ -25,7 +25,7 @@
           background-color: rgb(0,0,0);
           background-color: rgba(0,0,0, 0.9);
           overflow-x: hidden;
-          transition: 0.5s;
+          transition: 1.0s;
         }
         
         .overlay-content {
@@ -42,7 +42,7 @@
           font-size: 36px;
           color: #818181;
           display: block;
-          transition: 0.3s;
+          transition: 0.6s;
         }
         
         .overlay a:hover, .overlay a:focus {
@@ -97,16 +97,22 @@
 </header>
   <div class="bgimg-1">
     <style>
-  * {box-sizing: border-box;}
-  body {font-family: Verdana, sans-serif;}
-  .mySlides {display: block;min-height:auto;margin: 0;width:auto;}
+  * {box-sizing:content-box;}
+  body {font-family: system-ui;}
+  .mySlides {display: block;min-height:fit-content;margin-top: 0;width:fit-content; background-size:cover; max-height: 300px;}
   img {vertical-align: middle;}
 
 /* Slideshow container */
   .slideshow-container {
-  max-width: auto;
-  position: relative;
-  margin: auto;
+    max-height: 700px !important ;
+    margin-top: -20px;
+    height: auto;
+    margin-bottom: 700px;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    
+
 }
 
   /* Caption text */
@@ -137,7 +143,7 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 4.0s ease;
 }
 
 .active {
@@ -147,7 +153,7 @@
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.0s;
 }
 
 @keyframes fade {
@@ -169,18 +175,20 @@
 
 <div class="mySlides fade">
   
-  <img src="../project_assets/Blood.gif" style="width:100%">
+  <img src="../project_assets/blood-5053770.jpg" style="width:100%">
   
 </div>
 
 <div class="mySlides fade">  <div class="numbertext"></div>
-  <img src="../project_assets/GIMSR(TOP).jpeg" style="width:100%">
+  <img src="../project_assets/blood-732297.jpg" style="width:100%">
   
 </div>
 
 <div class="mySlides fade">
-  <img src="../project_assets/GIMSR(Front).jpeg" style="width:100%">
+  <img src="../project_assets/earth-4861456.jpg" style="width:100%">
 </div>
+
+
 
 </div>
 <br>
@@ -188,7 +196,8 @@
 <div style="text-align:center">
   <span class="dot"></span> 
   <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span>
+  
 </div>
 
 <script>
@@ -209,7 +218,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 </script>
 

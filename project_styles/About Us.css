@@ -137,17 +137,16 @@ ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bgimg-1 {
-  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
-  min-height: 100%;
-}
+
+
+
 .bgimg-2 {
-  background-image: url("../project_assets/GIMSR\(Front\).jpeg");
+  background-image: url("../project_assets/nguy-n-hi-p-ufwC2cmbaaI-unsplash.jpg");
   min-height: 600px;
 }
 
 .bgimg-3 {
-  background-image: url("../project_assets/");
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
   min-height: 1000px;
 }
 .bg-about{
@@ -177,7 +176,7 @@ ul li a:hover {
   color: rgb(26, 26, 64);
 }
 .border {
-  font-size: 25px;
+  font-size: 0px;
   color: #f7f7f7;
 }
 .bgimg-1 .caption{
