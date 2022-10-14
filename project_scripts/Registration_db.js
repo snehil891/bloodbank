@@ -90,7 +90,7 @@ function Validate() {
   console.log(Password);
   var ConfirmPassword = document.getElementById("textConfirmPassword").value;
   var decimal =
-    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,16}$/;
   if (Password.match(decimal)) {
     if (Password === ConfirmPassword) {
       return true;
@@ -98,7 +98,7 @@ function Validate() {
     alert("Passwords do not match.");
     return false;
   }
-  alert("Password doesn't contain enough characters.");
+  alert("Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters");
   return false;
 }
 
