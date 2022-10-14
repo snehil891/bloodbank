@@ -60,15 +60,13 @@ h2{
     margin-right:auto;
 }
 .row-1{
-    padding:0px;
-    margin-right:230px;
-    margin-left:5px;
-    float:left;
+    padding:30px;
+
 }
 .row-2{
     padding:0px;
-    margin-left:200px;
-    margin-right:70px;
+    margin-left:290px;
+    margin-right:90px;
 }
 .content-section .title{
 	text-transform: uppercase;
