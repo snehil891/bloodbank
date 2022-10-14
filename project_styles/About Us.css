@@ -127,7 +127,7 @@ ul li a:hover {
   padding: 1.15px 3.5px;
 }
 
-.bgimg-1,
+
 .bgimg-2,
 .bgimg-3 {
   position: relative;
@@ -137,8 +137,6 @@ ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 .bgimg-2 {
   background-image: url("../project_assets/nguy-n-hi-p-ufwC2cmbaaI-unsplash.jpg");
@@ -178,41 +176,6 @@ ul li a:hover {
 .border {
   font-size: 0px;
   color: #f7f7f7;
-}
-.bgimg-1 .caption{
-  position: absolute;
-  left: 0;
-  top: 75%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.bgimg-1 .caption .box{
-  position: absolute;
-  top: 90px;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-.bgimg-1 .caption .box span{
-  display: block;
-  width: 35px;
-  height: 35px;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
-  transform: rotate(45deg);
-  margin: -10px;
-  animation: animate 2s infinite;
-}.bgimg-1 .caption .box span:nth-child(1){
-  animation-delay: 0.2s;
-  transform: rotate(45deg) translate(20px,20px);
-}
-.bgimg-1 .caption .box span:nth-child(2){
-  animation-delay: 0.5s;
-  transform: rotate(45deg) translate(20px,20px);
-}
-.bgimg-1 .caption .box span:nth-child(3){
-  animation-delay: 0.7s;
-  transform: rotate(45deg) translate(20px,20px);
 }
 .caption {
   position: absolute;
