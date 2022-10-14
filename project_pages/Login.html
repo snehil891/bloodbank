@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="../project_styles/Login.css" />
+  </head>
+  <body>
+    <!-- <header>
+        </div>
+        <ul class="nav-area">
+            <li><a href="../project_pages/Homepage.html">Back To Home</a></li>
+        </ul>
+       </header> -->
+    <div class="login-page">
+      <div class="form">
+        <form class="login-form" action="">
+          <input id="login-id" type="text" placeholder="User Name" required />
+          <input
+            id="Login-Password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <button id="login-button">login</button>
+          <p class="message">
+            Not Registered? <a href="Registration.html">Register</a>
+          </p>
+          <p class="forgot-message">
+            <a href="Forgotusername.html">Forgot Username?</a>
+            <br>
+            <a href="Forgotpassword.html">Forgot Password?</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.6.1.min.js" ;></script>
+    <script type="module" src="../project_scripts/db_transactions.js"></script>
+    <script src="../project_scripts/page_functionality.js"></script>
+    <script>
+      $(".message a").click(function () {
+        $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+      });
+    </script>
+  </body>
+</html>

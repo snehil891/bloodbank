@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-page</title>
+    <link rel="stylesheet" href="../project_styles/Admin-page.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">GITAM Blood Bank</span>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">GITAM Blood Bank</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="Admin-page.html" class="nav-link">
+                <i class='bx bxs-dashboard dash-board'></i>
+                <span class="link">Dashboard</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="AdminDonation.html" target="_blank" class="nav-link">
+                <i class='bx bxs-donate-blood donate-blood'></i>
+                <span class="link">Donations</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="AdminRequest.html" target="_blank" class="nav-link">
+                <i class='bx bx-donate-blood donate-blood'></i>
+                <span class="link">Requests</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="Login.html" class="nav-link">
+                <i class='bx bx-log-out log-out'></i>
+                <span class="link">Log-out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="overlay"></section>
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>
+    <script src="../project_scripts/page_functionality.js"></script>
+  </body>
+</html>

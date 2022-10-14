@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="../project_styles/Registration.css">
+</head>
+
+<body>
+    <!-- <header>
+        </div>
+        <ul class="nav-area">
+            <li><a href="../project_pages/Homepage.html">Back To Home</a></li>
+        </ul>
+    </header> -->
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form" action="">
+                <input id="Name" type="text" placeholder="Name" required />
+                <input id="UserName" type="text" placeholder="UserName" required/>
+                <tr>
+                    <td>
+                        <input type="password" id="txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, 
+                            and at least 8 or more characters" required placeholder="Password" >
+                    </td>
+                <tr>
+                    <td>
+                        <input type="password" id="txtConfirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, 
+                                and at least 8 or more characters"  placeholder="Confirm Password" required>
+                    </td>
+                    <!-- <input id="DOB" type="date" placeholder="DOB" required /> -->
+                    <input id="email" type="text" placeholder="Email Id" required />
+                    <input id="phone" type="tel" placeholder="Phone Number" minlength="10" maxlength="10" required/>
+                    <button id="create_acc">Create Account</button>
+                    <p class="message">Already Registered? <a href="Login.html">Login Here</a></p>
+
+            </form>
+            </form>
+        </div>
+    </div>
+    <!-- <script src=' https://code.jquery.com/jquery-3.6.1.min.js' ;></script> -->
+    <script type="module" src = "../project_scripts/db_transactions.js"></script>
+    <script src="../project_scripts/page_functionality.js"></script>
+</body>
+
+</html>
