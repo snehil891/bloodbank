@@ -1,265 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
-  <link rel="stylesheet" href="../project_styles/About Us.css">
-</head>
-<body>
-  <header>
-    <div class="dropdown">
-      <style>
-        body {
-          font-family: 'Lato', sans-serif;
-        }
-        
-        .overlay {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: rgb(0,0,0);
-          background-color: rgba(0,0,0, 0.9);
-          overflow-x: hidden;
-          transition: 1.0s;
-        }
-        
-        .overlay-content {
-          position: relative;
-          top: 25%;
-          width: 100%;
-          text-align: center;
-          margin-top: 30px;
-        }
-        
-        .overlay a {
-          padding: 8px;
-          text-decoration: none;
-          font-size: 36px;
-          color: #818181;
-          display: block;
-          transition: 0.6s;
-        }
-        
-        .overlay a:hover, .overlay a:focus {
-          color: #f1f1f1;
-        }
-        
-        .overlay .closebtn {
-          position: absolute;
-          top: 20px;
-          right: 45px;
-          font-size: 60px;
-        }
-        
-        @media screen and (max-height: 450px) {
-          .overlay a {font-size: 20px}
-          .overlay .closebtn {
-          font-size: 40px;
-          top: 15px;
-          right: 35px;
-          }
-        }
-        </style>
-        </head>
-        <body>
-        
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="../project_pages/Homepage.html">Home</a>
-            <a href="../project_pages/Donate.html">Donate</a>
-            <a href="../project_pages/Request.html">Request</a>
-            <a href="../project_pages/DevPage.html">Developers</a>
-          </div>
-        </div>
-        
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        
-        <script>
-        function openNav() {
-          document.getElementById("myNav").style.width = "100%";
-        }
-        
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-        }
-        </script>
-      
-      
-
-    </div>
-    
-</header>
-  <div class="bgimg-1">
-    <style>
-  * {box-sizing:content-box;}
-  body {font-family: system-ui;}
-  .mySlides {display: block;min-height:fit-content;margin-top: 0;width:fit-content; background-size:cover; max-height: 300px;}
-  img {vertical-align: middle;}
-
-/* Slideshow container */
-  .slideshow-container {
-    max-height: 700px !important ;
-    margin-top: -20px;
-    height: auto;
-    margin-bottom: 700px;
-    max-height: 100%;
-    max-width: 100%;
-    position: relative;
-    
-
-}
-
-  /* Caption text */
-  .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 4.0s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.0s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 </head>
-<body>
-<!--  <h2>About Us</h2> -->
-<p></p> 
+<body class="w3-light-grey">
 
-<div class="slideshow-container">
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-<div class="mySlides fade">
-  
-  <img src="../project_assets/blood-5053770.jpg" style="width:100%">
-  
-</div>
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>ABOUT US</b></h1>
+  <p>Welcome to GITAM Blood Bank</p>
+</header>
 
-<div class="mySlides fade">  <div class="numbertext"></div>
-  <img src="../project_assets/blood-732297.jpg" style="width:100%">
-  
-</div>
+<!-- Grid -->
+<div class="w3-row">
 
-<div class="mySlides fade">
-  <img src="../project_assets/earth-4861456.jpg" style="width:100%">
-</div>
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="../project_assets/GIMSR(TOP).jpeg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>AIM</b></h3>
+      
+    </div>
 
-
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  
-</div>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-</script>
-
-      <div class="box">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-  </div>
-  </div>
-  <div class="bg-about">
-      <h2>About us</h2>
-      <p>
-        This Blood Bank is an initiative by a group of GITAM B.Tech CSE students to provide the city with a solution for any issue related
-        with Blood Donation/Acceptance. We aim at making this website big enough that it can reach to anyone who's in need, instantly!
-
+    <div class="w3-container">
+      <h4>This Blood Bank is an initiative by a group of GITAM B.Tech CSE students to provide the city with a solution for any issue related
+        with Blood Donation/Acceptance. We aim at making this website reachable enough to anyone who's in need, instantly!
         GITAM Blood Bank is committed on providing the patients with an online portal where they can request for blood or take an appointment
         if volunteering for blood donation!
         
-        With this facility being provided to the people, they will no more need to rush to the hospital for searching for blood or when
+      </h4>
+      
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="../project_assets/Gitam(Top0.jpeg"  style="width:100%">
+    <div class="w3-container">
+
+      <h3>Credit<b></b></h3>
+
+    </div>
+
+    <div class="w3-container">
+      <h4>
+        An initiative by a group of Computer Science and Engineering undergrads from GITAM University, Visakhapatnam!
+      </h4>
+      
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="../project_assets/Blood3.jpeg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Objective</b></h4>
+      <h5>With this facility being provided to the people, they will no more need to rush to the hospital for searching for blood or when
         volunteering up for blood donation.
         
-        People can raise a request for either of the two and we will revert back as soon as possible.
-          
-      </p>
+        People can raise a request for either of the two and we will revert back as soon as possible.</h5>
     </div>
-    <div class="bgimg-2">
-      <div class="caption">
-        <span class="border">In case of emergency, you can reach us at: 9876543212</span>
-      </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Navigate To</h4>
     </div>
-    <div class="bgimg-3">
-      <div class="caption">
-        <span class="border">An initiative by GITAM B.Tech CSE Students!</span>
-      </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="../project_assets/OIP.jpg" alt="Image" class="w3-left w3-margin-right" style="width:30px">
+        <span class="w3-large1"><a href="../project_pages/Homepage.html"</a>Home<br>
+        
+      </li>
+      <li class="w3-padding-16">
+        <img src="../project_assets/donate Icon.png" alt="Image" class="w3-left w3-margin-right" style="width:30px">
+        <span class="w3-large"><a href="../project_pages/Donate.html" </a>Donate</span><br>
+        
+      </li> 
+      <li class="w3-padding-16">
+        <img src="../project_assets/request.jpg" alt="Image" class="w3-left w3-margin-right" style="width:30px">
+        <span class="w3-large"><a href="../project_pages/Request.html" </a>Request</span><br>
+      
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="../project_assets/developers.jpg" alt="Image" class="w3-left w3-margin-right" style="width:30px">
+        <span class="w3-large"><a href="../project_pages/DevPage.html" </a>Developers</span><br></br>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w4-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Contact Us</h4>
     </div>
-    <footer class="center footer">
-      Contact:<br>
-      Email:  bldbank146@gmail.com<br>
-      <span class="Copy">Address: GITAM UNIVERSITY, Rushikonda, Visakhapatnam-530045</span>
-    </footer>
-    <script src="../project_scripts/page_functionality.js"></script>
+    <div class="w3-container w3-white">
+      <li class="w3-padding-16">
+        <img src="../project_assets/ContactUs.png" alt="Image" class="w3-left w3-margin-right" style="width:20px">
+        <span class="w3-large1">1234567890<br>
+        
+      </li>
+
+      <li class="w3-padding-161">
+        <img src="../project_assets/Email.png" alt="Image" class="w3-left w3-margin-right" style="width:20px">
+        <span class="w3-large">bldbank146@gmail.com<br>
+        
+      </li>
+
+      
+
+
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
 </body>
 </html>
