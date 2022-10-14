@@ -40,35 +40,39 @@ function get_request() {
   console.log("getting");
   const patient_name = document.getElementById("Patient_name").value;
   const Hospital_name = document.getElementById("Hospital_name").value;
-  const patient_dob = new Date(document.getElementById("patient_dob").value);
+  const patient_required_date = new Date(document.getElementById("required_date").value);
   const patient_gender = get_value_gender();
   const patient_phone = document.getElementById("patient_phone").value;
   const purpose_request = document.getElementById("purpose_request").value;
+  const no_of_units = document.getElementById("no_of_units").value;
+  const patient_age = document.getElementById("patient_dob").value;
   const select = document.getElementById("Blood_group_request");
   const patient_blood = select.options[select.selectedIndex].value;
   return {
+    no_of_units,
     patient_name,
     Hospital_name,
-    patient_dob,
+    patient_age,
     patient_gender,
     patient_phone,
     purpose_request,
     patient_blood,
+    patient_required_date
   };
 }
 
-function get_age(dob) {
-  console.log("checking");
-  var dob_year = dob.getFullYear();
-  function getAge(birthYear) {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    var age = currentYear - birthYear;
-    return age;
-  }
-  var calculatedAge = getAge(dob_year);
-  return calculatedAge;
-}
+// function get_age(dob) {
+//   console.log("checking");
+//   var dob_year = dob.getFullYear();
+//   function getAge(birthYear) {
+//     var currentDate = new Date();
+//     var currentYear = currentDate.getFullYear();
+//     var age = currentYear - birthYear;
+//     return age;
+//   }
+//   var calculatedAge = getAge(dob_year);
+//   return calculatedAge;
+// }
 
 async function add_to_request() {
   console.log("called");
@@ -81,13 +85,14 @@ async function add_to_request() {
   await setDoc(doc(collection(dbRef, time, (request_data.patient_blood+"_request")),(time+"_"+String(request_data.patient_phone))), {
     Name: request_data.patient_name,
     Hospital_Name: request_data.Hospital_name,
-    age: String(get_age(request_data.patient_dob)),
-    dob: String(request_data.patient_dob),
+    age: request_data.patient_age,
+    required_date: String(request_data.patient_required_date),
     Gender: request_data.patient_gender,
     Mobile: request_data.patient_phone,
     Purpose: request_data.purpose_request,
     Blood_group: request_data.patient_blood,
     Date_of_creation: time,
+    No_of_Units: request_data.no_of_units
  
   })
     .then((docRef) => {
