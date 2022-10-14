@@ -49,13 +49,14 @@ if (click_request_button) {
     event.preventDefault();
   });
 }
-const click_issued_button = document.getElementById("check_issued");
-if (click_issued_button) {
-  click_issued_button.addEventListener("click", function () {
-    console.log(view("Issued"));
-    event.preventDefault();
-  });
-}
+
+// const click_issued_button = document.getElementById("check_issued");
+// if (click_issued_button) {
+//   click_issued_button.addEventListener("click", function () {
+//     console.log(view("Issued"));
+//     event.preventDefault();
+//   });
+// }
 const login_button = document.getElementById("login-button");
 if (login_button) {
   login_button.addEventListener("click", function () {
