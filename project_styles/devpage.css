@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 *{
 	margin:0px;
 	padding:0px;
-
-	font-family: 'Poppins', sans-serif;
+	font-family: 'system-ui';
     box-sizing: border-box;
     background-color: #ddd;
      
@@ -99,7 +97,7 @@ h2{
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	padding: 6px 20px;
-	font-family: "system.ui";
+	font-family: "system-ui";
 	font-size: 20px;
 	font-weight: lighter;
   }
