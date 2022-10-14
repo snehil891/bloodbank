@@ -28,7 +28,7 @@ function sendEmail_username(email,username) {
       To: email,
       From: "bldbank146@gmail.com",
       Subject: "Forgot Password",
-      Body: "Seems like you forgot your username, well HERE YOU GO!       "+"\n"+"     USERNAME:"+username,
+      Body: "Seems like you forgot your username, well HERE YOU GO! %0D%0A USERNAME:"+username,
     //   Attachments: [
     //     {
     //       name: "File_Name_with_Extension",
