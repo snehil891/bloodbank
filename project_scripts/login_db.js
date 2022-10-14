@@ -79,7 +79,7 @@ async function login_check_user(login_id, login_password) {
     return true;
   }
   else{
-    alert("Login_ID not found. Kindly register.");
+    // alert("Login_ID not found. Kindly register.");
     return false;
   }
     
