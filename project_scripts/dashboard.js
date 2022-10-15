@@ -93,7 +93,7 @@ async function change_request_html(blood_group) {
     html += "<td>" + rows[i].No_of_Units + "</td>";
     html += "<td>" + rows[i].required_date + "</td>";
     html += "<td>" + rows[i].Date_of_creation + "</td>";
-    html += "<td>" + "<button onclick=\"issue_mark(this)\">Issued</button>" + "</td>";
+    // html += "<td>" + "<button onclick=\"issue_mark(this)\">Issued</button>" + "</td>";
 
     html += "</tr>";
   }
