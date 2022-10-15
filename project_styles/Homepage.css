@@ -19,7 +19,6 @@ header {
   z-index: 1000;
   transition: 0.6s;
 }
-
 header ul {
   position: fixed;
   top: 2%;
@@ -43,94 +42,13 @@ header ul li a {
 ul li a:hover {
   background: rgba(28, 80, 94, 0.862);
 }
-.dropdown {
-  float: right;
-  top: 2%;
-  width: 100%;
-  left: 2%;
-  overflow: hidden;
-  position: inherit;
-}
-.dropdown .dropbtn {
-  font-size: 20px;
-  border: none;
-  outline: none;
-  color:  rgb(244, 240, 240);
-  padding: 12px 16px;
-  background-color: inherit;
-  font-family:'system.ui';
-  margin: 0; 
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: rgb(244, 240, 240);
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
-}
-
-.dropdown-content {
-  display: none;
-  position:inherit;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  font-family:'system.ui';
-  font-size: 18px;
-}
-.dropdown-content a {
-  float: none;
-  color: rgb(0, 0, 0);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content :hover {
-  background-color: rgba(106, 28, 28, 0.862);
-}
-.dropdown-content :hover a{
-  color: rgb(255, 255, 255);
-}
-.show{
-  display: block;
-}
-
 .sticky ul li a {
   color: #000;
+  font-size: 15px;
+  letter-spacing: 0px;
   font-weight: bolder;
-  padding: 20px 20px;
+  padding: 15px 15px;
 }
-
-.sticky .dropdown .dropbtn .bar1{
-  background-color: rgb(0, 0, 0);
-  font-weight: bolder;
-  padding: 1.15px 3.5px;
-}
-
-.sticky .dropdown .dropbtn .bar2{
-  background-color: rgb(0, 0, 0);
-  font-weight: bolder;
-  padding: 1.15px 3.5px;
-}
-
-.sticky .dropdown .dropbtn .bar3{
-  background-color: rgb(0, 0, 0);
-  font-weight: bolder;
-  padding: 1.15px 3.5px;
-}
-
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
@@ -143,9 +61,11 @@ ul li a:hover {
 }
 .bgimg-1 {
   background-image: url("../project_assets/Homepage_blood.gif");
-  min-height: 100%;
+  min-height:100%;
+  width: 100%;
   justify-content: center;
   display: flex;
+  z-index: -1;
 }
 .bgimg-2 {
   background-image: url("../project_assets/bloodbank.jpg");
@@ -155,7 +75,7 @@ ul li a:hover {
 }
 
 .bgimg-3 {
-  background-image: url("../project_assets/Blood-Banks-in-Visakhapatnam.jpg");
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
   min-height: 1000px;
   justify-content: center;
   display: flex;
@@ -185,10 +105,6 @@ ul li a:hover {
 }
 .bg-about a:hover{
   color: rgb(26, 26, 64);
-}
-.border {
-  font-size: 25px;
-  color: #f7f7f7;
 }
 .bgimg-1 .caption{
   position: absolute;
@@ -225,21 +141,6 @@ ul li a:hover {
   animation-delay: 0.7s;
   transform: rotate(45deg) translate(20px,20px);
 }
-.caption {
-  position: absolute;
-  left: 0;
-  top: 70%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
 .footer {
   background: rgb(0, 0, 0);
   color: #fff;
@@ -252,47 +153,634 @@ ul li a:hover {
 .footer span.copy{
   text-align: center;
   color: #fff;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
-@media screen and (max-width: 600px) {
+@media (max-width:484px) {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: inherit;
+  opacity: 90;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Blood3.jpeg");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 800px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 15px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 13px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system-ui';
+}
+}
+@media (max-width:768px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    background-attachment: scroll;
-    background-size:cover ;
-    align-items: flex-end;
+    position: inherit;
+    opacity: 90;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    justify-content: flex-end;
-  }
-
-  header {
-    padding: 20px 0px;
-    margin: 0;
-    background-size:cover ;
-    align-items: flex-end;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Blood3.jpeg");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 600px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+header {
+  padding: 30px 10px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 40px 20px;
+  font-weight: none;
+  font-size: 40px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 40px;
+  font-weight:bolder;
+  padding: 30px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+}
+@media (max-width:900px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    position: inherit;
+    opacity: 90;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    justify-content: flex-end;
-  }
-
-  header ul li a {
-    padding: 2px 1px;
-    font-weight: none;
-    font-size: 14px;
-    background-size:cover ;
-    align-items: flex-end;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Blood3.jpeg");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 900px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 15px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 13px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+}
+@media (min-width: 1080px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    position: inherit;
+    opacity: 90;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  .sticky {
-    padding: 2px 2px;
-    font-weight: none;
-    background-size:cover ;
-    align-items: flex-end;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Homepage_blood.gif");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 900px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 22px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 20px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+.border {
+  font-size: 25px;
+  color: #f7f7f7;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+}
+@media (min-width: 1440px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    position: inherit;
+    opacity: 90;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Homepage_blood.gif");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 900px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 22px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 20px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+.border {
+  font-size: 25px;
+  color: #f7f7f7;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+}
+@media (min-width: 2160px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    position: inherit;
+    opacity: 90;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Homepage_blood.gif");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 900px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 25px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 20px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+.border {
+  font-size: 25px;
+  color: #f7f7f7;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
 }
 @keyframes animate{
   0%{
