@@ -189,6 +189,41 @@ ul li a:hover {
   justify-content: center;
   display: flex;
 }
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
 header {
   padding: 10px 0px;
   margin: 0;
@@ -282,6 +317,41 @@ header ul li a {
   max-width: 100%;
   justify-content: center;
   display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
 }
 header {
   padding: 30px 10px;
@@ -377,6 +447,41 @@ header ul li a {
   justify-content: center;
   display: flex;
 }
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
 header {
   padding: 10px 0px;
   margin: 0;
@@ -470,6 +575,41 @@ header ul li a {
   max-width: 100%;
   justify-content: center;
   display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
 }
 header {
   padding: 10px 0px;
@@ -586,6 +726,41 @@ header ul li a {
   justify-content: center;
   display: flex;
 }
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
 header {
   padding: 10px 0px;
   margin: 0;
@@ -700,6 +875,41 @@ header ul li a {
   max-width: 100%;
   justify-content: center;
   display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
 }
 header {
   padding: 10px 0px;
