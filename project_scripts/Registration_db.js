@@ -98,7 +98,7 @@ function Validate() {
     alert("Passwords do not match.");
     return false;
   }
-  alert("Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters");
+  alert("Password must contain at least 1 number and 1 uppercase and lowercase letter, and at least 8 or more characters.");
   return false;
 }
 
