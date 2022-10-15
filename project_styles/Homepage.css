@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "system.ui";
+  font: 400 15px/1.8 "system-ui";
   background-size:cover ;
   align-items: flex-end;
   background-repeat: no-repeat;
@@ -170,11 +170,11 @@ ul li a:hover {
   text-align: center;
   text-decoration: underline;
   font-size: 2.5em;
-  font-family:'system.ui';
+  font-family:'system-ui';
 }
 .bg-about p{
   font-size: 1.25em;
-  font-family:'system.ui';
+  font-family:'system-ui';
 }
 .bg-about a{
   text-align: center;
