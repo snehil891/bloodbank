@@ -170,7 +170,6 @@ ul li a:hover {
 .bgimg-1 {
   background-image: url("../project_assets/earth-4861456.webp");
   height:auto;
-  z-index: -1;
   display: flex;
 }
 .bgimg-2 {
@@ -425,7 +424,6 @@ header ul li a {
 .bgimg-1 {
   background-image: url("../project_assets/earth-4861456.webp");
   height:auto;
-  z-index: -1;
   display: flex;
 }
 .bgimg-2 {
@@ -546,7 +544,6 @@ header ul li a {
 .bgimg-1 {
   background-image: url("../project_assets/Homepage_blood.gif");
   height:auto;
-  z-index: -1;
   display: flex;
 }
 .bgimg-2 {
@@ -688,7 +685,6 @@ header ul li a {
 .bgimg-1 {
   background-image: url("../project_assets/Homepage_blood.gif");
   height:auto;
-  z-index: -1;
   display: flex;
 }
 .bgimg-2 {
@@ -830,7 +826,6 @@ header ul li a {
 .bgimg-1 {
   background-image: url("../project_assets/Homepage_blood.gif");
   height:auto;
-  z-index: -1;
   display: flex;
 }
 .bgimg-2 {

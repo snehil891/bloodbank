@@ -816,24 +816,16 @@ header ul li a {
 .bgimg-1 {
   background-image: url("../project_assets/Homepage_blood.gif");
   height:auto;
-  z-index: -1;
-  width: 100%;
-  max-width: 100%;
-  justify-content:center;
   display: flex;
 }
 .bgimg-2 {
   background-image: url("../project_assets/bloodbank.webp");
   min-height: 900px;
-  max-width: 100%;
-  justify-content: center;
   display: flex;
 }
 .bgimg-3 {
   background-image: url("../project_assets/GIMSR\(TOP\).webp");
   min-height: 100%;
-  max-width: 100%;
-  justify-content: center;
   display: flex;
 }
 .bgimg-1 .caption{
