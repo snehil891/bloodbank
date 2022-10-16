@@ -1,23 +1,23 @@
 body{
-    background-color: #60787a7d;
+    background-color: #0000007d;
     background-size:cover;
     background-position:center;
 }
-.login-page{
+.Usrnm-page{
     width:360px;
-    padding:10% 0 0;
+    padding:15% 0 0;
     margin:auto;
 }
 .form{
     position:relative;
     z-index:1;
-    background:#333131;
+    background:#000000;
     max-width:360px;
     margin:0 auto 100px;
     left: 0%;
     padding: 40px;
     text-align: center;
-}
+} 
 .form input{
     font-family: 'system.ui';
     outline:1;
@@ -47,7 +47,7 @@ body{
 }
 .form .message{
     margin:15px 0 0;
-    color:rgb(255, 240, 240);
+    color:aliceblue;
     font-size:12px;
 }
 .form .message a{
