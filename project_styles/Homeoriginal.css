@@ -227,7 +227,7 @@ ul li a:hover {
 }
 header {
   padding: 10px 0px;
-  margin: 0;
+  margin: 1px;
   background-size:cover;
   align-items: flex-end;
   background-repeat: no-repeat;
