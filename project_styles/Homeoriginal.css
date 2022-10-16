@@ -1,0 +1,1003 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "system-ui";
+  background-size:cover ;
+  align-items: flex-end;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  padding: 40px 400px;
+  z-index: 1000;
+  transition: 0.6s;
+}
+header ul {
+  position: fixed;
+  top: 2%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: inherit;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  margin: 0 2px;
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  letter-spacing: 0px;
+  font-weight: 500px;
+  padding: 15px 15px;
+}
+ul li a:hover {
+  background: rgba(28, 80, 94, 0.862);
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-weight: bolder;
+  padding: 15px 15px;
+}
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  opacity: 90;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Homepage_blood.gif");
+  min-height:100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  z-index: -1;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 600px;
+  justify-content: center;
+  display: flex;
+}
+
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 1000px;
+  justify-content: center;
+  display: flex;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+.bg-about a:hover{
+  color: rgb(26, 26, 64);
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.footer {
+  text-decoration: no;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 60px;
+}
+.center {
+  text-align: center;
+  padding: 30px 0;
+}
+.footer span.copy{
+  text-align: center;
+  color: #fff;
+  padding: 30px 10px;
+}
+@media (max-width:484px) {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  opacity: 90;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Blood3.jpeg");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 800px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 15px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 13px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system-ui';
+}
+}
+@media (max-width:768px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    opacity: 90;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Blood3.jpeg");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 600px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+header {
+  padding: 30px 10px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 40px 20px;
+  font-weight: none;
+  font-size: 40px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 40px;
+  font-weight:bolder;
+  padding: 30px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+}
+@media (max-width:900px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    opacity: 90;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Blood3.jpeg");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 900px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 15px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 13px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+}
+@media (min-width: 1080px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    opacity: 90;
+    background-attachment: fixed;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Homepage_blood.gif");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 900px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 22px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 20px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+.border {
+  font-size: 25px;
+  color: #f7f7f7;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+}
+@media (min-width: 1440px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    opacity: 90;
+    background-attachment: fixed;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Homepage_blood.gif");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 900px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 22px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 20px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+.border {
+  font-size: 25px;
+  color: #f7f7f7;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+}
+@media (min-width: 2160px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    opacity: 90;
+    background-attachment: fixed;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../project_assets/Homepage_blood.gif");
+  height:auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  justify-content:center;
+  display: flex;
+}
+.bgimg-2 {
+  background-image: url("../project_assets/bloodbank.jpg");
+  min-height: 900px;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-3 {
+  background-image: url("../project_assets/GIMSR\(TOP\).jpeg");
+  min-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bgimg-1 .caption{
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.bgimg-1 .caption .box{
+  position: absolute;
+  top: 90px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.bgimg-1 .caption .box span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}.bgimg-1 .caption .box span:nth-child(1){
+  animation-delay: 0.2s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(2){
+  animation-delay: 0.5s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+.bgimg-1 .caption .box span:nth-child(3){
+  animation-delay: 0.7s;
+  transform: rotate(45deg) translate(20px,20px);
+}
+header {
+  padding: 10px 0px;
+  margin: 0;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+header ul li a {
+  padding: 1px 1px;
+  font-weight: none;
+  font-size: 25px;
+  background-size:cover ;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.footer {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  height: 80px;
+}
+.center {
+  text-align: center;
+  padding: auto;
+}
+.show{
+  display: block;
+}
+.sticky ul li a {
+  color: #000;
+  font-size: 20px;
+  font-weight:bolder;
+  padding: 10px 0px;
+}
+.bg-about{
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+.bg-about h2
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-family:'system-ui';
+}
+.bg-about p{
+  font-size: 1.25em;
+  font-family:'system-ui';
+}
+.bg-about a{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 300px;
+  font-size: 0.85em;
+  font-family:'system.ui';
+}
+.border {
+  font-size: 25px;
+  color: #f7f7f7;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+}
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0%;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+}
