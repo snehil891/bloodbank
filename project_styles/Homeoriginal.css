@@ -34,11 +34,10 @@ header ul li {
   list-style: none;
 }
 header ul li a {
-  margin: 5px 1px;
+  margin: 5px 7px;
   text-decoration: none;
   color:rgb(255, 255, 255);
   font-size: 40px;
-  letter-spacing: 10px;
   font-weight: 500px;
   padding: 20px 20px;
 }
@@ -47,8 +46,7 @@ ul li a:hover {
 }
 .sticky ul li a {
   color: #000;
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 20px;
   font-weight: bolder;
   padding: 15px 15px;
 }
@@ -169,7 +167,7 @@ ul li a:hover {
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/Blood3.webp");
+  background-image: url("../project_assets/earth-4861456.webp");
   height:auto;
   z-index: -1;
   display: flex;
@@ -228,7 +226,7 @@ header {
   justify-content: flex-end;
 }
 header ul li a{
-  padding: 1px 1px;
+  margin: 1px 2px;
   font-weight: none;
   font-size: 8px;
   background-size:cover ;
@@ -251,7 +249,7 @@ header ul li a{
 }
 .sticky ul li a {
   color: #000;
-  font-size: 15px;
+  font-size: 20px;
   font-weight:bolder;
   padding: 10px 0px;
 }
@@ -279,7 +277,7 @@ header ul li a{
   font-family:'system-ui';
 }
 }
-@media (max-width:768px) {
+@media (min-width:768px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
@@ -290,7 +288,7 @@ header ul li a{
     background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/Blood3.webp");
+  background-image: url("../project_assets/earth-4861456.webp");
   height:auto;
   z-index: -1;
   display: flex;
@@ -341,7 +339,7 @@ header ul li a{
   transform: rotate(45deg) translate(20px,20px);
 }
 header {
-  padding: 30px 10px;
+  padding: 10px 10px;
   margin: 0;
   background-size:cover ;
   align-items: flex-end;
@@ -349,9 +347,8 @@ header {
   justify-content: flex-end;
 }
 header ul li a {
-  padding: 40px 20px;
+  margin: 5px 5px;
   font-weight: none;
-  font-size: 40px;
   background-size:cover ;
   align-items: flex-end;
   background-repeat: no-repeat;
@@ -411,19 +408,13 @@ header ul li a {
     background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/Blood3.webp");
+  background-image: url("../project_assets/earth-4861456.webp");
   height:auto;
-  z-index: -1;
-  width: 100%;
-  max-width: 100%;
-  justify-content:center;
   display: flex;
 }
 .bgimg-2 {
   background-image: url("../project_assets/bloodbank.webp");
-  min-height: 900px;
-  max-width: 100%;
-  justify-content: center;
+  min-height: 700px;
   display: flex;
 }
 .bgimg-3 {
@@ -541,17 +532,11 @@ header ul li a {
 .bgimg-1 {
   background-image: url("../project_assets/Homepage_blood.gif");
   height:auto;
-  z-index: -1;
-  width: 100%;
-  max-width: 100%;
-  justify-content:center;
   display: flex;
 }
 .bgimg-2 {
   background-image: url("../project_assets/bloodbank.webp");
   min-height: 900px;
-  max-width: 100%;
-  justify-content: center;
   display: flex;
 }
 .bgimg-3 {
@@ -690,24 +675,16 @@ header ul li a {
 .bgimg-1 {
   background-image: url("../project_assets/Homepage_blood.gif");
   height:auto;
-  z-index: -1;
-  width: 100%;
-  max-width: 100%;
-  justify-content:center;
   display: flex;
 }
 .bgimg-2 {
   background-image: url("../project_assets/bloodbank.webp");
   min-height: 900px;
-  max-width: 100%;
-  justify-content: center;
   display: flex;
 }
 .bgimg-3 {
   background-image: url("../project_assets/GIMSR\(TOP\).webp");
   min-height: 100%;
-  max-width: 100%;
-  justify-content: center;
   display: flex;
 }
 .bgimg-1 .caption{
