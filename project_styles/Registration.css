@@ -70,7 +70,7 @@ body{
 }
 .register-page{
     width:800px;
-    padding:50% 0 0;
+    padding:40% 0 0;
     margin:auto;
 }
 .text {
@@ -191,6 +191,72 @@ body{
     text-decoration:none;
 }
 }
+@media (min-width:900px) {
+    body{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.jpg);
+        background-size:cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .register-page{
+        width:360px;
+        position: fixed;
+        padding:0.5% 30% 0.5%;
+        margin:auto;
+    }
+    .text {
+      color: #fff;
+      font-size: 35px;
+      padding: 2px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .form{
+        position:relative;
+        z-index:1;
+        background:#262361;
+        max-width:360px;
+        margin:0 auto 100px;
+        padding:45px;
+        text-align: center;
+    }
+    .form input{
+        font-family:'system.ui';
+        outline:1;
+        background:#f2f2f2;
+        width:100%;
+        border:0;
+        margin:0 0 15px;
+        padding:15px;
+        box-sizing:border-box;
+        font-size:14px;
+    }
+    .form button{
+        font-family:'system.ui';
+        text-transform:uppercase;
+        outline:0;
+        background:#000000;
+        width:100%;
+        border:0;
+        padding:15px;
+        color:#FFFFFF;
+        font-size:14px;
+        cursor:pointer;
+    }
+    .form button:hover,.form button:active{
+        background:#3e1e1d;
+    
+    }
+    .form .message{
+        margin:15px 0 0;
+        color:rgb(255, 255, 255);
+        font-size:12px;
+    }
+    .form .message a{
+        color:#ff2323;
+        text-decoration:none;
+    }
+}
 @media (min-width:1080px) {
   body{
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.jpg);
@@ -200,7 +266,7 @@ body{
 }
 .register-page{
     width:360px;
-    padding:7% 0 0;
+    padding:5% 30% 0.5%;
     margin:auto;
 }
 .text {
