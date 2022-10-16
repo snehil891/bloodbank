@@ -69,7 +69,7 @@ ul li a:hover {
   z-index: -1;
 }
 .bgimg-2 {
-  background-image: url("../project_assets/bloodbank.jpg");
+  background-image: url("../project_assets/bloodbank.webp");
   min-height: 600px;
   justify-content: center;
   display: flex;
@@ -177,7 +177,7 @@ ul li a:hover {
   display: flex;
 }
 .bgimg-2 {
-  background-image: url("../project_assets/bloodbank.jpg");
+  background-image: url("../project_assets/bloodbank.webp");
   min-height: 100%;
   max-width: 100%;
   justify-content: center;
@@ -305,7 +305,7 @@ header ul li a {
   display: flex;
 }
 .bgimg-2 {
-  background-image: url("../project_assets/bloodbank.jpg");
+  background-image: url("../project_assets/bloodbank.webp");
   min-height: 600px;
   max-width: 100%;
   justify-content: center;
@@ -433,7 +433,7 @@ header ul li a {
   display: flex;
 }
 .bgimg-2 {
-  background-image: url("../project_assets/bloodbank.jpg");
+  background-image: url("../project_assets/bloodbank.webp");
   min-height: 900px;
   max-width: 100%;
   justify-content: center;
@@ -561,7 +561,7 @@ header ul li a {
   display: flex;
 }
 .bgimg-2 {
-  background-image: url("../project_assets/bloodbank.jpg");
+  background-image: url("../project_assets/bloodbank.webp");
   min-height: 900px;
   max-width: 100%;
   justify-content: center;
@@ -710,7 +710,7 @@ header ul li a {
   display: flex;
 }
 .bgimg-2 {
-  background-image: url("../project_assets/bloodbank.jpg");
+  background-image: url("../project_assets/bloodbank.webp");
   min-height: 900px;
   max-width: 100%;
   justify-content: center;
@@ -859,7 +859,7 @@ header ul li a {
   display: flex;
 }
 .bgimg-2 {
-  background-image: url("../project_assets/bloodbank.jpg");
+  background-image: url("../project_assets/bloodbank.webp");
   min-height: 900px;
   max-width: 100%;
   justify-content: center;

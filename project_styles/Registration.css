@@ -1,5 +1,5 @@
 body{
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.webp);
     background-size:cover;
     background-position: center center;
     background-attachment: fixed;
@@ -63,7 +63,7 @@ body{
 }
 @media (min-width:484px) {
   body{
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.webp);
     background-size:cover;
     background-position: center center;
     background-attachment: fixed;
@@ -128,7 +128,7 @@ body{
 }
 @media (min-width:768px){
   body{
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.webp);
     background-size:cover;
     background-position: center center;
     background-attachment: fixed;
@@ -193,7 +193,7 @@ body{
 }
 @media (min-width:900px) {
     body{
-        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.jpg);
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.webp);
         background-size:cover;
         background-position: center center;
         background-attachment: fixed;
@@ -259,7 +259,7 @@ body{
 }
 @media (min-width:1080px) {
   body{
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/blood-732297.webp);
     background-size:cover;
     background-position: center center;
     background-attachment: fixed;
