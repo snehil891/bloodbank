@@ -1,0 +1,661 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+/* End extract */
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.git-serif {
+    font-family: serif
+}
+
+.git-sans-serif {
+    font-family: sans-serif
+}
+
+.git-cursive {
+    font-family: cursive
+}
+
+.git-monospace {
+    font-family: monospace
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.git-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.git-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+.git-table,
+.git-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.git-table-all {
+    border: 1px solid #ccc
+}
+
+.git-bordered tr,
+.git-table-all tr {
+    border-bottom: 1pxsolid #ddd
+}
+
+.git-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.git-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.git-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.git-ul li:last-child {
+    border-bottom: none
+}
+
+.git-ripple:active {
+    opacity: 0.5
+}
+
+.git-ripple {
+    transition: opacity 0s
+}
+
+.git-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.git-dropdown-click,
+.git-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.git-dropdown-hover:first-child,
+.git-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.git-dropdown-hover:hover>.git-button:first-child,
+.git-dropdown-click:hover>.git-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+
+.git-main,
+#main {
+    transition: margin-left .4s
+}
+
+.git-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.git-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.git-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.git-center .git-bar {
+    display: inline-block;
+    width: auto
+}
+
+.git-bar .git-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.git-bar .git-dropdown-hover,
+.git-bar .git-dropdown-click {
+    position: static;
+    float: left
+}
+
+.git-bar .git-button {
+    white-space: normal
+}
+
+.git-bar-block .git-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.git-bar-block.git-center .git-bar-item {
+    text-align: center
+}
+
+.git-block {
+    display: block;
+    width: 100%
+}
+
+.git-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.git-container:after,
+.git-container:before,
+.git-panel:after,
+.git-panel:before,
+.git-row:after,
+.git-row:before,
+.git-row-padding:after,
+.git-row-padding:before,
+.git-cell-row:before,
+.git-cell-row:after,
+.git-clear:after,
+.git-clear:before,
+.git-bar:before,
+.git-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.git-col,
+.git-half,
+.git-third,
+.git-twothird,
+.git-threequarter,
+.git-quarter {
+    float: left;
+    width: 100%
+}
+
+.git-col.s1 {
+    width: 8.33333%
+}
+
+.git-col.s2 {
+    width: 16.66666%
+}
+
+.git-col.s3 {
+    width: 24.99999%
+}
+
+.git-col.s4 {
+    width: 33.33333%
+}
+
+.git-col.s5 {
+    width: 41.66666%
+}
+
+.git-col.s6 {
+    width: 49.99999%
+}
+
+.git-col.s7 {
+    width: 58.33333%
+}
+
+.git-col.s8 {
+    width: 66.66666%
+}
+
+.git-col.s9 {
+    width: 74.99999%
+}
+
+.git-col.s10 {
+    width: 83.33333%
+}
+
+.git-col.s11 {
+    width: 91.66666%
+}
+
+.git-col.s12 {
+    width: 99.99999%
+}
+
+
+@media (min-width:601px) {
+    .git-col.m1 {
+        width: 8.33333%
+    }
+
+    .git-col.m2 {
+        width: 16.66666%
+    }
+
+    .git-col.m3,
+    .git-quarter {
+        width: 24.99999%
+    }
+
+    .git-col.m4,
+    .git-third {
+        width: 33.33333%
+    }
+
+    .git-col.m5 {
+        width: 41.66666%
+    }
+
+    .git-col.m6,
+    .git-half {
+        width: 49.99999%
+    }
+
+    .git-col.m7 {
+        width: 58.33333%
+    }
+
+    .git-col.m8,
+    .git-twothird {
+        width: 66.66666%
+    }
+
+
+
+    @media (min-width:993px) {
+        .git-col.l1 {
+            width: 8.33333%
+        }
+
+        .git-col.l2 {
+            width: 16.66666%
+        }
+
+        .git-col.l3 {
+            width: 24.99999%
+        }
+
+        .git-col.l4 {
+            width: 33.33333%
+        }
+
+        .git-col.l5 {
+            width: 41.66666%
+        }
+
+        .git-col.l6 {
+            width: 49.99999%
+        }
+
+        .git-col.l7 {
+            width: 58.33333%
+        }
+
+        .git-col.l8 {
+            width: 66.66666%
+        }
+
+        .git-rest {
+            overflow: hidden
+        }
+
+        .git-stretch {
+            margin-left: -16px;
+            margin-right: -16px
+        }
+
+        .git-content,
+        .git-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .git-content {
+            max-width: 980px
+        }
+
+        .git-auto {
+            max-width: 1140px
+        }
+
+        .git-cell-row {
+            display: table;
+            width: 100%
+        }
+
+        .git-cell {
+            display: table-cell
+        }
+
+
+
+
+
+
+
+
+        /* Important */
+        .git-container,
+        .git-panel {
+            padding: 0.01em 16px
+        }
+
+        .git-panel {
+            margin-top: 16px;
+            margin-bottom: 16px
+        }
+
+        .git-codespan {
+            color: crimson;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 110%
+        }
+
+        .git-card,
+        .git-card-2 {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+        }
+
+
+
+        .git-animate-input {
+            transition: width 0.4s ease-in-out
+        }
+
+        .git-animate-input:focus {
+            width: 100% !important
+        }
+
+        .git-opacity,
+        .git-hover-opacity:hover {
+            opacity: 0.60
+        }
+
+        .git-opacity-off,
+        .git-hover-opacity-off:hover {
+            opacity: 1
+        }
+
+        .git-opacity-max {
+            opacity: 0.25
+        }
+
+        .git-opacity-min {
+            opacity: 0.75
+        }
+
+
+        .git-left-align {
+            text-align: left !important
+        }
+
+        .git-right-align {
+            text-align: right !important
+        }
+
+        .git-justify {
+            text-align: justify !important
+        }
+
+        .git-center {
+            text-align: center !important
+        }
+
+
+
+        .git-border-0 {
+            border: 0 !important
+        }
+
+        .git-border {
+            border: 1px solid #ccc !important
+        }
+
+        .git-border-top {
+            border-top: 1px solid #ccc !important
+        }
+
+        .git-border-bottom {
+            border-bottom: 1px solid #ccc !important
+        }
+
+        .git-border-left {
+            border-left: 1px solid #ccc !important
+        }
+
+        .git-border-right {
+            border-right: 1px solid #ccc !important
+        }
+
+        .git-topbar {
+            border-top: 6px solid #ccc !important
+        }
+
+        .git-bottombar {
+            border-bottom: 6px solid #ccc !important
+        }
+
+        .git-leftbar {
+            border-left: 6px solid #ccc !important
+        }
+
+        .git-rightbar {
+            border-right: 6px solid #ccc !important
+        }
+
+        .git-section,
+        .git-code {
+            margin-top: 16px !important;
+            margin-bottom: 16px !important
+        }
+
+        .git-margin {
+            margin: 16px !important
+        }
+
+        .git-margin-top {
+            margin-top: 16px !important
+        }
+
+        .git-margin-bottom {
+            margin-bottom: 16px !important
+        }
+
+        .git-margin-left {
+            margin-left: 16px !important
+        }
+
+        .git-margin-right {
+            margin-right: 16px !important
+        }
+
+        .git-padding-small {
+            padding: 4px 8px !important
+        }
+
+        .git-padding {
+            padding: 8px 16px !important
+        }
+
+        .git-padding-large {
+            padding: 12px 24px !important
+        }
+
+        .git-padding-16 {
+            padding-top: 16px !important;
+            padding-bottom: 16px !important
+        }
+
+        .git-padding-24 {
+            padding-top: 24px !important;
+            padding-bottom: 24px !important
+        }
+
+        .git-padding-32 {
+            padding-top: 32px !important;
+            padding-bottom: 32px !important
+        }
+
+        .git-padding-48 {
+            padding-top: 48px !important;
+            padding-bottom: 48px !important
+        }
+
+        .git-padding-64 {
+            padding-top: 64px !important;
+            padding-bottom: 64px !important
+        }
+
+        .git-padding-top-64 {
+            padding-top: 64px !important
+        }
+
+        .git-padding-top-48 {
+            padding-top: 48px !important
+        }
+
+        .git-padding-top-32 {
+            padding-top: 32px !important
+        }
+
+        .git-padding-top-24 {
+            padding-top: 24px !important
+        }
+
+        .git-left {
+            float: left !important
+        }
+
+        .git-right {
+            float: right !important
+        }
+
+        /* Colors */
+        .git-white,
+        .git-hover-white:hover {
+            color: #000 !important;
+            background-color: #fff !important
+        }
+
+        .git-light-grey,
+        .git-hover-light-grey:hover,
+        .git-light-gray,
+        .git-hover-light-gray:hover {
+            color: #000 !important;
+            background-color: #f1f1f1 !important
+        }
