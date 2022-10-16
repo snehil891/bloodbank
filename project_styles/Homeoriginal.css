@@ -172,9 +172,6 @@ ul li a:hover {
   background-image: url("../project_assets/Blood3.webp");
   height:auto;
   z-index: -1;
-  width: 100%;
-  max-width: 100%;
-  justify-content:center;
   display: flex;
 }
 .bgimg-2 {
