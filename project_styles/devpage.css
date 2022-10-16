@@ -3,8 +3,7 @@
 	padding:0px;
 	font-family: 'system-ui';
     box-sizing: border-box;
-    background-color: #ddd;
-     
+    background-color: #ddd; 
 }
 .row{
     padding:0px;
@@ -77,14 +76,6 @@ h2{
 	font-size: 21px;
     text-align: center;
 }
-@media screen and (max-width: 768px){
-	.container{
-	width: 70%;
-	display: block;
-	margin:auto;
-	padding-top:50px;
-}
-}
 .nav-area {
 	float: right;
 	list-style: none;
@@ -105,3 +96,11 @@ h2{
 	background: rgb(114, 82, 82);
 	color: rgb(255, 255, 255);
   }
+@media(max-width:484px){
+	.container{
+		width: 70%;
+		display: block;
+		margin:auto;
+		padding-top:50px;
+}
+}
