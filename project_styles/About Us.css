@@ -7,8 +7,6 @@ html {
 *:after {
     box-sizing: inherit
 }
-
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -18,7 +16,6 @@ body {
     margin: 0
 }
 
-/* End extract */
 html,
 body {
     font-family: Verdana, sans-serif;
