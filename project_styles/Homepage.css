@@ -5,6 +5,8 @@ html {
   font: 400 15px/1.8 "system-ui";
   background-size:cover ;
   align-items: flex-end;
+  background-attachment: fixed;
+  background-position: center center;
   background-repeat: no-repeat;
   justify-content: flex-end;
 }
@@ -52,10 +54,9 @@ ul li a:hover {
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
-  position: relative;
   opacity: 90;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -159,10 +160,9 @@ ul li a:hover {
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
-  position: inherit;
   opacity: 90;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -288,10 +288,9 @@ header ul li a {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    position: inherit;
     opacity: 90;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -417,10 +416,9 @@ header ul li a {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    position: inherit;
     opacity: 90;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -546,10 +544,9 @@ header ul li a {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    position: inherit;
     opacity: 90;
     background-attachment: fixed;
-    background-position: center;
+    background-position:center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -696,10 +693,9 @@ header ul li a {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    position: inherit;
     opacity: 90;
     background-attachment: fixed;
-    background-position: center;
+    background-position:center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -846,10 +842,9 @@ header ul li a {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    position: inherit;
     opacity: 90;
     background-attachment: fixed;
-    background-position: center;
+    background-position:center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
