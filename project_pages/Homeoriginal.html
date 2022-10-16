@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="../project_styles/Homepage.css">
-</head>
-<body>
-  <header>
-  <ul>
-  <li><a href="../project_pages/DevPage.html">Developers</a></li>
-  <li><a href="../project_pages/About Us.html" >About Us</a></li>
-  <li><a href="../project_pages/Login.html">Donate</a></li>
-  <li><a href="../project_pages/Login.html">Request</a></li>
-  <li><a href="../project_pages/Login.html" >Login</a></li>
-  <li><a href="../project_pages/Registration.html">SignUp</a></li>
-  </ul>
-</header>
-  <div class="bgimg-1">
-    <div class="caption">
-      <div class="box">
-        <span></span>
-        <span></span>
-        <span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../project_styles/Homepage.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="../project_pages/DevPage.html">Developers</a></li>
+        <li><a href="../project_pages/About Us.html">About Us</a></li>
+        <li><a href="../project_pages/Login.html">Donate</a></li>
+        <li><a href="../project_pages/Login.html">Request</a></li>
+        <li><a href="../project_pages/Login.html" target="_blank">Login</a></li>
+        <li><a href="../project_pages/Registration.html" target="_blank">SignUp</a></li>
+      </ul>
+    </header>
+    <div class="bgimg-1">
+      <div class="caption">
+        <div class="box">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-  </div>
-  </div>
-  <div class="bg-about">
+    </div>
+    <div class="bg-about">
       <h2>About us</h2>
       <p>
-          The website is created by the students of Gitam university
-          our primary goal in making this website is that we want to save 
-          the more no of lives,no people should die because of the unavailability
-          of the blood. 
-          <br>
-          <a href="../project_pages/About Us.html" id="Knowmore">Know us more...</a>
+        The website is created by the students of Gitam university our primary
+        goal in making this website is that we want to save the more no of
+        lives,no people should die because of the unavailability of the blood.
+        <br />
+        <a href="../project_pages/About Us.html" id="Knowmore"
+          >Know us more...</a
+        >
       </p>
     </div>
-    <div class="bgimg-2">
-    </div>
-    <div class="bgimg-3">
-    </div>
+    <div class="bgimg-2"></div>
+    <div class="bgimg-3"></div>
     <footer class="center footer">
-      Contact:<br>
-      Email:bldbank146@gmail.com<br>
+      Contact:<br />
+      Email:bldbank146@gmail.com<br />
       Address:GITAM UNIVERSITY, Rushikonda, Visakhapatnam-530045
     </footer>
     <script src="../project_scripts/page_functionality.js"></script>
-</body>
+    <script>
+      function redirect() {
+        let url = "../project_pages/Homeoriginal.html";
+        window.location(url);
+      }
+      window.history.forward();
+      function noBack() {
+        window.history.forward();
+      }
+      window.history.forward();
+      function noForward() {
+        window.history.back();
+      }
+    </script>
+  </body>
 </html>
