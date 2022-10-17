@@ -40,7 +40,7 @@ async function login_check_admin(login_id, login_password) {
         console.log("admin login");
         setTimeout(myURL, 100);
         function myURL() {
-          location.href = "Admin-page.html";
+          location.href = "admin/Admin-page.html";
         }
         return true;
       } else {
