@@ -1,23 +1,23 @@
-import { add_to_db, Validate } from "./Registration_db.js";
+// import { add_to_db, Validate } from "./Registration_db.js";
 import { login_page } from "./login_db.js";
 import {
   view,
-  get_email_username,
-  get_email_password,
+  // get_email_username,
+  // get_email_password,
   change_donate_html,change_request_html
 } from "./dashboard.js";
 import { add_to_donation } from "./donation_db.js";
 import { add_to_request } from "./request_db.js";
 
-const register_button = document.getElementById("create_acc");
-if (register_button) {
-  register_button.addEventListener("click", function () {
-    if (Validate()) {
-      console.log(add_to_db());
-    }
-    event.preventDefault();
-  });
-}
+// const register_button = document.getElementById("create_acc");
+// if (register_button) {
+//   register_button.addEventListener("click", function () {
+//     if (Validate()) {
+//       console.log(add_to_db());
+//     }
+//     event.preventDefault();
+//   });
+// }
 const click_register_button = document.getElementById("check_register");
 if (click_register_button) {
   click_register_button.addEventListener("click", function () {
@@ -64,20 +64,20 @@ if (login_button) {
     event.preventDefault();
   });
 }
-const email_button = document.getElementById("email");
-if (email_button) {
-  email_button.addEventListener("click", function () {
-    console.log(get_email_password());
-    event.preventDefault();
-  });
-}
-const user_button = document.getElementById("email_username");
-if (user_button) {
-  user_button.addEventListener("click", function () {
-    console.log(get_email_username());
-    event.preventDefault();
-  });
-}
+// const email_button = document.getElementById("email");
+// if (email_button) {
+//   email_button.addEventListener("click", function () {
+//     console.log(get_email_password());
+//     event.preventDefault();
+//   });
+// }
+// const user_button = document.getElementById("email_username");
+// if (user_button) {
+//   user_button.addEventListener("click", function () {
+//     console.log(get_email_username());
+//     event.preventDefault();
+//   });
+// }
 const donate_button = document.getElementById("submit_donate");
 if (donate_button) {
   donate_button.addEventListener("click", function () {

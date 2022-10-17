@@ -11,7 +11,7 @@ import {
   collection,
   Timestamp,
 } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-import { sendEmail_password, sendEmail_username } from "./send_mail.js";
+// import { sendEmail_password, sendEmail_username } from "./send_mail.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAJ1mrcBYnl_M2bG7vfpSwlcm5NnpzsohQ",
   authDomain: "blood-bank-25293.firebaseapp.com",
@@ -43,8 +43,9 @@ async function change_donate_html(blood_group) {
       html += "<td>" + rows[i].Gender + "</td>";
       html += "<td>" + rows[i].Mobile + "</td>";
       html += "<td>" + rows[i].Date_of_creation + "</td>";
-
+      
       html += "</tr>";
+      
     }
     if (days < 90) {
       html += "<tr bgcolor=\"red\">";
@@ -124,58 +125,58 @@ async function view(view_type) {
   });
 }
 
-async function get_email_password() {
-  const username = document.getElementById("username_textbox").value;
-  var flag = 0;
-  var emailid, password;
-  console.log(username);
-  const querySnapshot = await getDocs(collection(db, "Register"));
-  querySnapshot.forEach((doc) => {
-    // console.log(doc.id, " => ", doc.data());
-    if (doc.id === username) {
-      flag = 1;
-      console.log(doc.id);
-      emailid = doc.data().details.Email_ID;
-      console.log(emailid);
-      password = doc.data().Password;
-    }
-  });
-  if (flag === 1) {
-    sendEmail_password(emailid, password);
-  } else {
-    alert("Email ID not linked with the username you provided.");
-    return false;
-  }
-}
-async function get_email_username() {
-  const email = document.getElementById("email_textbox").value;
-  var flag = 0;
-  var emailid, username;
-  console.log(username);
-  const querySnapshot = await getDocs(collection(db, "Register"));
-  querySnapshot.forEach((doc) => {
-    // console.log(doc.id, " => ", doc.data());
-    var user_email = doc.data().details.Email_ID;
-    if (user_email === email) {
-      flag = 1;
-      console.log(doc.id);
-      emailid = doc.data().details.Email_ID;
-      console.log(emailid);
-      username = doc.data().login_ID;
-    }
-  });
-  if (flag === 1) {
-    sendEmail_username(emailid, username);
-  } else {
-    alert("No username found with the Email-ID you provided.");
-    return false;
-  }
-}
+// async function get_email_password() {
+//   const username = document.getElementById("username_textbox").value;
+//   var flag = 0;
+//   var emailid, password;
+//   console.log(username);
+//   const querySnapshot = await getDocs(collection(db, "Register"));
+//   querySnapshot.forEach((doc) => {
+//     // console.log(doc.id, " => ", doc.data());
+//     if (doc.id === username) {
+//       flag = 1;
+//       console.log(doc.id);
+//       emailid = doc.data().details.Email_ID;
+//       console.log(emailid);
+//       password = doc.data().Password;
+//     }
+//   });
+//   if (flag === 1) {
+//     sendEmail_password(emailid, password);
+//   } else {
+//     alert("Email ID not linked with the username you provided.");
+//     return false;
+//   }
+// }
+// async function get_email_username() {
+//   const email = document.getElementById("email_textbox").value;
+//   var flag = 0;
+//   var emailid, username;
+//   console.log(username);
+//   const querySnapshot = await getDocs(collection(db, "Register"));
+//   querySnapshot.forEach((doc) => {
+//     // console.log(doc.id, " => ", doc.data());
+//     var user_email = doc.data().details.Email_ID;
+//     if (user_email === email) {
+//       flag = 1;
+//       console.log(doc.id);
+//       emailid = doc.data().details.Email_ID;
+//       console.log(emailid);
+//       username = doc.data().login_ID;
+//     }
+//   });
+//   if (flag === 1) {
+//     sendEmail_username(emailid, username);
+//   } else {
+//     alert("No username found with the Email-ID you provided.");
+//     return false;
+//   }
+// }
 
 export {
   change_donate_html,
   change_request_html,
   view,
-  get_email_password,
-  get_email_username,
+  // get_email_password,
+  // get_email_username,
 };
