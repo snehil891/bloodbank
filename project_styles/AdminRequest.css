@@ -2,7 +2,7 @@
   font-family: 'system-ui';
 }
   body{
-  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/gitam_center.webp);
+  background-image:linear-gradient(rgba(65,80,90,0.6),rgba(65, 80, 90, 0.6));
   background-size: 100%; 
 }
 h1{
