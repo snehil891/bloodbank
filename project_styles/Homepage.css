@@ -256,7 +256,7 @@ html {
   font-family:'system-ui';
 }
 }
-@media (max-width:768px) {
+@media (min-width:768px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
@@ -375,7 +375,7 @@ html {
   font-family:'system.ui';
 }
 }
-@media (max-width:900px) {
+@media (min-width:900px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
@@ -392,12 +392,12 @@ html {
 }
 .bgimg-2 {
   background-image: url("../project_assets/bloodbank.webp");
-  min-height: 100%;
+  min-height: 800px;
   display: flex;
 }
 .bgimg-3 {
   background-image: url("../project_assets/GIMSR\(TOP\).webp");
-  min-height: 800px;
+  min-height: 100%;
   display: flex;
 }
 .bgimg-1 .caption{
@@ -443,7 +443,7 @@ html {
   width: 100%; 
 }
 .navbar a {
-  font-size: 24px;
+  font-size: 22px;
   float: right;
   display: block;
   color: #f2f2f2;
@@ -454,7 +454,7 @@ html {
 .navbar a:hover {
   background: #ddd;
   color: black;
-  font-size: 26px;
+  font-size: 25px;
   font-style: italic;
 }
 .footer {
@@ -566,7 +566,7 @@ html {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 14px;
   text-decoration: none;
 }
 .navbar a:hover {
@@ -632,7 +632,7 @@ html {
   letter-spacing: 10px;
 }
 }
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
@@ -700,18 +700,18 @@ html {
   width: 100%; 
 }
 .navbar a {
-  font-size: 27px;
+  font-size: 24px;
   float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 14px;
   text-decoration: none;
 }
 .navbar a:hover {
   background: #ddd;
   color: black;
-  font-size: 29px;
+  font-size: 27px;
   font-style: italic;
 }
 .footer {
