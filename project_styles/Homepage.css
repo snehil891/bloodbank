@@ -79,14 +79,16 @@ html {
   font-family:'system-ui';
 }
 .bg-about a{
+  color: rgb(8, 4, 117);
   text-align: center;
-  text-decoration: solid;
+  text-decoration: underline;
   font-weight: 300px;
   font-size: 0.85em;
   font-family:'system.ui';
 }
 .bg-about a:hover{
-  color: rgb(26, 26, 64);
+  font-size: 1em;
+  color: rgb(4, 4, 4);
 }
 .bgimg-1 .caption{
   position: absolute;
