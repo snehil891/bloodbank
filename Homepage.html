@@ -8,15 +8,20 @@
   <link rel="stylesheet" href="../project_styles/Homepage.css">
 </head>
 <body>
-  <header>
+  <div class="navbar">
+    <a href="../Donate.html">Donate</a>
+    <a href="../Request.html">Request</a>
+    <a href="../aboutus.html">About Us</a>
+    <a href="../DevPage.html">Developers</a>
+  </div>
+  <!-- <header>
   <ul>
-  <li><a href="../aboutus.html" >About Us</a></li>
-  <li><a href="../DevPage.html">Developers</a></li>
   <li><a href="../Donate.html">Donate</a></li>
   <li><a href="../Request.html">Request</a></li>
-  <!-- <li><a href="..//Homeoriginal.html">Logout</a></li> -->
+  <li><a href="../aboutus.html" >About Us</a></li>
+  <li><a href="../DevPage.html">Developers</a></li>
     </ul>
-</header>
+</header> -->
   <div class="bgimg-1">
     <div class="caption">
       <div class="box">
@@ -47,20 +52,19 @@
       Address:GITAM UNIVERSITY, Rushikonda, Visakhapatnam-530045
     </footer>
     <script src="../project_scripts/page_functionality.js"></script>
-    <!-- <script>
-      function redirect() {
-  let url = "../Homepage.html";
-  window.location(url);
-}
-window.history.forward();
-function noBack() {
-  window.history.forward();
-}
-window.history.forward();
-function noForward() {
-  window.history.back();
-}
-
-    </script> -->
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+      </script>
 </body>
 </html>

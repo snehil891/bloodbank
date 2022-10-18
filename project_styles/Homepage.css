@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "system-ui";
+  font: 400 20px/1.8 "system-ui";
   background-size:cover ;
   align-items: flex-end;
   background-attachment: fixed;
@@ -10,46 +10,27 @@ html {
   background-repeat: no-repeat;
   justify-content: flex-end;
 }
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: left;
-  padding: 40px 400px;
-  z-index: 1000;
-  transition: 0.6s;
-}
-header ul {
-  position: fixed;
-  top: 2%;
-  right: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: inherit;
-}
-header ul li {
+.navbar {
+  font-size: 25px;
   list-style: none;
+  overflow:hidden;
+  position: absolute;
+  top: 0; 
+  width: 100%; 
 }
-header ul li a {
-  margin: 4px 7px;
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color:rgb(255, 255, 255);
-  letter-spacing: 0px;
-  font-weight: 500px;
-  padding: 15px 15px;
 }
-ul li a:hover {
-  background: rgba(28, 80, 94, 0.862);
-}
-.sticky ul li a {
-  color: #000;
-  font-size: 15px;
-  letter-spacing: 0px;
-  font-weight: bolder;
-  padding: 15px 15px;
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  font-size: 27px;
+  font-style: italic;
 }
 .bgimg-1,
 .bgimg-2,
@@ -217,36 +198,27 @@ ul li a:hover {
   animation-delay: 0.7s;
   transform: rotate(45deg) translate(20px,20px);
 }
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: left;
-  padding: 40px 400px;
-  z-index: 1000;
-  transition: 0.6s;
-}
-header ul {
-  position: fixed;
-  top: 2%;
-  right: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: inherit;
-}
-header ul li {
+.navbar {
+  font-size: 14px;
   list-style: none;
+  overflow:hidden;
+  position: absolute;
+  top: 0; 
+  width: 100%; 
 }
-header ul li a {
-  margin: 4px 1px;
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 8px;
   text-decoration: none;
-  color:rgb(255, 255, 255);
-  letter-spacing: 0px;
-  font-weight: 500px;
-  padding: 15px 15px;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  font-size: 16px;
+  font-style: italic;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -259,12 +231,6 @@ header ul li a {
 }
 .show{
   display: block;
-}
-.sticky ul li a {
-  color: #000;
-  font-size: 13px;
-  font-weight:bolder;
-  padding: 10px 0px;
 }
 .bg-about{
   text-align: center;
@@ -351,23 +317,27 @@ header ul li a {
   animation-delay: 0.7s;
   transform: rotate(45deg) translate(20px,20px);
 }
-header {
-  padding: 30px 10px;
-  margin: 0;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-end;
+.navbar {
+  font-size: 25px;
+  list-style: none;
+  overflow:hidden;
+  position: absolute;
+  top: 0; 
+  width: 100%; 
 }
-header ul li a {
-  padding: 40px 20px;
-  font-weight: none;
-  font-size: 40px;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-start;
-  align-items: flex-end;
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  font-size: 27px;
+  font-style: italic;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -380,12 +350,6 @@ header ul li a {
 }
 .show{
   display: block;
-}
-.sticky ul li a {
-  color: #000;
-  font-size: 40px;
-  font-weight:bolder;
-  padding: 30px 0px;
 }
 .bg-about{
   text-align: center;
@@ -471,23 +435,27 @@ header ul li a {
   animation-delay: 0.7s;
   transform: rotate(45deg) translate(20px,20px);
 }
-header {
-  padding: 10px 0px;
-  margin: 0;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-end;
+.navbar {
+  list-style: none;
+  overflow:hidden;
+  position: absolute;
+  top: 0; 
+  width: 100%; 
 }
-header ul li a {
-  padding: 1px 1px;
-  font-weight: none;
-  font-size: 15px;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-start;
-  align-items: flex-end;
+.navbar a {
+  font-size: 24px;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  font-size: 26px;
+  font-style: italic;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -500,12 +468,6 @@ header ul li a {
 }
 .show{
   display: block;
-}
-.sticky ul li a {
-  color: #000;
-  font-size: 13px;
-  font-weight:bolder;
-  padding: 10px 0px;
 }
 .bg-about{
   text-align: center;
@@ -591,23 +553,27 @@ header ul li a {
   animation-delay: 0.7s;
   transform: rotate(45deg) translate(20px,20px);
 }
-header {
-  padding: 10px 0px;
-  margin: 0;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-end;
+.navbar {
+  list-style: none;
+  overflow:hidden;
+  position: absolute;
+  top: 0; 
+  width: 100%; 
 }
-header ul li a {
-  padding: 1px 1px;
-  font-weight: none;
-  font-size: 22px;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-start;
-  align-items: flex-end;
+.navbar a {
+  font-size: 23px;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  font-size: 26px;
+  font-style: italic;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -620,12 +586,6 @@ header ul li a {
 }
 .show{
   display: block;
-}
-.sticky ul li a {
-  color: #000;
-  font-size: 20px;
-  font-weight:bolder;
-  padding: 10px 0px;
 }
 .bg-about{
   text-align: center;
@@ -672,7 +632,7 @@ header ul li a {
   letter-spacing: 10px;
 }
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
@@ -732,23 +692,27 @@ header ul li a {
   animation-delay: 0.7s;
   transform: rotate(45deg) translate(20px,20px);
 }
-header {
-  padding: 10px 0px;
-  margin: 0;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-end;
+.navbar {
+  list-style: none;
+  overflow:hidden;
+  position: absolute;
+  top: 0; 
+  width: 100%; 
 }
-header ul li a {
-  padding: 1px 1px;
-  font-weight: none;
-  font-size: 22px;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-start;
-  align-items: flex-end;
+.navbar a {
+  font-size: 27px;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  font-size: 29px;
+  font-style: italic;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -761,12 +725,6 @@ header ul li a {
 }
 .show{
   display: block;
-}
-.sticky ul li a {
-  color: #000;
-  font-size: 20px;
-  font-weight:bolder;
-  padding: 10px 0px;
 }
 .bg-about{
   text-align: center;
@@ -873,23 +831,27 @@ header ul li a {
   animation-delay: 0.7s;
   transform: rotate(45deg) translate(20px,20px);
 }
-header {
-  padding: 10px 0px;
-  margin: 0;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-end;
+.navbar {
+  font-size: 28px;
+  list-style: none;
+  overflow:hidden;
+  position: absolute;
+  top: 0; 
+  width: 100%; 
 }
-header ul li a {
-  padding: 1px 1px;
-  font-weight: none;
-  font-size: 25px;
-  background-size:cover ;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  justify-content: flex-start;
-  align-items: flex-end;
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  font-size: 30px;
+  font-style: italic;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -902,12 +864,6 @@ header ul li a {
 }
 .show{
   display: block;
-}
-.sticky ul li a {
-  color: #000;
-  font-size: 20px;
-  font-weight:bolder;
-  padding: 10px 0px;
 }
 .bg-about{
   text-align: center;
