@@ -151,7 +151,7 @@ html {
 }
 .bgimg-1{
   background-image: url("../project_assets/earth-4861456.webp");
-  min-height: 100%;
+  min-height: 95%;
   display: flex;
 }
 .bgimg-2 {
@@ -201,18 +201,13 @@ html {
   transform: rotate(45deg) translate(20px,20px);
 }
 .navbar {
-  font-size: 14px;
-  list-style: none;
-  overflow:hidden;
-  position: absolute;
-  top: 0; 
-  width: 100%; 
+  font-size: 15px;
+  position: relative;
+  font-weight: bold;
 }
 .navbar a {
-  float: right;
   display: block;
-  color: #f2f2f2;
-  text-align: center;
+  color: #000000;
   padding: 14px 8px;
   text-decoration: none;
 }
