@@ -150,7 +150,7 @@ html {
   background-size: cover;
 }
 .bgimg-1{
-  background-image: url("../project_assets/earth-4861456.webp");
+  background-image: url("../project_assets/Blood_sample.webp");
   min-height: 95%;
   display: flex;
 }
@@ -264,7 +264,7 @@ html {
     background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/earth-4861456.webp");
+  background-image: url("../project_assets/Blood_sample.webp");
   height:auto;
   z-index: -1;
   display: flex;
@@ -383,7 +383,7 @@ html {
     background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/earth-4861456.webp");
+  background-image: url("../project_assets/Blood_sample.webp");
   height:auto;
   display: flex;
 }
