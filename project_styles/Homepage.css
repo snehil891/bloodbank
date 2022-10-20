@@ -17,6 +17,7 @@ html {
   position: absolute;
   top: 0; 
   width: 100%; 
+  font-weight: bold;
 }
 .navbar a {
   float: right;
@@ -30,7 +31,6 @@ html {
   background: #ddd;
   color: black;
   animation: forwards;
-  font-style: italic;
 }
 .bgimg-1,
 .bgimg-2,
@@ -212,10 +212,9 @@ html {
   text-decoration: none;
 }
 .navbar a:hover {
-  background: #ddd;
+  background: rgb(133, 41, 41);
   color: black;
-  font-size: 16px;
-  font-style: italic;
+  animation: forwards;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -316,25 +315,21 @@ html {
 }
 .navbar {
   font-size: 25px;
-  list-style: none;
-  overflow:hidden;
-  position: absolute;
-  top: 0; 
-  width: 100%; 
+  position: relative;
+  font-weight: bold;
 }
 .navbar a {
   float: right;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px 8px;
   text-decoration: none;
 }
 .navbar a:hover {
-  background: #ddd;
+  background: rgb(133, 41, 41);
   color: black;
-  font-size: 27px;
-  font-style: italic;
+  animation: forwards;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -434,25 +429,23 @@ html {
 }
 .navbar {
   list-style: none;
-  overflow:hidden;
-  position: absolute;
-  top: 0; 
-  width: 100%; 
+  position: relative;
+  font-weight: bold;
 }
 .navbar a {
   font-size: 22px;
   float: right;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px 8px;
   text-decoration: none;
 }
 .navbar a:hover {
-  background: #ddd;
+  background: rgb(133, 41, 41);
   color: black;
   font-size: 25px;
-  font-style: italic;
+
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -556,6 +549,7 @@ html {
   position: absolute;
   top: 0; 
   width: 100%; 
+  font-weight: bold;
 }
 .navbar a {
   font-size: 23px;
@@ -570,7 +564,6 @@ html {
   background: #ddd;
   color: black;
   font-size: 26px;
-  font-style: italic;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -695,6 +688,7 @@ html {
   position: absolute;
   top: 0; 
   width: 100%; 
+  font-weight: bold;
 }
 .navbar a {
   font-size: 24px;
@@ -708,8 +702,7 @@ html {
 .navbar a:hover {
   background: #ddd;
   color: black;
-  font-size: 27px;
-  font-style: italic;
+  animation: forwards;
 }
 .footer {
   background: rgb(0, 0, 0);
@@ -835,6 +828,7 @@ html {
   position: absolute;
   top: 0; 
   width: 100%; 
+  font-weight: bold;
 }
 .navbar a {
   float: right;
@@ -847,8 +841,7 @@ html {
 .navbar a:hover {
   background: #ddd;
   color: black;
-  font-size: 30px;
-  font-style: italic;
+  animation: forwards;
 }
 .footer {
   background: rgb(0, 0, 0);
