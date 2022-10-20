@@ -42,21 +42,18 @@ html {
   background-size: cover;
 }
 .bgimg-1 {
-  /* background-image: url("../project_assets/Homepage_blood.gif"); */
   justify-content: center;
   display: flex;
   z-index: -1;
   min-height: 100%;
 }
 .bgimg-2 {
-  /* background-image: url("../project_assets/bloodbank.webp"); */
   min-height: 600px;
   justify-content: center;
   display: flex;
 }
 
 .bgimg-3 {
-  /* background-image: url("../project_assets/GIMSR\(TOP\).webp"); */
   min-height: 1000px;
   justify-content: center;
   display: flex;
@@ -152,18 +149,16 @@ html {
 .bgimg-1{
   background-image: url("../project_assets/Blood_sample.webp");
   min-height: 95%;
+  max-width: 100%;
   display: flex;
 }
 .bgimg-2 {
-  /* background-image: url("../project_assets/bloodbank.webp"); */
   display: flex;
-  max-width: fit-content;
-  min-height: fit-content;
+  min-height: auto;
 }
 .bgimg-3 {
-  /* background-image: url("../project_assets/GIMSR\(TOP\).webp"); */
   display: flex;
-  min-height: fit-content;
+  min-height: auto;
 } 
 .bgimg-1 .caption{
   position: absolute;
@@ -269,12 +264,10 @@ html {
   display: flex;
 }
 .bgimg-2 {
-  /* background-image: url("../project_assets/bloodbank.webp"); */
   min-height: 100%;
   display: flex;
 }
 .bgimg-3 {
-  /* background-image: url("../project_assets/GIMSR\(TOP\).webp"); */
   min-height: 800px;
   display: flex;
 }
@@ -383,12 +376,10 @@ html {
   display: flex;
 }
 .bgimg-2 {
-  /* background-image: url("../project_assets/bloodbank.webp"); */
   min-height: 800px;
   display: flex;
 }
 .bgimg-3 {
-  /* background-image: url("../project_assets/GIMSR\(TOP\).webp"); */
   min-height: 100%;
   display: flex;
 }
@@ -499,12 +490,10 @@ html {
   display: flex;
 }
 .bgimg-2 {
-  /* background-image: url("../project_assets/bloodbank.webp"); */
   min-height: 100%;
   display: flex;
 }
 .bgimg-3 {
-  /* background-image: url("../project_assets/GIMSR\(TOP\).webp"); */
   min-height: 800px;
   display: flex;
 }
@@ -638,12 +627,10 @@ html {
   display: flex;
 }
 .bgimg-2 {
-  /* background-image: url("../project_assets/bloodbank.webp"); */
   min-height: 100%;
   display: flex;
 }
 .bgimg-3 {
-  /* background-image: url("../project_assets/GIMSR\(TOP\).webp"); */
   min-height: 800px;
   display: flex;
 }
@@ -777,12 +764,10 @@ html {
   display: flex;
 }
 .bgimg-2 {
-  /* background-image: url("../project_assets/bloodbank.webp"); */
   min-height: 100%;
   display: flex;
 }
 .bgimg-3 {
-  /* background-image: url("../project_assets/GIMSR\(TOP\).webp"); */
   min-height: 800px;
   display: flex;
 }
@@ -876,7 +861,7 @@ html {
   text-decoration: solid;
   font-weight: 300px;
   font-size: 0.85em;
-  font-family:'system.ui';
+  font-family:'system-ui';
 }
 .border {
   font-size: 25px;
