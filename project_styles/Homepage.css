@@ -44,7 +44,7 @@ html {
 .bgimg-1 {
   justify-content: center;
   display: flex;
-  z-index: -1;
+
   min-height: 100%;
 }
 .bgimg-2 {
