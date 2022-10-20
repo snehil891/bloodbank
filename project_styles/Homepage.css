@@ -147,7 +147,7 @@ html {
   background-size: cover;
 }
 .bgimg-1{
-  background-image: url("../project_assets/Blood_sample.webp");
+  background-image: url("../project_assets/Blood4.webp");
   min-height: 95%;
   max-width: 100%;
   display: flex;
@@ -258,7 +258,7 @@ html {
     background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/Blood_sample.webp");
+  background-image: url("../project_assets/Blood4.webp");
   height:auto;
   z-index: -1;
   display: flex;
@@ -371,7 +371,7 @@ html {
     background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/Blood_sample.webp");
+  background-image: url("../project_assets/Blood4.webp");
   height:auto;
   display: flex;
 }
