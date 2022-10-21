@@ -46,14 +46,14 @@ function get_donation() {
   const select = document.getElementById("Blood_group");
   const donator_blood = select.options[select.selectedIndex].value;
   console.log(donator_blood);
-  return {
+  return [
     donator_name,
     donator_dob,
     donator_gender,
     donator_phone,
     donator_address,
     donator_blood,
-  };
+  ];
 }
 
 // async function donate_check(phone) {
@@ -73,8 +73,8 @@ function get_donation() {
 //   }
 // }
 
-function check_age(dob) {
-console.log("checking");
+async function check_age(dob) {
+  console.log("checking");
   var dob_year = dob.getFullYear();
   function getAge(birthYear) {
     var currentDate = new Date();
@@ -83,18 +83,41 @@ console.log("checking");
     return age;
   }
   var calculatedAge = getAge(dob_year);
-    return calculatedAge;
+  return calculatedAge;
 }
 
 async function add_to_donation() {
   console.log("called");
   const donation_data = get_donation();
+  let flag = 0;
+  console.log(donation_data[3]);
   console.log(donation_data);
+  
+  if (flag == 0) {
+    donation_data.forEach((element) => {
+      if (element == "Invalid Date") {
+        flag = 1;
+      }
+      else if(!element){
+        flag =1;
+      }
+      else if (element.length == 0) {
+        flag=1;
+      }
+    });
+  }
+  if (donation_data[3].length < 10) {
+    flag = 1;
+  }  
+  if (flag == 1) {
+    alert("Please fill all the fields properly.");
+    return 0;
+  }
   const time = String(new Date());
   console.log(time);
   const dbRef = collection(db, "Donate");
-  var age_donor=check_age(donation_data.donator_dob);
-  if (age_donor>18) {
+  var age_donor = await check_age(donation_data[1]);
+  if (age_donor > 18) {
     console.log("Checked");
     // if (donate_check(donation_data.donator_phone)) {
     //   await setDoc(doc(db, "Donate", donation_data.donator_phone), {
@@ -122,27 +145,33 @@ async function add_to_donation() {
     //       console.log(error);
     //     });
     console.log("adding");
-    await setDoc(doc(collection(dbRef, time, (donation_data.donator_blood+"_donate")),(time+"_"+String(donation_data.donator_phone))), {
-        Name: donation_data.donator_name,
-        dob: String(donation_data.donator_dob),
-        Gender: donation_data.donator_gender,
-        Mobile: donation_data.donator_phone,
-        Address: donation_data.donator_address,
-        age:age_donor,
-        Blood_group: donation_data.donator_blood,
-        Date_of_creation: time
+    await setDoc(
+      doc(
+        collection(dbRef, time, donation_data[5] + "_donate"),
+        time + "_" + String(donation_data[3])
+      ),
+      {
+        Name: donation_data[0],
+        dob: String(donation_data[1]),
+        Gender: donation_data[2],
+        Mobile: donation_data[3],
+        Address: donation_data[4],
+        age: age_donor,
+        Blood_group: donation_data[5],
+        Date_of_creation: time,
+      }
+    )
+      .then((docRef) => {
+        console.log("Document has been added successfully");
+        alert("Thank you for Donation. Redirecting to Home.");
+        setTimeout(myURL, 100);
+        function myURL() {
+          location.href = "Homepage.html";
+        }
       })
-        .then((docRef) => {
-          console.log("Document has been added successfully");
-          alert("Thank you for Donation. Redirecting to Home.");
-          setTimeout(myURL, 100);
-          function myURL() {
-            location.href = "Homepage.html";
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-        }); 
+      .catch((error) => {
+        console.log(error);
+      });
   } else {
     alert("Sorry! You are not old enough to donate blood.");
   }
