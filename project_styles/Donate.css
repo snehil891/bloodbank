@@ -143,26 +143,6 @@ form .btn button {
   letter-spacing: 1px;
   cursor: pointer;
 }
-.nav-area {
-  float: right;
-  list-style: none;
-  margin-top: 10px;
-}
-.nav-area li {
-  display: inline-block;
-}
-.nav-area li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 6px 20px;
-  font-family: "system-ui";
-  font-size: 25px;
-  font-weight: lighter;
-}
-.nav-area li a:hover {
-  background: #fff;
-  color: #333;
-}
 @media (max-width:484px) {
   .background{
     background-image:  url(../project_assets/Blood9.webp);
@@ -283,26 +263,6 @@ form .btn button {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  .nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 10px;
-  }
-  .nav-area li {
-    display: inline-block;
-  }
-  .nav-area li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 6px 20px;
-    font-family: "system-ui";
-    font-size: 20px;
-    font-weight: lighter;
-  }
-  .nav-area li a:hover {
-    background: #fff;
-    color: #333;
   }
 }
 @media (min-width:768px) {
@@ -434,28 +394,8 @@ form .btn button {
     letter-spacing: 1px;
     cursor: pointer;
   }
-  .nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 10px;
-  }
-  .nav-area li {
-    display: inline-block;
-  }
-  .nav-area li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 20px;
-    font-family: "system-ui";
-    font-size: 25px;
-    font-weight: lighter;
-  }
-  .nav-area li a:hover {
-    background: #fff;
-    color: #333;
-  }
 }
-@media (min-width:900px) {
+@media (max-width:900px) {
   .background{
     background-image:  url(../project_assets/Blood9.webp);
     position: absolute;
@@ -584,33 +524,13 @@ form .btn button {
     letter-spacing: 1px;
     cursor: pointer;
   }
-  .nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 10px;
-  }
-  .nav-area li {
-    display: inline-block;
-  }
-  .nav-area li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 20px;
-    font-family: "system-ui";
-    font-size: 25px;
-    font-weight: lighter;
-  }
-  .nav-area li a:hover {
-    background: #fff;
-    color: #333;
-  }
 }
 @media (min-width:1080px) {
-  body {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../project_assets/Blood.gif);
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
+  .background{
+    background-image:  url(../project_assets/Blood.gif);
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
   .show-btn {
     padding: 10px 20px;
@@ -736,25 +656,5 @@ form .btn button {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  .nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 7px;
-  }
-  .nav-area li {
-    display: inline-block;
-  }
-  .nav-area li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-family: "system-ui";
-    font-size: 20px;
-    font-weight: lighter;
-  }
-  .nav-area li a:hover {
-    background: #fff;
-    color: #333;
   }
 }
