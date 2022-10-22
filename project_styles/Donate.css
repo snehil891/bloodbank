@@ -1,19 +1,34 @@
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../project_assets/Blood.gif);
-  background-size:cover;
-  background-position: center center;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 20px/1.8 "system-ui";
+  background-size:cover ;
+  align-items: flex-end;
   background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+.background{
+  opacity: 90;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
 }
 .show-btn {
   padding: 10px 20px;
   font-size: 20px;
   font-weight: 500;
-  opacity: 0.7;
+  opacity: 0.8;
   color:#fff;
   cursor: pointer;
 }
 .show-btn:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 .show-btn,
 .container {
@@ -62,7 +77,7 @@ input[type="checkbox"] {
 .container form .data {
   height: 35px;
   width: 100%;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 form .data label {
   font-size: 18px;
@@ -70,25 +85,36 @@ form .data label {
 form .data input {
   height: 100%;
   width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
+  padding-left: 5px;
+  font-size: 19px;
 }
 form .data input:focus {
   border-color: #fff;
   border-bottom-width: 2px;
 }
+.container form .gend{
+  color: #fff;
+  height: 8px;
+}
 .container form .Gender {
   color: #fff;
-  height: 40px;
+  height: 30px;
   font-size: medium;
-  margin: 25px 0;
   word-spacing: 3px;
 }
+form .Dob input {
+  height: 100%;
+  width: 100%;
+  padding-left: 5px;
+  font-size: 25px;
+}
 .container form .dob{
-  color: #fff;
+  color: rgb(255, 255, 255);
+  height: 20px;
+  font-size: larger;
 }
 form .btn {
-  margin: 30px 0;
+  margin: 20px 0;
   height: 45px;
   width: 100%;
   position: relative;
@@ -102,7 +128,6 @@ form .btn .inner {
   z-index: -1;
   background: rgb(163, 178, 255); 
 }
-
 form .btn:hover .inner {
   background: red;
 }
@@ -131,7 +156,7 @@ form .btn button {
   text-decoration: none;
   padding: 6px 20px;
   font-family: "system-ui";
-  font-size: 15px;
+  font-size: 25px;
   font-weight: lighter;
 }
 .nav-area li a:hover {
@@ -139,10 +164,11 @@ form .btn button {
   color: #333;
 }
 @media (max-width:484px) {
-  body {
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
+  .background{
+    background-image:  url(../project_assets/Blood9.webp);
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
   .show-btn {
     padding: 10px 20px;
@@ -267,7 +293,7 @@ form .btn button {
     display: inline-block;
   }
   .nav-area li a {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 6px 20px;
     font-family: "system-ui";
@@ -280,10 +306,11 @@ form .btn button {
   }
 }
 @media (min-width:768px) {
-  body {
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
+  .background{
+    background-image:  url(../project_assets/Blood9.webp);
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
   .show-btn {
     padding: 10px 20px;
@@ -325,7 +352,7 @@ form .btn button {
     position: absolute;
     right: 20px;
     top: 15px;
-    font-size: 18px;
+    font-size: 40px;
     cursor: pointer;
   }
   .container .close-btn:hover {
@@ -343,7 +370,7 @@ form .btn button {
   .container form .data {
     height: 45px;
     width: 100%;
-    margin: 40px 0;
+    margin: 30px 0;
   }
   form .data label {
     font-size: 40px;
@@ -352,21 +379,29 @@ form .btn button {
     height: 100%;
     width: 100%;
     padding-left: 10px;
-    font-size: 25px;
+    font-size: 35px;
   }
   form .data input:focus {
     border-color: #fff;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
   }
   .container form .Gender {
     color: #fff;
-    height: 60px;
-    font-size: 20px;
-    margin: 25px 0;
-    word-spacing: 3px;
+    height: 70px;
+    font-size: 30px;
+    margin: 30px 0;
+    word-spacing: 2px;
+  }
+  form .Dob input {
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    font-size: 30px;
   }
   .container form .dob{
-    color: #fff;
+    color: rgb(255, 255, 255);
+    height: 20px;
+    font-size: 35px;
   }
   form .btn {
     margin: 30px 0;
@@ -421,10 +456,11 @@ form .btn button {
   }
 }
 @media (min-width:900px) {
-  body {
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
+  .background{
+    background-image:  url(../project_assets/Blood9.webp);
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
   .show-btn {
     padding: 10px 20px;
@@ -453,7 +489,7 @@ form .btn button {
     display: none;
     top: 50%;
     background: rgb(23, 7, 29);
-    width: 410px;
+    width: 310px;
     padding: 50px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
@@ -474,7 +510,7 @@ form .btn button {
   }
   .container .text {
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
   }
@@ -482,18 +518,18 @@ form .btn button {
     margin-top: -20px;
   }
   .container form .data {
-    height: 45px;
+    height: 25px;
     width: 100%;
-    margin: 40px 0;
+    margin: 30px 0;
   }
   form .data label {
-    font-size: 40px;
+    font-size: 30px;
   }
   form .data input {
     height: 100%;
     width: 100%;
     padding-left: 10px;
-    font-size: 25px;
+    font-size: 20px;
   }
   form .data input:focus {
     border-color: #fff;
@@ -506,8 +542,16 @@ form .btn button {
     margin: 25px 0;
     word-spacing: 3px;
   }
+  form .Dob input {
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    font-size: 25px;
+  }
   .container form .dob{
-    color: #fff;
+    color: rgb(255, 255, 255);
+    height: 20px;
+    font-size: larger;
   }
   form .btn {
     margin: 30px 0;
@@ -572,12 +616,12 @@ form .btn button {
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 500;
-    opacity: 0.7;
+    opacity: 0.8;
     color:#fff;
     cursor: pointer;
   }
   .show-btn:hover {
-    opacity: 1;
+    opacity: 0.5;
   }
   .show-btn,
   .container {
@@ -626,7 +670,7 @@ form .btn button {
   .container form .data {
     height: 35px;
     width: 100%;
-    margin: 30px 0;
+    margin: 20px 0;
   }
   form .data label {
     font-size: 18px;
@@ -634,25 +678,36 @@ form .btn button {
   form .data input {
     height: 100%;
     width: 100%;
-    padding-left: 10px;
-    font-size: 17px;
+    padding-left: 5px;
+    font-size: 19px;
   }
   form .data input:focus {
     border-color: #fff;
     border-bottom-width: 2px;
   }
+  .container form .gend{
+    color: #fff;
+    height: 8px;
+  }
   .container form .Gender {
     color: #fff;
-    height: 40px;
+    height: 30px;
     font-size: medium;
-    margin: 25px 0;
     word-spacing: 3px;
   }
+  form .Dob input {
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    font-size: 25px;
+  }
   .container form .dob{
-    color: #fff;
+    color: rgb(255, 255, 255);
+    height: 20px;
+    font-size: larger;
   }
   form .btn {
-    margin: 30px 0;
+    margin: 20px 0;
     height: 45px;
     width: 100%;
     position: relative;
@@ -685,7 +740,7 @@ form .btn button {
   .nav-area {
     float: right;
     list-style: none;
-    margin-top: 10px;
+    margin-top: 7px;
   }
   .nav-area li {
     display: inline-block;
@@ -693,9 +748,9 @@ form .btn button {
   .nav-area li a {
     color: #fff;
     text-decoration: none;
-    padding: 6px 20px;
+    padding: 5px 10px;
     font-family: "system-ui";
-    font-size: 15px;
+    font-size: 20px;
     font-weight: lighter;
   }
   .nav-area li a:hover {

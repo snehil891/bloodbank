@@ -14,6 +14,11 @@
           <li><a href="../Homepage.html">Home</a></li>
       </ul>
      </header>
+     <div class="background">
+     <video width="100%" height="auto" id="video" preload="metadata">
+      <source src="../Blood.gif" type="video/gif">
+     </video>
+     </div>
       <div class="center">
          <input type="checkbox" id="show">
          <label for="show" class="show-btn">View Donation Form</label>
@@ -26,11 +31,12 @@
                <div class="data">
                   <input type="text" id="Donator_name" placeholder="Name" required>
                </div>
-               <div class="data">
+               <div class="Dob">
+                  <h2 class="dob">Date Of Birth</h2>
                   <input type="date" id="Donator_dob" placeholder="DOB" required>
                </div>
                <div class="Gender" aria-required="true">
-                <h3>Select your Gender</h3>
+                <h3 class="gend">Select your Gender</h3>
                 <input type="radio" name="gender" id="male">
                 <label for="male">Male</label>
                 <input type="radio" name="gender" id="female">
