@@ -47,16 +47,16 @@ html {
     min-height: 100%;
 }
 .bgimg-2 {
-  min-height: 600px;
+  min-height: 100%;
   justify-content: center;
   display: flex;
 }
-
+/* 
 .bgimg-3 {
   min-height: 1000px;
   justify-content: center;
   display: flex;
-}
+} */
 .bg-about{
   text-align: center;
   text-decoration: none;
@@ -155,10 +155,10 @@ html {
   display: flex;
   min-height: auto;
 }
-.bgimg-3 {
+/* .bgimg-3 {
   display: flex;
   min-height: auto;
-} 
+}  */
 .bgimg-1 .caption{
   position: absolute;
   left: 0;
@@ -266,10 +266,10 @@ html {
   min-height: 100%;
   display: flex;
 }
-.bgimg-3 {
+/* .bgimg-3 {
   min-height: 800px;
   display: flex;
-}
+} */
 .bgimg-1 .caption{
   position: absolute;
   left: 0;
@@ -378,10 +378,10 @@ html {
   min-height: 800px;
   display: flex;
 }
-.bgimg-3 {
+/* .bgimg-3 {
   min-height: 100%;
   display: flex;
-}
+} */
 .bgimg-1 .caption{
   position: absolute;
   left: 0;
@@ -492,10 +492,10 @@ html {
   min-height: 100%;
   display: flex;
 }
-.bgimg-3 {
+/* .bgimg-3 {
   min-height: 800px;
   display: flex;
-}
+} */
 .bgimg-1 .caption{
   position: absolute;
   left: 0;
@@ -629,10 +629,10 @@ html {
   min-height: 100%;
   display: flex;
 }
-.bgimg-3 {
+/* .bgimg-3 {
   min-height: 800px;
   display: flex;
-}
+} */
 .bgimg-1 .caption{
   position: absolute;
   left: 0;
@@ -766,10 +766,10 @@ html {
   min-height: 100%;
   display: flex;
 }
-.bgimg-3 {
+/* .bgimg-3 {
   min-height: 800px;
   display: flex;
-}
+} */
 .bgimg-1 .caption{
   position: absolute;
   left: 0;
