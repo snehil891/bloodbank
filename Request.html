@@ -9,12 +9,11 @@
   <link rel="stylesheet" href="../project_styles/Request.css">
 </head>
 <body>
-  <header>
-  </div>
-  <ul class="nav-area">
-      <li><a href="../Homepage.html">Home</a></li>
-  </ul>
- </header>
+   <div class="background">
+      <video width="100%" height="auto" id="video" preload="metadata">
+       <source src="../request_page.gif" type="video/gif">
+      </video>
+   </div>
   <div class="center">
     <input type="checkbox" id="show">
     <label for="show" class="show-btn">View Request form</label>
@@ -34,7 +33,7 @@
              <input type="number" id="patient_dob" placeholder="Enter Patient age" required>
           </div>
           <div class="Gender" aria-required="true">
-           <h3>Select Patient Gender</h3>
+           <h3 class="gend">Select Patient Gender</h3>
            <input type="radio" name="gender" id="Male">
            <label for="Male">Male</label>
            <input type="radio" name="gender" id="Female">
@@ -51,7 +50,7 @@
           <div class="data">
             <input type="number" id="no_of_units" placeholder="No of Units Required" required>
           </div>
-          <div class="data">
+          <div class="Required">
             <h3 class="Requireddate">Required date</h3>
             <input type="date" id="required_date" placeholder="Required Date" required>
           </div>

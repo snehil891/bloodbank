@@ -1,110 +1,130 @@
-body{
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/request_page.gif);
-  background-size:cover;
-  background-position: center center;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 20px/1.8 "system-ui";
+  background-size:cover ;
+  align-items: flex-end;
   background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
 }
-.show-btn{
+.background{
+  opacity: 90;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+}
+.show-btn {
   padding: 10px 20px;
   font-size: 20px;
-  opacity: 0.7;
   font-weight: 500;
-  color: #ffffff;
+  opacity: 0.8;
+  color:#fff;
   cursor: pointer;
 }
-.show-btn, .container{
+.show-btn:hover {
+  opacity: 0.5;
+}
+.show-btn,
+.container {
   border-radius: 25px;
   position: absolute;
   top: 7%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.show-btn:hover {
-  opacity: 1;
-}
-input[type="checkbox"]{
+
+input[type="checkbox"] {
   display: none;
 }
-.container{
+.container {
   display: none;
-  top: 49%;
+  top: 50%;
   background: rgb(23, 7, 29);
-  width: 400px;
-  padding: 20px;
+  width: 410px;
+  padding: 30px;
   box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
   border-radius: 1px;
 }
-#show:checked ~ .container{
+#show:checked ~ .container {
   display: block;
 }
-.container .close-btn{
-  color: rgb(255, 255, 255);
+.container .close-btn {
+  color:rgb(255, 255, 255);
   position: absolute;
   right: 20px;
   top: 15px;
-  font-size: 27px;
+  font-size: 18px;
   cursor: pointer;
 }
-.container .close-btn:hover{
-  color: rgb(152, 0, 0)
+.container .close-btn:hover {
+  color: rgb(152, 0, 0);
 }
-.container .text{
+.container .text {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
   text-align: center;
 }
-.container form{
+.container form {
   margin-top: -20px;
 }
-.container form .data{
+.container form .data {
   height: 35px;
   width: 100%;
-  margin: 30px 0;
+  margin: 20px 0;
 }
-form .data label{
+form .data label {
   font-size: 18px;
 }
-form .data input{
+form .data input {
   height: 100%;
   width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
+  padding-left: 5px;
+  font-size: 19px;
 }
-form .data input:focus{
-  border-color: #ffffff;
+form .data input:focus {
+  border-color: #fff;
   border-bottom-width: 2px;
 }
-.container form .Gender{
+.container form .gend{
   color: #fff;
-  height: 40px;
-  font-size: 15px;
-  margin: 25px 0;
-  word-spacing: 3%;
+  height: 8px;
+}
+.container form .Gender {
+  color: #fff;
+  height: 30px;
+  font-size: medium;
+  word-spacing: 3px;
 }
 .container .Requireddate{
   height: 5px;
   color: #fff;  
 }
-form .btn{
-  margin: 30px 0;
+form .btn {
+  margin: 20px 0;
   height: 45px;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-form .btn .inner{
+form .btn .inner {
   height: 100%;
   width: 300%;
   position: absolute;
   left: -100%;
   z-index: -1;
-  background: rgb(163, 178, 255);
+  background: rgb(163, 178, 255); 
 }
-form .btn:hover .inner{
+form .btn:hover .inner {
   background: red;
 }
-form .btn button{
+form .btn button {
   height: 100%;
   width: 100%;
   background: none;
@@ -116,135 +136,125 @@ form .btn button{
   letter-spacing: 1px;
   cursor: pointer;
 }
-.nav-area {
-  float: right;
-  list-style: none;
-  margin-top: 10px;
-}
-.nav-area li {
-  display: inline-block;
-}
-.nav-area li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 6px 20px;
-  font-family: "system-ui";
-  font-size: 20px;
-  font-weight: lighter;
-}
-.nav-area li a:hover {
-  background: #fff;
-  color: #333;
-}
 @media (max-width:484px) {
-  body{
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
-  }
-  .show-btn{
-    padding: 10px 20px;
-    font-size: 12px;
-    opacity: 0.7;
-    font-weight: 500;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  .show-btn, .container{
-    border-radius: 25px;
+  .background{
+    background-image:  url(../project_assets/Blood9.webp);
     position: absolute;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+  }
+  .show-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.7;
+    color:#fff;
+    cursor: pointer;
   }
   .show-btn:hover {
     opacity: 1;
   }
-  input[type="checkbox"]{
+  .show-btn,
+  .container {
+    border-radius: 25px;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  input[type="checkbox"] {
     display: none;
   }
-  .container{
+  .container {
     display: none;
     top: 50%;
     background: rgb(23, 7, 29);
-    width: 350px;
-    padding: 10x;
+    width: 310px;
+    padding: 22px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
   }
-  #show:checked ~ .container{
+  #show:checked ~ .container {
     display: block;
   }
-  .container .close-btn{
-    color: rgb(255, 255, 255);
+  .container .close-btn {
+    color:rgb(255, 255, 255);
     position: absolute;
     right: 20px;
     top: 15px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
   }
-  .container .close-btn:hover{
-    color: rgb(152, 0, 0)
+  .container .close-btn:hover {
+    color: rgb(152, 0, 0);
   }
-  .container .text{
+  .container .text {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     text-align: center;
   }
-  .container form{
-    margin-top: -20px;
-    margin-left: -1px;
-    margin-right: 2px;
+  .container form {
+    margin-top: -15px;
   }
-  .container form .data{
-    height: 25px;
+  .container form .data {
+    height: 30px;
     width: 100%;
-    margin: 30px 0;
+    margin: 15px 0;
   }
-  form .data label{
-    font-size: 15px;
-  }
-  form .data input{
-    height: 100%;
-    width: 90%;
-    padding-left: 20px;
+  form .data label {
     font-size: 14px;
   }
-  form .data input:focus{
-    border-color: #ffffff;
+  form .data input {
+    height: 100%;
+    width: 100%;
+    padding-left: 0px;
+    font-size: 15px;
+  }
+  form .data input:focus {
+    border-color: #fff;
     border-bottom-width: 2px;
   }
-  .container form .Gender{
+  .container form .Gender {
     color: #fff;
     height: 40px;
-    font-size: 15px;
-    margin: 25px 0;
-    word-spacing: 3%;
+    font-size: medium;
+    margin: 20px 0;
+    word-spacing: 3px;
   }
-  .container .Requireddate{
-    height: 5px;
-    color: #fff;  
+  form .Required input{
+    height: 100%;
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 5px;
+    font-size: 18px;
   }
-  form .btn{
+  .container form .Requireddate{
+    height: 7px;
+    color: #fff;
+    font-size: 22px;  
+  }  
+  form .btn {
     margin: 30px 0;
     height: 45px;
     width: 100%;
     position: relative;
     overflow: hidden;
   }
-  form .btn .inner{
+  form .btn .inner {
     height: 100%;
     width: 300%;
     position: absolute;
     left: -100%;
     z-index: -1;
-    background: rgb(163, 178, 255);
+    background: rgb(163, 178, 255); 
   }
-  form .btn:hover .inner{
+  
+  form .btn:hover .inner {
     background: red;
   }
-  form .btn button{
+  form .btn button {
     height: 100%;
     width: 100%;
     background: none;
@@ -256,134 +266,256 @@ form .btn button{
     letter-spacing: 1px;
     cursor: pointer;
   }
-  .nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 10px;
-  }
-  .nav-area li {
-    display: inline-block;
-  }
-  .nav-area li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 20px;
-    font-family: "system-ui";
-    font-size: 20px;
-    font-weight: lighter;
-  }
-  .nav-area li a:hover {
-    background: #fff;
-    color: #333;
-  } 
 }
 @media (min-width:768px) {
-  body{
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
+  .background{
+    background-image:  url(../project_assets/Blood9.webp);
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
-  .show-btn{
+  .show-btn {
     padding: 10px 20px;
-    font-size: 20px;
-    opacity: 0.7;
+    font-size: 30px;
     font-weight: 500;
-    color: #ffffff;
+    opacity: 0.7;
+    color:#fff;
     cursor: pointer;
   }
-  .show-btn, .container{
+  .show-btn:hover {
+    opacity: 1;
+  }
+  .show-btn,
+  .container {
     border-radius: 25px;
     position: absolute;
     top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .show-btn:hover {
-    opacity: 1;
-  }
-  input[type="checkbox"]{
+  
+  input[type="checkbox"] {
     display: none;
   }
-  .container{
+  .container {
     display: none;
     top: 50%;
     background: rgb(23, 7, 29);
-    width: 410px;
+    width: 560px;
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
+    border-radius: 1px;
+  }
+  #show:checked ~ .container {
+    display: block;
+  }
+  .container .close-btn {
+    color:rgb(255, 255, 255);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .container .close-btn:hover {
+    color: rgb(152, 0, 0);
+  }
+  .container .text {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .container form {
+    margin-top: -20px;
+  }
+  .container form .data {
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  form .data label {
+    font-size: 40px;
+  }
+  form .data input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 25px;
+  }
+  form .data input:focus {
+    border-color: #fff;
+    border-bottom-width: 3px;
+  }
+  .container form .Gender {
+    color: #fff;
+    height: 70px;
+    font-size: 25px;
+    margin: 20px 0;
+    word-spacing: 3px;
+  }
+  form .Required input{
+    height: 100%;
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 5px;
+    font-size: 30px;
+  }
+  .container form .Requireddate{
+    height: 18px;
+    color: #fff;  
+    font-size: 35px;
+  }  
+  form .btn {
+    margin: 20px 0;
+    height: 55px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: rgb(163, 178, 255); 
+  }
+  
+  form .btn:hover .inner {
+    background: red;
+  }
+  form .btn button {
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+}
+@media (min-width:900px) {
+  .background{
+    background-image:  url(../project_assets/request_page.gif);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .show-btn {
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 500;
+    opacity: 0.7;
+    color:#fff;
+    cursor: pointer;
+  }
+  .show-btn:hover {
+    opacity: 1;
+  }
+  .show-btn,
+  .container {
+    border-radius: 25px;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  .container {
+    display: none;
+    top: 50%;
+    background: rgb(23, 7, 29);
+    width: 360px;
     padding: 30px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
   }
-  #show:checked ~ .container{
+  #show:checked ~ .container {
     display: block;
   }
-  .container .close-btn{
-    color: rgb(255, 255, 255);
+  .container .close-btn {
+    color:rgb(255, 255, 255);
     position: absolute;
     right: 20px;
     top: 15px;
-    font-size: 25px;
+    font-size: 18px;
     cursor: pointer;
   }
-  .container .close-btn:hover{
-    color: rgb(152, 0, 0)
+  .container .close-btn:hover {
+    color: rgb(152, 0, 0);
   }
-  .container .text{
+  .container .text {
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
   }
-  .container form{
+  .container form {
     margin-top: -20px;
   }
-  .container form .data{
-    height: 25px;
+  .container form .data {
+    height: 20px;
     width: 100%;
-    margin: 30px 0;
+    margin: 20px 0;
   }
-  form .data label{
-    font-size: 55px;
+  form .data label {
+    font-size: 30px;
   }
-  form .data input{
+  form .data input {
     height: 100%;
-    width: 90%;
-    padding-left: 20px;
-    font-size: 25px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 20px;
   }
-  form .data input:focus{
-    border-color: #ffffff;
+  form .data input:focus {
+    border-color: #fff;
     border-bottom-width: 2px;
   }
-  .container form .Gender{
+  .container form .Gender {
     color: #fff;
     height: 40px;
-    font-size: 18px;
-    margin: 25px 0;
-    word-spacing: 3%;
+    font-size: 20px;
+    margin: 22px 0;
+    word-spacing: 3px;
   }
-  .container .Requireddate{
-    height: 5px;
-    color: #fff;  
+  form .Required input{
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    font-size: 22px;
   }
-  form .btn{
-    margin: 30px 0;
+  .container form .Requireddate{
+    height: 10px;
+    color: #fff; 
+    font-size: larger; 
+  }  
+  form .btn {
+    margin: 5px 0;
     height: 45px;
     width: 100%;
     position: relative;
     overflow: hidden;
   }
-  form .btn .inner{
+  form .btn .inner {
     height: 100%;
     width: 300%;
     position: absolute;
     left: -100%;
     z-index: -1;
-    background: rgb(163, 178, 255);
+    background: rgb(163, 178, 255); 
   }
-  form .btn:hover .inner{
+  
+  form .btn:hover .inner {
     background: red;
   }
-  form .btn button{
+  form .btn button {
     height: 100%;
     width: 100%;
     background: none;
@@ -395,137 +527,128 @@ form .btn button{
     letter-spacing: 1px;
     cursor: pointer;
   }
-  .nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 10px;
-  }
-  .nav-area li {
-    display: inline-block;
-  }
-  .nav-area li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 20px;
-    font-family: "system-ui";
-    font-size: 20px;
-    font-weight: lighter;
-  }
-  .nav-area li a:hover {
-    background: #fff;
-    color: #333;
-  } 
 }
 @media (min-width:1080px) {
-  body{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../project_assets/request_page.gif);
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
+  .background{
+    background-image:  url(../project_assets/request_page.gif);
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
-  .show-btn{
+  .show-btn {
     padding: 10px 20px;
     font-size: 20px;
-    opacity: 0.7;
     font-weight: 500;
-    color: #ffffff;
+    opacity: 0.8;
+    color:#fff;
     cursor: pointer;
   }
-  .show-btn, .container{
+  .show-btn:hover {
+    opacity: 0.5;
+  }
+  .show-btn,
+  .container {
     border-radius: 25px;
     position: absolute;
     top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .show-btn:hover {
-    opacity: 1;
-  }
-  input[type="checkbox"]{
+  
+  input[type="checkbox"] {
     display: none;
   }
-  .container{
+  .container {
     display: none;
-    top: 49%;
+    top: 50%;
     background: rgb(23, 7, 29);
-    width: 410px;
-    padding: 20px;
+    width: 450px;
+    padding: 40px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
   }
-  #show:checked ~ .container{
+  #show:checked ~ .container {
     display: block;
   }
-  .container .close-btn{
-    color: rgb(255, 255, 255);
+  .container .close-btn {
+    color:rgb(255, 255, 255);
     position: absolute;
     right: 20px;
     top: 15px;
-    font-size: 27px;
+    font-size: 18px;
     cursor: pointer;
   }
-  .container .close-btn:hover{
-    color: rgb(152, 0, 0)
+  .container .close-btn:hover {
+    color: rgb(152, 0, 0);
   }
-  .container .text{
+  .container .text {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
     text-align: center;
   }
-  .container form{
-    margin-top: -25px;
-    margin-left: -5px;
-    margin-right: 5px;
+  .container form {
+    margin-top: -20px;
   }
-  .container form .data{
-    height: 35px;
+  .container form .data {
+    height: 25px;
     width: 100%;
-    margin: 30px 0;
+    margin: 25px 0;
   }
-  form .data label{
-    font-size: 18px;
+  form .data label {
+    font-size: 20px;
   }
-  form .data input{
+  form .data input {
     height: 100%;
     width: 100%;
-    padding-left: 10px;
-    font-size: 17px;
+    padding-left: 5px;
+    font-size: 20px;
   }
-  form .data input:focus{
-    border-color: #ffffff;
+  form .data input:focus {
+    border-color: #fff;
     border-bottom-width: 2px;
   }
-  .container form .Gender{
+  .container form .gend{
     color: #fff;
-    height: 40px;
-    font-size: 15px;
-    margin: 25px 0;
-    word-spacing: 3%;
+    height: 8px;
   }
-  .container .Requireddate{
-    height: 5px;
-    color: #fff;  
+  .container form .Gender {
+    color: #fff;
+    height: 30px;
+    font-size: medium;
+    word-spacing: 3px;
   }
-  form .btn{
-    margin: 30px 0;
+  form .Required input{
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+  .container form .Requireddate{
+    height: 15px;
+    color: #fff;
+    font-size: larger;  
+  }  
+  form .btn {
+    margin: 20px 0;
     height: 45px;
     width: 100%;
     position: relative;
     overflow: hidden;
   }
-  form .btn .inner{
+  form .btn .inner {
     height: 100%;
     width: 300%;
     position: absolute;
     left: -100%;
     z-index: -1;
-    background: rgb(163, 178, 255);
+    background: rgb(163, 178, 255); 
   }
-  form .btn:hover .inner{
+  
+  form .btn:hover .inner {
     background: red;
   }
-  form .btn button{
+  form .btn button {
     height: 100%;
     width: 100%;
     background: none;
@@ -536,25 +659,5 @@ form .btn button{
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  .nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 10px;
-  }
-  .nav-area li {
-    display: inline-block;
-  }
-  .nav-area li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 20px;
-    font-family: "system-ui";
-    font-size: 20px;
-    font-weight: lighter;
-  }
-  .nav-area li a:hover {
-    background: #fff;
-    color: #333;
   }
 }
