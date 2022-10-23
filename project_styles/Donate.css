@@ -177,8 +177,8 @@ form .btn button {
     display: none;
     top: 50%;
     background: rgb(23, 7, 29);
-    width: 300px;
-    padding: 30px;
+    width: 310px;
+    padding: 22px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
   }
@@ -198,26 +198,26 @@ form .btn button {
   }
   .container .text {
     color: #fff;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
     text-align: center;
   }
   .container form {
-    margin-top: -20px;
+    margin-top: -15px;
   }
   .container form .data {
-    height: 35px;
+    height: 30px;
     width: 100%;
-    margin: 30px 0;
+    margin: 15px 0;
   }
   form .data label {
-    font-size: 18px;
+    font-size: 14px;
   }
   form .data input {
     height: 100%;
     width: 100%;
-    padding-left: 10px;
-    font-size: 17px;
+    padding-left: 0px;
+    font-size: 15px;
   }
   form .data input:focus {
     border-color: #fff;
@@ -227,7 +227,7 @@ form .btn button {
     color: #fff;
     height: 40px;
     font-size: medium;
-    margin: 25px 0;
+    margin: 20px 0;
     word-spacing: 3px;
   }
   .container form .dob{
@@ -395,9 +395,9 @@ form .btn button {
     cursor: pointer;
   }
 }
-@media (max-width:900px) {
+@media (min-width:900px) {
   .background{
-    background-image:  url(../project_assets/Blood9.webp);
+    background-image:  url(../project_assets/Blood.gif);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -429,8 +429,8 @@ form .btn button {
     display: none;
     top: 50%;
     background: rgb(23, 7, 29);
-    width: 310px;
-    padding: 50px;
+    width: 330px;
+    padding: 30px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
   }
@@ -458,9 +458,9 @@ form .btn button {
     margin-top: -20px;
   }
   .container form .data {
-    height: 25px;
+    height: 22px;
     width: 100%;
-    margin: 30px 0;
+    margin: 25px 0;
   }
   form .data label {
     font-size: 30px;
@@ -559,8 +559,8 @@ form .btn button {
     display: none;
     top: 50%;
     background: rgb(23, 7, 29);
-    width: 410px;
-    padding: 30px;
+    width: 450px;
+    padding: 40px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
   }
@@ -580,7 +580,7 @@ form .btn button {
   }
   .container .text {
     color: #fff;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 600;
     text-align: center;
   }
@@ -590,16 +590,16 @@ form .btn button {
   .container form .data {
     height: 35px;
     width: 100%;
-    margin: 20px 0;
+    margin: 30px 0;
   }
   form .data label {
-    font-size: 18px;
+    font-size: 20px;
   }
   form .data input {
     height: 100%;
     width: 100%;
     padding-left: 5px;
-    font-size: 19px;
+    font-size: 25px;
   }
   form .data input:focus {
     border-color: #fff;
