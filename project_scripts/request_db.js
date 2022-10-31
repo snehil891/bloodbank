@@ -11,6 +11,7 @@ import {
   collection,
   Timestamp,
 } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+import { sendemail_request } from "./send_mail.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAJ1mrcBYnl_M2bG7vfpSwlcm5NnpzsohQ",
   authDomain: "blood-bank-25293.firebaseapp.com",
@@ -44,7 +45,7 @@ function get_request() {
     document.getElementById("required_date").value
   );
   const patient_gender = get_value_gender();
-  const patient_phone = document.getElementById("patient_phone").value;
+  const patient_email = document.getElementById("patient_email").value;
   const purpose_request = document.getElementById("purpose_request").value;
   const no_of_units = document.getElementById("no_of_units").value;
   const patient_age = document.getElementById("patient_dob").value;
@@ -56,7 +57,7 @@ function get_request() {
     Hospital_name,//3
     patient_age,//4
     patient_gender,//5
-    patient_phone,//6
+    patient_email,//6
     purpose_request,//7
     patient_blood,//8
     patient_required_date,//9
@@ -92,7 +93,7 @@ async function add_to_request() {
       }
     });
   }
-  if (request_data[5].length < 10) {
+  if (!request_data[5].includes("@")) {
     flag = 1;
   }
   if (flag == 1) {
@@ -114,7 +115,7 @@ async function add_to_request() {
       age: request_data[3],
       required_date: String(request_data[8]),
       Gender: request_data[4],
-      Mobile: request_data[5],
+      Email: request_data[5],
       Purpose: request_data[6],
       Blood_group: request_data[7],
       Date_of_creation: time,
@@ -124,6 +125,7 @@ async function add_to_request() {
     .then((docRef) => {
       console.log("Document has been added successfully");
       alert("We have registered your request. Redirecting to Home.");
+      sendemail_request(request_data[5]);
       setTimeout(myURL, 100);
       function myURL() {
         location.href = "Homepage.html";

@@ -11,6 +11,7 @@ import {
   collection,
   Timestamp,
 } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+import { sendemail_donation } from "./send_mail.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAJ1mrcBYnl_M2bG7vfpSwlcm5NnpzsohQ",
   authDomain: "blood-bank-25293.firebaseapp.com",
@@ -41,7 +42,7 @@ function get_donation() {
   const donator_name = document.getElementById("Donator_name").value;
   const donator_dob = new Date(document.getElementById("Donator_dob").value);
   const donator_gender = get_value_gender();
-  const donator_phone = document.getElementById("Donator_phone").value;
+  const donator_email = document.getElementById("Donator_email").value;
   const donator_address = document.getElementById("Donator_address").value;
   const select = document.getElementById("Blood_group");
   const donator_blood = select.options[select.selectedIndex].value;
@@ -50,7 +51,7 @@ function get_donation() {
     donator_name,
     donator_dob,
     donator_gender,
-    donator_phone,
+    donator_email,
     donator_address,
     donator_blood,
   ];
@@ -106,7 +107,7 @@ async function add_to_donation() {
       }
     });
   }
-  if (donation_data[3].length < 10) {
+  if (!donation_data[3].includes("@")) {
     flag = 1;
   }  
   if (flag == 1) {
@@ -154,7 +155,7 @@ async function add_to_donation() {
         Name: donation_data[0],
         dob: String(donation_data[1]),
         Gender: donation_data[2],
-        Mobile: donation_data[3],
+        Email: donation_data[3],
         Address: donation_data[4],
         age: age_donor,
         Blood_group: donation_data[5],
@@ -164,6 +165,7 @@ async function add_to_donation() {
       .then((docRef) => {
         console.log("Document has been added successfully");
         alert("Thank you for Donation. Redirecting to Home.");
+        sendemail_donation(donation_data[3]);
         setTimeout(myURL, 100);
         function myURL() {
           location.href = "Homepage.html";
