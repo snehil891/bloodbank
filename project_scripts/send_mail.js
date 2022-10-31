@@ -1,5 +1,5 @@
 import { Email } from "./smtp.js";
-function sendemail_donation(email) {
+async function sendemail_donation(email) {
     console.log("sending");
     Email.send({
       Host: "smtp.elasticemail.com",
@@ -16,10 +16,11 @@ function sendemail_donation(email) {
     //     }]
     })
       .then(function (message) {
-        alert("Mail has been sent successfully")
+        alert("Mail has been sent successfully");
+        return true;
       });
   }
-function sendemail_request(email) {
+async function sendemail_request(email) {
     console.log("sending");
     Email.send({
       Host: "smtp.elasticemail.com",
@@ -36,7 +37,8 @@ function sendemail_request(email) {
     //     }]
     })
       .then(function (message) {
-        alert("Mail has been sent successfully")
+        alert("Mail has been sent successfully");
+        return true;
       });
   }
 
