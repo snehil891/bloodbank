@@ -124,8 +124,9 @@ async function add_to_request() {
   )
     .then(async (docRef) => {
       console.log("Document has been added successfully");
-      alert("We have registered your request. Redirecting to Home.");
       await sendemail_request(request_data[5]);
+      alert("We have registered your request. Redirecting to Home.");
+      
       setTimeout(myURL, 100);
       function myURL() {
         location.href = "Homepage.html";

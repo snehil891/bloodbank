@@ -164,8 +164,9 @@ async function add_to_donation() {
     )
       .then(async (docRef) => {
         console.log("Document has been added successfully");
-        alert("Thank you for Donation. Redirecting to Home.");
         await sendemail_donation(donation_data[3]);
+
+        alert("Thank you for Donation. Redirecting to Home.");
         setTimeout(myURL, 100);
         function myURL() {
           location.href = "Homepage.html";
