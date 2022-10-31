@@ -41,7 +41,7 @@ async function change_donate_html(blood_group) {
       html += "<td>" + rows[i].Blood_group + "</td>";
       html += "<td>" + rows[i].age + "</td>";
       html += "<td>" + rows[i].Gender + "</td>";
-      html += "<td>" + rows[i].Mobile + "</td>";
+      html += "<td>" + rows[i].Email + "</td>";
       html += "<td>" + rows[i].Date_of_creation + "</td>";
       
       html += "</tr>";
@@ -53,7 +53,7 @@ async function change_donate_html(blood_group) {
       html += "<td>" + rows[i].Blood_group + "</td>";
       html += "<td>" + rows[i].age + "</td>";
       html += "<td>" + rows[i].Gender + "</td>";
-      html += "<td>" + rows[i].Mobile + "</td>";
+      html += "<td>" + rows[i].Email + "</td>";
       html += "<td>" + rows[i].Date_of_creation + "</td>";
 
       html += "</tr>";
@@ -89,7 +89,7 @@ async function change_request_html(blood_group) {
     html += "<td>" + rows[i].Blood_group + "</td>";
     html += "<td>" + rows[i].age + "</td>";
     html += "<td>" + rows[i].Gender + "</td>";
-    html += "<td>" + rows[i].Mobile + "</td>";
+    html += "<td>" + rows[i].Email + "</td>";
     html += "<td>" + rows[i].Purpose + "</td>";
     html += "<td>" + rows[i].No_of_Units + "</td>";
     html += "<td>" + rows[i].required_date + "</td>";
