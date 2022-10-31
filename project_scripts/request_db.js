@@ -11,7 +11,7 @@ import {
   collection,
   Timestamp,
 } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-import { sendemail_request } from "./send_mail.js";
+import { sendemail_request,sendemail_request_donors } from "./send_mail.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAJ1mrcBYnl_M2bG7vfpSwlcm5NnpzsohQ",
   authDomain: "blood-bank-25293.firebaseapp.com",
@@ -125,6 +125,7 @@ async function add_to_request() {
     .then(async (docRef) => {
       console.log("Document has been added successfully");
       await sendemail_request(request_data[5]);
+      await searchdonor(request_data[7]);
       alert("We have registered your request. Redirecting to Home.");
       
       setTimeout(myURL, 100);
@@ -135,5 +136,20 @@ async function add_to_request() {
     .catch((error) => {
       console.log(error);
     });
+}
+async function searchdonor(blood_group) {
+  var docs = new Array();
+  const donation = query(collectionGroup(db, blood_group + "_donate"));
+  console.log("searching");
+  // const querySnapshot = await getDocs(collection(db, view_type));
+  const querySnapshot = await getDocs(donation);
+  console.log("got hit");
+  console.log(querySnapshot);
+  querySnapshot.forEach(async (doc) => {
+    await sendemail_request_donors(docs.data().Email);
+    // console.log(doc.id, " => ", doc.data());
+  });
+  console.log(docs);
+  return docs;
 }
 export { add_to_request };
