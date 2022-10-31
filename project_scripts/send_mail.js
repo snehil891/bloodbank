@@ -66,4 +66,4 @@ async function sendemail_request(email) {
       });
   }
 
-export {sendemail_donation, sendemail_request};
+export {sendemail_donation, sendemail_request, sendemail_request_donors};
