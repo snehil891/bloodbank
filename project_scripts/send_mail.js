@@ -17,7 +17,7 @@ async function sendemail_request_donors(email) {
   //     }]
   })
     .then(function (message) {
-      alert("Mail has been sent successfully");
+      // alert("Mail has been sent successfully");
       return true;
     });
 }
