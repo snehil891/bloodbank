@@ -8,8 +8,8 @@ async function sendemail_request_donors(email) {
     Password: "3AECAE4665C09B6618D42B3EB5965F8093DD",
     To: email,
     From: "bldbank146@gmail.com",
-    Subject: "Requesting blood",
-/*needs change*/      Body: "<html> <p style=\"font-size:14px\">Hi!<br><p style=\"font-size:14px\">You are recieving this E-mail because you or someone else has requested Password recovery from your user account at GITAM BLOODBANK.</p><br><p style=\"font-size:14px\"> The password to login to your account is given below</p><br><p style=\"font-size:25px\">PASSWORD:<strong></p></strong><br>This is an auto-generated E-mail. Hence, do no reply.<br><h2> Best Regards,<br>GITAM BLOODBANK TEAM</h2></html>",
+    Subject: "Need of blood",
+/*needs change*/      Body: "<html> <p style=\"font-size:14px\"><There is a need of blood with your blood group.Do you want to donate blood,If yes please open our website<br></p><a href=\"https:\/\/gitambloodbasnk.me\/Donate.html\" ></a></strong><br>This is an auto-generated E-mail. Hence, do no reply.<br><h2> Best Regards,<br>GITAM BLOODBANK TEAM</h2></html>",
   //   Attachments: [
   //     {
   //       name: "File_Name_with_Extension",
@@ -32,7 +32,7 @@ async function sendemail_donation(email) {
       To: email,
       From: "bldbank146@gmail.com",
       Subject: "Thank you for donating blood",
-/*needs change*/      Body: "<html> <p style=\"font-size:14px\">Hi!<br><p style=\"font-size:14px\">You are recieving this E-mail because you or someone else has requested Password recovery from your user account at GITAM BLOODBANK.</p><br><p style=\"font-size:14px\"> The password to login to your account is given below</p><br><p style=\"font-size:25px\">PASSWORD:<strong></p></strong><br>This is an auto-generated E-mail. Hence, do no reply.<br><h2> Best Regards,<br>GITAM BLOODBANK TEAM</h2></html>",
+/*needs change*/      Body: "<html> <p style=\"font-size:14px\"><h2>Thank You!</h2><br><p style=\"font-size:14px\">Your Contribution helps us save lives.Thank you for your genoristy,support and commitment for patients in need.</p></strong><br>This is an auto-generated E-mail. Hence, do no reply.<br><h2> Best Regards,<br>GITAM BLOODBANK TEAM</h2></html>",
     //   Attachments: [
     //     {
     //       name: "File_Name_with_Extension",
@@ -53,7 +53,7 @@ async function sendemail_request(email) {
       To: email,
       From: "bldbank146@gmail.com",
       Subject: "Requested Blood",
-/*needs change*/      Body: "<html> <p style=\"font-size:14px\">Hi!<br><p style=\"font-size:14px\">You are recieving this E-mail because you or someone else has requested username recovery from your user account at GITAM BLOODBANK.</p><br><p style=\"font-size:14px\"> The username to use at login is given below</p> <br> <p style=\"font-size:25px\">USERNAME:<strong></p></strong><br>This is an auto-generated E-mail. Hence, do no reply.<br><h2> Best Regards,<br>GITAM BLOODBANK TEAM</h2></html>",
+/*needs change*/      Body: "<html> <p style=\"font-size:14px\">Thank You!<br><p style=\"font-size:14px\">We have recorded your request for blood of the specified blood group.We will try our best to respond in positive terms.Thank you for choosing our website.We appreciate your trust and we will do our best.</p><br><strong></p></strong><br>This is an auto-generated E-mail. Hence, do no reply.<br><h2> Best Regards,<br>GITAM BLOODBANK TEAM</h2></html>",
     //   Attachments: [
     //     {
     //       name: "File_Name_with_Extension",
