@@ -29,7 +29,7 @@ async function change_donate_html(blood_group) {
   var rows = await view_blood_donate(blood_group);
   console.log(rows);
   var html =
-    "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>Phone Number</th><th>Date of Form Filling</th></tr>";
+    "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>E-mail</th><th>Phone Number</th><th>Date of Form Filling</th></tr>";
   for (var i = 0; i < rows.length; i++) {
     const dateOne = new Date();
     const dateTwo = new Date(rows[i].Date_of_creation);
@@ -42,6 +42,7 @@ async function change_donate_html(blood_group) {
       html += "<td>" + rows[i].age + "</td>";
       html += "<td>" + rows[i].Gender + "</td>";
       html += "<td>" + rows[i].Email + "</td>";
+      html += "<td>" + rows[i].Phone + "</td>";
       html += "<td>" + rows[i].Date_of_creation + "</td>";
       
       html += "</tr>";
@@ -54,6 +55,7 @@ async function change_donate_html(blood_group) {
       html += "<td>" + rows[i].age + "</td>";
       html += "<td>" + rows[i].Gender + "</td>";
       html += "<td>" + rows[i].Email + "</td>";
+      html += "<td>" + rows[i].Phone + "</td>";
       html += "<td>" + rows[i].Date_of_creation + "</td>";
 
       html += "</tr>";
@@ -82,7 +84,7 @@ async function change_request_html(blood_group) {
   var rows = await view_blood_request(blood_group);
   console.log(rows);
   var html =
-    "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>Phone Number</th><th>Purpose</th><th>Units required</th><th>Required Date</th><th>Date of Form Filling</th></tr>";
+    "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>E-mail</th><th>Phone Number</th><th>Purpose</th><th>Units required</th><th>Required Date</th><th>Date of Form Filling</th></tr>";
   for (var i = 0; i < rows.length; i++) {
     html += "<tr>";
     html += "<td>" + rows[i].Name + "</td>";
@@ -90,6 +92,7 @@ async function change_request_html(blood_group) {
     html += "<td>" + rows[i].age + "</td>";
     html += "<td>" + rows[i].Gender + "</td>";
     html += "<td>" + rows[i].Email + "</td>";
+    html += "<td>" + rows[i].Phone + "</td>";
     html += "<td>" + rows[i].Purpose + "</td>";
     html += "<td>" + rows[i].No_of_Units + "</td>";
     html += "<td>" + rows[i].required_date + "</td>";

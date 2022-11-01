@@ -43,7 +43,9 @@ function get_donation() {
   const donator_dob = new Date(document.getElementById("Donator_dob").value);
   const donator_gender = get_value_gender();
   const donator_email = document.getElementById("Donator_email").value;
+  const donator_phone = document.getElementById("Donator_phone").value;
   const donator_address = document.getElementById("Donator_address").value;
+
   const select = document.getElementById("Blood_group");
   const donator_blood = select.options[select.selectedIndex].value;
   console.log(donator_blood);
@@ -54,6 +56,7 @@ function get_donation() {
     donator_email,
     donator_address,
     donator_blood,
+    donator_phone
   ];
 }
 
@@ -106,6 +109,9 @@ async function add_to_donation() {
         flag=1;
       }
     });
+  }
+  if(donation_data[6].length!=10){
+    flag=1;
   }
   if (!donation_data[3].includes("@gmail.com") || !donation_data[3].includes("@gitam.in") ||!donation_data[3].includes("@hotmail.com")||!donation_data[3].includes("@gitam.edu")||!donation_data[3].includes("@yahoo.com")) {
     flag = 1;
@@ -160,6 +166,7 @@ async function add_to_donation() {
         age: age_donor,
         Blood_group: donation_data[5],
         Date_of_creation: time,
+        Phone: donation_data[6]
       }
     )
       .then(async (docRef) => {

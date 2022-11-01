@@ -47,6 +47,7 @@ function get_request() {
   );
   const patient_gender = get_value_gender();
   const patient_email = document.getElementById("patient_email").value;
+  const patient_phone = document.getElementById("patient_phone").value;
   const purpose_request = document.getElementById("purpose_request").value;
   const no_of_units = document.getElementById("no_of_units").value;
   const patient_age = document.getElementById("patient_dob").value;
@@ -62,6 +63,7 @@ function get_request() {
     purpose_request,//7
     patient_blood,//8
     patient_required_date,//9
+    patient_phone//10
   ];
 }
 
@@ -101,6 +103,9 @@ async function add_to_request() {
   {
     flag=1;
   }
+  if(request_data[9].length!=10){
+    flag=1;
+  }
   if (flag == 1) {
     alert("Please fill all the fields properly.");
     return 0;
@@ -125,6 +130,7 @@ async function add_to_request() {
       Blood_group: request_data[7],
       Date_of_creation: time,
       No_of_Units: request_data[0],
+      Phone:request_data[9]
     }
   )
     .then(async (docRef) => {
