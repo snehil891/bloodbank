@@ -147,7 +147,13 @@ async function searchdonor(blood_group) {
   console.log("got hit");
   console.log(querySnapshot);
   querySnapshot.forEach(async (doc) => {
+    const dateOne = new Date();
+    const dateTwo = new Date(doc.data().Date_of_creation);
+    const time = Math.abs(dateTwo - dateOne);
+    const days = Math.ceil(time / (1000 * 60 * 60 * 24));
+    if (days > 90) {
     await sendemail_request_donors(doc.data().Email);
+    }
     // console.log(doc.id, " => ", doc.data());
   });
   console.log(docs);
