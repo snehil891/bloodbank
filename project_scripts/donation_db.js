@@ -107,7 +107,7 @@ async function add_to_donation() {
       }
     });
   }
-  if (!donation_data[3].includes("@")) {
+  if (!donation_data[3].includes("@gmail.com") || !donation_data[3].includes("@gitam.in") ||!donation_data[3].includes("@hotmail.com")||!donation_data[3].includes("@gitam.edu")||!donation_data[3].includes("@yahoo.com")) {
     flag = 1;
   }  
   if (flag == 1) {
@@ -118,7 +118,7 @@ async function add_to_donation() {
   console.log(time);
   const dbRef = collection(db, "Donate");
   var age_donor = await check_age(donation_data[1]);
-  if (age_donor > 18) {
+  if (age_donor > 18 && age_donor<65) {
     console.log("Checked");
     // if (donate_check(donation_data.donator_phone)) {
     //   await setDoc(doc(db, "Donate", donation_data.donator_phone), {

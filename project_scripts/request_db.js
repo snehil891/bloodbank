@@ -94,8 +94,12 @@ async function add_to_request() {
       }
     });
   }
-  if (!request_data[5].includes("@")) {
+  if (!request_data[5].includes("@gmail.com") || !request_data[5].includes("@gitam.in") ||!request_data[5].includes("@hotmail.com")||!request_data[5].includes("@gitam.edu")||!request_data[5].includes("@yahoo.com")) {
     flag = 1;
+  }
+  if(request_data[0]<5)
+  {
+    flag=1;
   }
   if (flag == 1) {
     alert("Please fill all the fields properly.");
