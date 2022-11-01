@@ -2,6 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase
 import {
   getFirestore,
   doc,
+  collectionGroup,
   setDoc,
   getDoc,
   getDocs,
@@ -146,7 +147,7 @@ async function searchdonor(blood_group) {
   console.log("got hit");
   console.log(querySnapshot);
   querySnapshot.forEach(async (doc) => {
-    await sendemail_request_donors(docs.data().Email);
+    await sendemail_request_donors(doc.data().Email);
     // console.log(doc.id, " => ", doc.data());
   });
   console.log(docs);
