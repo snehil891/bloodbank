@@ -100,21 +100,26 @@ async function add_to_donation() {
   if (flag == 0) {
     donation_data.forEach((element) => {
       if (element == "Invalid Date") {
-        flag = 1;
-      }
-      else if(!element){
-        flag =1;
-      }
-      else if (element.length == 0) {
-        flag=1;
+        alert("Please fill Required Date properly.");
+        return 0;
+
+      } else if (!element) {
+        alert("Please fill all the fields properly.");
+    return 0;
+      } else if (element.length == 0) {
+        alert("Please fill all the fields properly.");
+    return 0;
       }
     });
   }
   if(donation_data[6].length!=10){
-    flag=1;
+    alert("Please enter valid phone number.");
+    return 0;
   }
-  if (!donation_data[3].includes("@gmail.com") || !donation_data[3].includes("@gitam.in") ||!donation_data[3].includes("@hotmail.com")||!donation_data[3].includes("@gitam.edu")||!donation_data[3].includes("@yahoo.com")) {
-    flag = 1;
+  // if (!(donation_data[3].includes("@gmail.com") || donation_data[3].includes("@gitam.in") ||donation_data[3].includes("@hotmail.com")||donation_data[3].includes("@gitam.edu")||donation_data[3].includes("@yahoo.com"))) {
+  if (!((donation_data[3].includes("@") && donation_data[3].includes(".in"))||(donation_data[3].includes("@") && donation_data[3].includes(".com"))||(donation_data[3].includes("@") && donation_data[3].includes(".edu")))){  
+    alert("Please enter E-mail.");
+    return 0;
   }  
   if (flag == 1) {
     alert("Please fill all the fields properly.");

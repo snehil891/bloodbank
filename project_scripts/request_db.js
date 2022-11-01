@@ -88,28 +88,37 @@ async function add_to_request() {
   if (flag == 0) {
     request_data.forEach((element) => {
       if (element == "Invalid Date") {
-        flag = 1;
+        alert("Please fill Required Date properly.");
+        return 0;
+
       } else if (!element) {
-        flag = 1;
+        alert("Please fill all the fields properly.");
+    return 0;
       } else if (element.length == 0) {
-        flag = 1;
+        alert("Please fill all the fields properly.");
+    return 0;
       }
     });
   }
-  if (!request_data[5].includes("@gmail.com") || !request_data[5].includes("@gitam.in") ||!request_data[5].includes("@hotmail.com")||!request_data[5].includes("@gitam.edu")||!request_data[5].includes("@yahoo.com")) {
-    flag = 1;
+  // if (!request_data[5].includes("@gmail.com") || !request_data[5].includes("@gitam.in") ||!request_data[5].includes("@hotmail.com")||!request_data[5].includes("@gitam.edu")||!request_data[5].includes("@yahoo.com")) {
+    if (!((request_data[5].includes("@") && request_data[5].includes(".in"))||(request_data[5].includes("@") && request_data[5].includes(".com"))||(request_data[5].includes("@") && request_data[5].includes(".edu")))){  
+    
+  alert("Please provide a valid E-mail.");
+    return 0;
   }
   if(request_data[0]<5)
   {
-    flag=1;
-  }
-  if(request_data[9].length!=10){
-    flag=1;
-  }
-  if (flag == 1) {
-    alert("Please fill all the fields properly.");
+    alert("Please request no more than 5 units.");
     return 0;
   }
+  if(request_data[9].length!=10){
+    alert("Please enter valid phone number.");
+    return 0;
+  }
+  // if (flag == 1) {
+  //   alert("Please fill all the fields properly.");
+  //   return 0;
+  // }
   const time = String(new Date());
   console.log(time);
   const dbRef = collection(db, "Request");
