@@ -41,18 +41,114 @@ function get_value_gender() {
 function get_request() {
   console.log("getting");
   const patient_name = document.getElementById("Patient_name").value;
+  if(patient_name.length==0){
+    document.getElementById("patient_name_error").innerHTML="Kindly fill the name.";
+    document.getElementById("patient_name_error").style.color = "red";
+    return false;
+  }
+  else{
+    document.getElementById("patient_name_error").innerHTML="";
+  }
   const Hospital_name = document.getElementById("Hospital_name").value;
+  if(Hospital_name.length==0){
+    document.getElementById("patient_hospital_error").innerHTML="Kindly fill the hospital name.";
+    document.getElementById("patient_hospital_error").style.color = "red";
+    return false;
+  }
+  else{
+    document.getElementById("patient_hospital_error").innerHTML="";
+  }
+  const patient_age = document.getElementById("patient_dob").value;
+  if(patient_age.length==0){
+    document.getElementById("patient_dob_error").innerHTML="Kindly enter age.";
+    document.getElementById("patient_dob_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_dob_error").innerHTML="";
+  }
+  const patient_gender = get_value_gender();
+  if(!patient_gender){
+    document.getElementById("patient_gender_error").innerHTML="Kindly select gender.";
+    document.getElementById("patient_gender_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_gender_error").innerHTML="";
+  }
+  const patient_email = document.getElementById("patient_email").value;
+  if (!((patient_email.includes("@") && patient_email.includes(".in"))||(patient_email.includes("@") && patient_email.includes(".com"))||(patient_email.includes("@") && patient_email.includes(".edu")))){  
+    document.getElementById("patient_email_error").innerHTML="Enter a valid E-mail.";
+    document.getElementById("patient_email_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_email_error").innerHTML="";
+  }
+  const patient_phone = document.getElementById("patient_phone").value;
+  if(patient_phone.length!=10){
+    document.getElementById("patient_phone_error").innerHTML="Enter a valid phone number.";
+    document.getElementById("patient_phone_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_phone_error").innerHTML="";
+  }
+  const purpose_request = document.getElementById("purpose_request").value;
+  if(purpose_request.length==0){
+    document.getElementById("patient_purpose_error").innerHTML="Kindly provide purpose.";
+    document.getElementById("patient_purpose_error").style.color = "red";
+    return false;
+  }
+  else{
+    document.getElementById("patient_purpose_error").innerHTML="";
+  }
+  const no_of_units = document.getElementById("no_of_units").value;
+  if(no_of_units<=0){
+    document.getElementById("patient_units_error").innerHTML="Enter valid number of units of blood.";
+    document.getElementById("patient_units_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_units_error").innerHTML="";
+  }
+  if(no_of_units.length==0){
+    document.getElementById("patient_units_error").innerHTML="Enter required number of units of blood.";
+    document.getElementById("patient_units_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_units_error").innerHTML="";
+  }
+  if(no_of_units>5){
+    document.getElementById("patient_units_error").innerHTML="Can't request for more than 5 units.";
+    document.getElementById("patient_units_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_units_error").innerHTML="";
+  }
   const patient_required_date = new Date(
     document.getElementById("required_date").value
   );
-  const patient_gender = get_value_gender();
-  const patient_email = document.getElementById("patient_email").value;
-  const patient_phone = document.getElementById("patient_phone").value;
-  const purpose_request = document.getElementById("purpose_request").value;
-  const no_of_units = document.getElementById("no_of_units").value;
-  const patient_age = document.getElementById("patient_dob").value;
+  if(patient_required_date=="Invalid Date"){
+    document.getElementById("patient_required_error").innerHTML="Kindly fill the required date.";
+    document.getElementById("patient_required_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_required_error").innerHTML="";
+  }
   const select = document.getElementById("Blood_group_request");
   const patient_blood = select.options[select.selectedIndex].value;
+  if(!patient_blood){
+    document.getElementById("patient_blood_error").innerHTML="Kindly select blood group.";
+    document.getElementById("patient_blood_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_blood_error").innerHTML="";
+  }
   return [
     no_of_units, //1
     patient_name, //2
@@ -85,36 +181,39 @@ async function add_to_request() {
   const request_data = get_request();
   console.log(request_data);
   let flag = 0;
-  if (flag == 0) {
-    request_data.forEach((element) => {
-      if (element == "Invalid Date") {
-        alert("Please fill Required Date properly.");
-        return 0;
+  if(!request_data){
+    return false;
+  }
+  // if (flag == 0) {
+  //   request_data.forEach((element) => {
+  //     if (element == "Invalid Date") {
+  //       alert("Please fill Required Date properly.");
+  //       return 0;
 
-      } else if (!element) {
-        alert("Please fill all the fields properly.");
-    return 0;
-      } else if (element.length == 0) {
-        alert("Please fill all the fields properly.");
-    return 0;
-      }
-    });
-  }
-  // if (!request_data[5].includes("@gmail.com") || !request_data[5].includes("@gitam.in") ||!request_data[5].includes("@hotmail.com")||!request_data[5].includes("@gitam.edu")||!request_data[5].includes("@yahoo.com")) {
-    if (!((request_data[5].includes("@") && request_data[5].includes(".in"))||(request_data[5].includes("@") && request_data[5].includes(".com"))||(request_data[5].includes("@") && request_data[5].includes(".edu")))){  
+  //     } else if (!element) {
+  //       alert("Please fill all the fields properly.");
+  //   return 0;
+  //     } else if (element.length == 0) {
+  //       alert("Please fill all the fields properly.");
+  //   return 0;
+  //     }
+  //   });
+  // }
+  // // if (!request_data[5].includes("@gmail.com") || !request_data[5].includes("@gitam.in") ||!request_data[5].includes("@hotmail.com")||!request_data[5].includes("@gitam.edu")||!request_data[5].includes("@yahoo.com")) {
+  //   if (!((request_data[5].includes("@") && request_data[5].includes(".in"))||(request_data[5].includes("@") && request_data[5].includes(".com"))||(request_data[5].includes("@") && request_data[5].includes(".edu")))){  
     
-  alert("Please provide a valid E-mail.");
-    return 0;
-  }
-  if(request_data[0]<5)
-  {
-    alert("Please request no more than 5 units.");
-    return 0;
-  }
-  if(request_data[9].length!=10){
-    alert("Please enter valid phone number.");
-    return 0;
-  }
+  // alert("Please provide a valid E-mail.");
+  //   return 0;
+  // }
+  // if(request_data[0]<5)
+  // {
+  //   alert("Please request no more than 5 units.");
+  //   return 0;
+  // }
+  // if(request_data[9].length!=10){
+  //   alert("Please enter valid phone number.");
+  //   return 0;
+  // }
   // if (flag == 1) {
   //   alert("Please fill all the fields properly.");
   //   return 0;

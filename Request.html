@@ -26,12 +26,15 @@
           <div class="data">
              <input type="text" id="Patient_name" placeholder="Patient Name" required>
           </div>
+          <p id="patient_name_error"></p>
           <div class="data">
             <input type="text" id="Hospital_name" placeholder="Hospital Name" required>
          </div>
+         <p id="patient_hospital_error"></p>
           <div class="data">
              <input type="number" id="patient_dob" placeholder="Enter Patient's age" required>
           </div>
+          <p id="patient_dob_error"></p>
           <div class="Gender" aria-required="true">
            <h3 class="gend">Select Patient's Gender</h3>
            <input type="radio" name="gender" id="Male">
@@ -41,22 +44,28 @@
            <input type="radio" name="gender" id="Others">
            <label for="Others">Others</label>
           </div>
+          <p id="patient_gender_error"></p>
           <div class="data">
            <input type="email" id="patient_email" placeholder="Enter patient's E-Mail" required>
           </div>
+          <p id="patient_email_error"></p>
           <div class="data">
             <input type="tel" id="patient_phone" placeholder="Enter patient's Phone number"  minlength="10" maxlength="10" required>
            </div> 
+           <p id="patient_phone_error"></p>
           <div class="data">
             <input  type="text" id="purpose_request" placeholder="Purpose" required>
           </div>
+          <p id="patient_purpose_error"></p>
           <div class="data">
             <input type="number" id="no_of_units" placeholder="No of Units Required" required>
           </div>
+          <p id="patient_units_error"></p>
           <div class="Required">
             <h3 class="Requireddate">Required date</h3>
             <input type="date" id="required_date" placeholder="Required Date" required>
           </div>
+          <p id="patient_required_error"></p>
           <div class="data">
            <select name="blood" id="Blood_group_request" aria-required="true">
                <option value="">Select the blood group</option>
@@ -70,6 +79,7 @@
                <option value="AB-">AB-</option>
            </select>
           </div> 
+          <p id="patient_blood_error"></p>
           <div class="btn">
              <div class="inner"></div>
              <button id="submit_request">Submit</button>
