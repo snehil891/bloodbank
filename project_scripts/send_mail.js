@@ -40,7 +40,7 @@ async function sendemail_donation(email) {
     //     }]
     })
       .then(function (message) {
-        alert("Mail has been sent successfully");
+        // alert("Mail has been sent successfully");
         return true;
       });
   }
@@ -61,7 +61,7 @@ async function sendemail_request(email) {
     //     }]
     })
       .then(function (message) {
-        alert("Mail has been sent successfully");
+        // alert("Mail has been sent successfully");
         return true;
       });
   }

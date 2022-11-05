@@ -96,33 +96,61 @@ async function add_to_donation() {
   let flag = 0;
   console.log(donation_data[3]);
   console.log(donation_data);
-  
+  let error_string = ["\n"];
   if (flag == 0) {
     donation_data.forEach((element) => {
       if (element == "Invalid Date") {
-        alert("Please fill Required Date properly.");
-        return 0;
+        if(!error_string.includes("DOB is not filled properly.")){
+          error_string.push("DOB is not filled properly.");
+          error_string.push("\n");}
+        flag=1;
+        // return 0;
 
       } else if (!element) {
-        alert("Please fill all the fields properly.");
-    return 0;
+        if(!error_string.includes("All fields are not filled properly or left empty.")){
+          error_string.push("All fields are not filled properly or left empty.");
+          error_string.push("\n");
+      }
+          flag=1;
+    // return 0;
       } else if (element.length == 0) {
-        alert("Please fill all the fields properly.");
-    return 0;
+        if(!error_string.includes("Some fields are empty.")){
+        error_string.push("Some fields are empty.");
+        error_string.push("\n");}
+        flag=1;
+    // return 0;
       }
     });
   }
   if(donation_data[6].length!=10){
-    alert("Please enter valid phone number.");
-    return 0;
+    error_string.push("Invalid phone number.");
+    error_string.push("\n");
+    flag=1;
+    // return 0;
   }
   // if (!(donation_data[3].includes("@gmail.com") || donation_data[3].includes("@gitam.in") ||donation_data[3].includes("@hotmail.com")||donation_data[3].includes("@gitam.edu")||donation_data[3].includes("@yahoo.com"))) {
   if (!((donation_data[3].includes("@") && donation_data[3].includes(".in"))||(donation_data[3].includes("@") && donation_data[3].includes(".com"))||(donation_data[3].includes("@") && donation_data[3].includes(".edu")))){  
-    alert("Please enter E-mail.");
-    return 0;
+    error_string.push("Invalid E-mail.");
+    error_string.push("\n");
+    flag=1;
+    // return 0;
   }  
   if (flag == 1) {
-    alert("Please fill all the fields properly.");
+    let error_message = "";
+    for (let i = 0; i < error_string.length-1; i++) {
+      const element = error_string[i];      
+      error_message+=element;
+      if(element=="\n"){
+        // error_message+=element;
+        error_message+="•  ";
+      }
+    }
+    // error_string.forEach((element) => {
+      
+    //   error_message+=element;
+      
+    // });
+    alert("Can't proceed due to the following reasons:"+error_message);
     return 0;
   }
   const time = String(new Date());
@@ -188,7 +216,11 @@ async function add_to_donation() {
         console.log(error);
       });
   } else {
-    alert("Sorry! You are not old enough to donate blood.");
+    if(age_donor<18){alert("Sorry! You are not old enough to donate blood.");
   }
+  else{
+    alert("Sorry! You are not elligible to donate blood.");
+  }
+    }
 }
 export { add_to_donation };
