@@ -25,10 +25,12 @@
                <div class="data">
                   <input type="text" id="Donator_name" placeholder="Name" required>
                </div>
+               <p id="donator_name_error"></p>
                <div class="Dob">
                   <h2 class="dob">Date Of Birth</h2>
                   <input type="date" id="Donator_dob" placeholder="DOB" required>
                </div>
+               <p id="donator_dob_error"></p>
                <div class="Gender" aria-required="true">
                 <h3 class="gend">Select Donor's Gender</h3>
                 <input type="radio" name="gender" id="male">
@@ -38,15 +40,19 @@
                 <input type="radio" name="gender" id="others">
                 <label for="others">Others</label>
                </div>
+               <p id="donator_gender_error"></p>
                <div class="data">
                 <input type="email" id="Donator_email" placeholder="Enter donor's E-mail" required>
                </div>
+               <p id="donator_email_error"></p>
                <div class="data">
                   <input type="tel" id="Donator_phone" placeholder="Enter patient's Phone number" required minlength="10" maxlength="10">
                  </div> 
+                 <p id="donator_phone_error"></p>
                <div class="data">
                 <input type="text" id="Donator_address" placeholder="Enter the address" required>
                </div>
+               <p id="donator_address_error"></p>
                <div> 
                 <select id="Blood_group" aria-required="true">
                     <option value="">Select the blood group</option>
@@ -61,6 +67,7 @@
                     <option value="AB-">AB-</option>
                 </select> 
                </div>
+               <p id="donator_blood_error"></p>
                <div class="btn">
                   <div class="inner"></div>
                   <button id="submit_donate">Submit</button>

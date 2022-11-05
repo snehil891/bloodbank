@@ -39,16 +39,72 @@ function get_value_gender() {
 
 function get_donation() {
   console.log("getting");
+  // const donator_name_field = document.getElementById("Donator_name");
   const donator_name = document.getElementById("Donator_name").value;
+  if(donator_name.length==0){
+    document.getElementById("donator_name_error").innerHTML="Kindly fill the name.";
+    document.getElementById("donator_name_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_name_error").innerHTML="";
+  }
   const donator_dob = new Date(document.getElementById("Donator_dob").value);
+  if(donator_dob=="Invalid Date"){
+    document.getElementById("donator_dob_error").innerHTML="Invalid DOB.";
+    document.getElementById("donator_dob_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_dob_error").innerHTML="";
+  }
   const donator_gender = get_value_gender();
+  if(!donator_gender){
+    document.getElementById("donator_gender_error").innerHTML="Select a gender.";
+    document.getElementById("donator_gender_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_gender_error").innerHTML="";
+  }
   const donator_email = document.getElementById("Donator_email").value;
+  if (!((donator_email.includes("@") && donator_email.includes(".in"))||(donator_email.includes("@") && donator_email.includes(".com"))||(donator_email.includes("@") && donator_email.includes(".edu")))){  
+    document.getElementById("donator_email_error").innerHTML="Enter a valid E-mail.";
+    document.getElementById("donator_email_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_email_error").innerHTML="";
+  }
   const donator_phone = document.getElementById("Donator_phone").value;
+  if(donator_phone.length!=10){
+    document.getElementById("donator_phone_error").innerHTML="Enter a valid phone number.";
+    document.getElementById("donator_phone_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_phone_error").innerHTML="";
+  }
   const donator_address = document.getElementById("Donator_address").value;
-
+  if(donator_address.length==0){
+    document.getElementById("donator_address_error").innerHTML="Kindly fill the address.";
+    document.getElementById("donator_address_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_address_error").innerHTML="";
+  }
   const select = document.getElementById("Blood_group");
   const donator_blood = select.options[select.selectedIndex].value;
   console.log(donator_blood);
+  if(!donator_blood){
+    document.getElementById("donator_blood_error").innerHTML="Kindly select blood group.";
+    document.getElementById("donator_blood_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_blood_error").innerHTML="";
+  }
   return [
     donator_name,
     donator_dob,
@@ -96,63 +152,66 @@ async function add_to_donation() {
   let flag = 0;
   console.log(donation_data[3]);
   console.log(donation_data);
-  let error_string = ["\n"];
-  if (flag == 0) {
-    donation_data.forEach((element) => {
-      if (element == "Invalid Date") {
-        if(!error_string.includes("DOB is not filled properly.")){
-          error_string.push("DOB is not filled properly.");
-          error_string.push("\n");}
-        flag=1;
-        // return 0;
-
-      } else if (!element) {
-        if(!error_string.includes("All fields are not filled properly or left empty.")){
-          error_string.push("All fields are not filled properly or left empty.");
-          error_string.push("\n");
-      }
-          flag=1;
-    // return 0;
-      } else if (element.length == 0) {
-        if(!error_string.includes("Some fields are empty.")){
-        error_string.push("Some fields are empty.");
-        error_string.push("\n");}
-        flag=1;
-    // return 0;
-      }
-    });
-  }
-  if(donation_data[6].length!=10){
-    error_string.push("Invalid phone number.");
-    error_string.push("\n");
-    flag=1;
-    // return 0;
-  }
-  // if (!(donation_data[3].includes("@gmail.com") || donation_data[3].includes("@gitam.in") ||donation_data[3].includes("@hotmail.com")||donation_data[3].includes("@gitam.edu")||donation_data[3].includes("@yahoo.com"))) {
-  if (!((donation_data[3].includes("@") && donation_data[3].includes(".in"))||(donation_data[3].includes("@") && donation_data[3].includes(".com"))||(donation_data[3].includes("@") && donation_data[3].includes(".edu")))){  
-    error_string.push("Invalid E-mail.");
-    error_string.push("\n");
-    flag=1;
-    // return 0;
-  }  
-  if (flag == 1) {
-    let error_message = "";
-    for (let i = 0; i < error_string.length-1; i++) {
-      const element = error_string[i];      
-      error_message+=element;
-      if(element=="\n"){
-        // error_message+=element;
-        error_message+="•  ";
-      }
-    }
-    // error_string.forEach((element) => {
-      
-    //   error_message+=element;
-      
-    // });
-    alert("Can't proceed due to the following reasons:"+error_message);
+  if(!donation_data){
     return 0;
   }
+  // let error_string = ["\n"];
+  // if (flag == 0) {
+  //   donation_data.forEach((element) => {
+  //     if (element == "Invalid Date") {
+  //       if(!error_string.includes("DOB is not filled properly.")){
+  //         error_string.push("DOB is not filled properly.");
+  //         error_string.push("\n");}
+  //       flag=1;
+  //       // return 0;
+
+  //     } else if (!element) {
+  //       if(!error_string.includes("All fields are not filled properly or left empty.")){
+  //         error_string.push("All fields are not filled properly or left empty.");
+  //         error_string.push("\n");
+  //     }
+  //         flag=1;
+  //   // return 0;
+  //     } else if (element.length == 0) {
+  //       if(!error_string.includes("Some fields are empty.")){
+  //       error_string.push("Some fields are empty.");
+  //       error_string.push("\n");}
+  //       flag=1;
+  //   // return 0;
+  //     }
+  //   });
+  // }
+  // if(donation_data[6].length!=10){
+  //   error_string.push("Invalid phone number.");
+  //   error_string.push("\n");
+  //   flag=1;
+  //   // return 0;
+  // }
+  // // if (!(donator_email.includes("@gmail.com") || donator_email.includes("@gitam.in") ||donator_email.includes("@hotmail.com")||donator_email.includes("@gitam.edu")||donator_email.includes("@yahoo.com"))) {
+  // if (!((donator_email.includes("@") && donator_email.includes(".in"))||(donator_email.includes("@") && donator_email.includes(".com"))||(donator_email.includes("@") && donator_email.includes(".edu")))){  
+  //   error_string.push("Invalid E-mail.");
+  //   error_string.push("\n");
+  //   flag=1;
+  //   // return 0;
+  // }  
+  // if (flag == 1) {
+  //   let error_message = "";
+  //   for (let i = 0; i < error_string.length-1; i++) {
+  //     const element = error_string[i];      
+  //     error_message+=element;
+  //     if(element=="\n"){
+  //       // error_message+=element;
+  //       error_message+="•  ";
+  //     }
+  //   }
+  //   // error_string.forEach((element) => {
+      
+  //   //   error_message+=element;
+      
+  //   // });
+  //   alert("Can't proceed due to the following reasons:"+error_message);
+  //   return 0;
+  // }
   const time = String(new Date());
   console.log(time);
   const dbRef = collection(db, "Donate");
