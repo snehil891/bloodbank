@@ -9,7 +9,7 @@ async function sendemail_request_donors(email) {
     To: email,
     From: "bldbank146@gmail.com",
     Subject: "Need of blood",
-/*needs change*/      Body: "<html> <p style=\"font-size:14px\">There is a need of blood with your blood group.Do you want to donate blood,If yes please open our website:<a href=\"https:\/\/gitambloodbank.me\/Donate.html\" >GITAMBloodBank</a></p></strong><br>This is an auto-generated E-mail. Hence, do no reply.<br><h2> Best Regards,<br>GITAM BLOODBANK TEAM</h2></html>",
+/*needs change*/      Body: "<html> <p style=\"font-size:14px\">There is a need of blood with your blood group.If you want to donate blood,please visit our website on:<a href=\"https:\/\/gitambloodbank.me\/Donate.html\" >GITAMBloodBank</a></p></strong><br>This is an auto-generated E-mail. Hence, do no reply.<br><h2> Best Regards,<br>GITAM BLOODBANK TEAM</h2></html>",
   //   Attachments: [
   //     {
   //       name: "File_Name_with_Extension",
