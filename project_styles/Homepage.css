@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 20px/1.8 "system-ui";
+  font-family: 'Montserrat', sans-serif;
   background-size:cover ;
   align-items: flex-end;
   background-attachment: fixed;
@@ -67,11 +67,13 @@ html {
   text-align: center;
   text-decoration: underline;
   font-size: 2.5em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
+
 }
 .bg-about p{
   font-size: 1.25em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
+
 }
 .bg-about a{
   color: rgb(8, 4, 117);
@@ -79,7 +81,8 @@ html {
   text-decoration: underline;
   font-weight: 300px;
   font-size: 0.85em;
-  font-family:'system.ui';
+  font-family: 'Montserrat', sans-serif;
+
 }
 .bg-about a:hover{
   font-size: 1em;
@@ -232,18 +235,19 @@ html {
   text-align: center;
   text-decoration: underline;
   font-size: 1.5em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
+
 }
 .bg-about p{
-  font-size: 1.15em;
-  font-family:'system-ui';
+  font-size: 1.15em;   
+  font-family: 'Montserrat', sans-serif;
 }
 .bg-about a{
   text-align: center;
   text-decoration: solid;
   font-weight: 300px;
   font-size: 0.95em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
 }
 }
 @media (min-width:768px) {
@@ -345,18 +349,19 @@ html {
   text-align: center;
   text-decoration: underline;
   font-size: 2.5em;
-  font-family:'system-ui';
+    font-family: 'Montserrat', sans-serif;
 }
 .bg-about p{
   font-size: 1.25em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
+
 }
 .bg-about a{
   text-align: center;
   text-decoration: solid;
   font-weight: 300px;
   font-size: 0.85em;
-  font-family:'system.ui';
+  font-family: 'Montserrat', sans-serif;
 }
 }
 @media (min-width:900px) {
@@ -459,18 +464,19 @@ html {
   text-align: center;
   text-decoration: underline;
   font-size: 2.5em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
+
 }
 .bg-about p{
   font-size: 1.25em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
 }
 .bg-about a{
   text-align: center;
   text-decoration: solid;
   font-weight: 300px;
   font-size: 0.85em;
-  font-family:'system.ui';
+  font-family: 'Montserrat', sans-serif;
 }
 }
 @media (min-width: 1080px) {
@@ -575,18 +581,18 @@ html {
   text-align: center;
   text-decoration: underline;
   font-size: 2.5em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
 }
 .bg-about p{
   font-size: 1.25em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
 }
 .bg-about a{
   text-align: center;
   text-decoration: solid;
   font-weight: 300px;
   font-size: 0.85em;
-  font-family:'system.ui';
+  font-family: 'Montserrat', sans-serif;
 }
 .border {
   font-size: 25px;
@@ -712,18 +718,18 @@ html {
   text-align: center;
   text-decoration: underline;
   font-size: 2.5em;
-  font-family:'system-ui';
+    font-family: 'Montserrat', sans-serif;
 }
 .bg-about p{
   font-size: 1.25em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
 }
 .bg-about a{
   text-align: center;
   text-decoration: solid;
   font-weight: 300px;
   font-size: 0.85em;
-  font-family:'system.ui';
+  font-family: 'Montserrat', sans-serif;
 }
 .border {
   font-size: 25px;
@@ -849,18 +855,20 @@ html {
   text-align: center;
   text-decoration: underline;
   font-size: 2.5em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
+
 }
 .bg-about p{
   font-size: 1.25em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
+
 }
 .bg-about a{
   text-align: center;
   text-decoration: solid;
   font-weight: 300px;
   font-size: 0.85em;
-  font-family:'system-ui';
+  font-family: 'Montserrat', sans-serif;
 }
 .border {
   font-size: 25px;
