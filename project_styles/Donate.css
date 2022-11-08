@@ -11,6 +11,7 @@ html {
   justify-content: flex-end;
 }
 .background{
+  background-image:  url(../project_assets/Blood.gif);
   opacity: 90;
   background-attachment: fixed;
   background-position: center center;
