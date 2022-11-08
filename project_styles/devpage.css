@@ -26,6 +26,15 @@ h2{
 	min-height: 100vh;
 	
 }
+
+.logo
+{
+	size: 20px;
+    display:block;
+    top: 0;
+	left: 0;
+	float: left;
+}
 .container{
 	width: 80%;
 	display: block;
@@ -116,6 +125,13 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   justify-content: flex-end;
+}
+.logo
+{
+    display:block;
+    top: 0;
+	left: 0;
+	float: left;
 }
 .row{
     padding:0px;
@@ -219,6 +235,13 @@ h2{
 		background-repeat: no-repeat;
 		justify-content: flex-end;
 	  }
+	  .logo
+{
+    display:block;
+    top: 0;
+	left: 0;
+	float: left;
+}
 	  .row{
 		  padding:0px;
 	  }
@@ -321,6 +344,13 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   justify-content: flex-end;
+}
+.logo
+{
+    display:block;
+    top: 0;
+	left: 0;
+	float: left;
 }
 .row{
     padding:0px;
