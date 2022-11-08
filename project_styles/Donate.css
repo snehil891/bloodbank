@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 20px/1.8 "system-ui";
+  font-family: 'Montserrat', sans-serif;
   background-size:cover ;
   align-items: flex-end;
   background-attachment: fixed;
@@ -22,10 +22,10 @@ html {
 }
 .show-btn {
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   opacity: 0.8;
-  color:#fff;
+  color:rgb(255, 255, 255);
   cursor: pointer;
 }
 .show-btn:hover {
@@ -47,10 +47,10 @@ input[type="checkbox"] {
   display: none;
   top: 50%;
   background: rgb(23, 7, 29);
-  width: 410px;
-  padding: 30px;
+  width: 450px;
+  padding: 40px;
   box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
-  border-radius: 1px;
+  border-radius: 25px;
 }
 #show:checked ~ .container {
   display: block;
@@ -60,7 +60,7 @@ input[type="checkbox"] {
   position: absolute;
   right: 20px;
   top: 15px;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
 }
 .container .close-btn:hover {
@@ -73,21 +73,21 @@ input[type="checkbox"] {
   text-align: center;
 }
 .container form {
-  margin-top: -20px;
+  margin-top: -15px;
 }
 .container form .data {
   height: 35px;
   width: 100%;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 form .data label {
-  font-size: 18px;
+  font-size: 20px;
 }
 form .data input {
   height: 100%;
   width: 100%;
-  padding-left: 5px;
-  font-size: 19px;
+  padding-left: 10px;
+  font-size: 20px;
 }
 form .data input:focus {
   border-color: rgb(144, 68, 68);
@@ -95,12 +95,12 @@ form .data input:focus {
 }
 .container form .gend{
   color: #fff;
-  height: 8px;
+  height: 7px;
 }
 .container form .Gender {
   color: #fff;
   height: 30px;
-  font-size: medium;
+  font-size: 18px;
   word-spacing: 3px;
 }
 form .Dob input {
@@ -111,8 +111,8 @@ form .Dob input {
 }
 .container form .dob{
   color: rgb(255, 255, 255);
-  height: 20px;
-  font-size: larger;
+  height: 15px;
+  font-size: 20px;
 }
 form .btn {
   margin: 20px 0;
@@ -129,6 +129,7 @@ form .btn .inner {
   z-index: -1;
   background: rgb(163, 178, 255); 
 }
+
 form .btn:hover .inner {
   background: red;
 }
@@ -166,7 +167,7 @@ form .btn button {
   .container {
     border-radius: 25px;
     position: absolute;
-    top: 9%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -178,8 +179,8 @@ form .btn button {
     display: none;
     top: 50%;
     background: rgb(23, 7, 29);
-    width: 310px;
-    padding: 22px;
+    width: 320px;
+    padding: 26px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
   }
@@ -199,12 +200,13 @@ form .btn button {
   }
   .container .text {
     color: #fff;
+    height: 40px;
     font-size: 25px;
     font-weight: 600;
     text-align: center;
   }
   .container form {
-    margin-top: -15px;
+    margin-top: -10px;
   }
   .container form .data {
     height: 30px;
@@ -218,21 +220,23 @@ form .btn button {
     height: 100%;
     width: 100%;
     padding-left: 0px;
-    font-size: 15px;
+    font-size: 14px;
   }
   form .data input:focus {
     border-color: rgb(144, 68, 68);
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
+    font-size: 18px;
   }
   .container form .Gender {
     color: #fff;
-    height: 40px;
-    font-size: medium;
+    height: 35px;
+    font-size: 15px;
     margin: 20px 0;
     word-spacing: 3px;
   }
   .container form .dob{
     color: #fff;
+    font-size: 16px;
   }
   form .btn {
     margin: 30px 0;
@@ -340,11 +344,12 @@ form .btn button {
     height: 100%;
     width: 100%;
     padding-left: 10px;
-    font-size: 35px;
+    font-size: 25px;
   }
   form .data input:focus {
     border-color: rgb(144, 68, 68);
-    border-bottom-width: 3px;
+    border-bottom-width: 4px;
+    font-size: 28px;
   }
   .container form .Gender {
     color: #fff;
@@ -474,7 +479,8 @@ form .btn button {
   }
   form .data input:focus {
     border-color: rgb(144, 68, 68);
-    border-bottom-width: 2px;
+    border-bottom-width: 4px;
+    font-size: 22px;
   }
   .container form .Gender {
     color: #fff;
@@ -535,10 +541,10 @@ form .btn button {
   }
   .show-btn {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     opacity: 0.8;
-    color:#fff;
+    color:rgb(255, 255, 255);
     cursor: pointer;
   }
   .show-btn:hover {
@@ -563,7 +569,7 @@ form .btn button {
     width: 450px;
     padding: 40px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
-    border-radius: 1px;
+    border-radius: 25px;
   }
   #show:checked ~ .container {
     display: block;
@@ -573,7 +579,7 @@ form .btn button {
     position: absolute;
     right: 20px;
     top: 15px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
   }
   .container .close-btn:hover {
@@ -581,17 +587,17 @@ form .btn button {
   }
   .container .text {
     color: #fff;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 600;
     text-align: center;
   }
   .container form {
-    margin-top: -20px;
+    margin-top: -15px;
   }
   .container form .data {
     height: 35px;
     width: 100%;
-    margin: 30px 0;
+    margin: 25px 0;
   }
   form .data label {
     font-size: 20px;
@@ -599,21 +605,22 @@ form .btn button {
   form .data input {
     height: 100%;
     width: 100%;
-    padding-left: 5px;
-    font-size: 25px;
+    padding-left: 10px;
+    font-size: 20px;
   }
   form .data input:focus {
     border-color: rgb(144, 68, 68);
-    border-bottom-width: 2px;
+    border-bottom-width: 5px;
+    font-size: 25px;
   }
   .container form .gend{
     color: #fff;
-    height: 8px;
+    height: 7px;
   }
   .container form .Gender {
     color: #fff;
     height: 30px;
-    font-size: medium;
+    font-size: 18px;
     word-spacing: 3px;
   }
   form .Dob input {
@@ -624,8 +631,8 @@ form .btn button {
   }
   .container form .dob{
     color: rgb(255, 255, 255);
-    height: 20px;
-    font-size: larger;
+    height: 15px;
+    font-size: 20px;
   }
   form .btn {
     margin: 20px 0;
