@@ -144,16 +144,6 @@ form .btn button {
   letter-spacing: 1px;
   cursor: pointer;
 }
-.logo{
-  float: left;
-  left: 0;
-  list-style: none;
-  overflow:hidden;
-  position: absolute;
-  top: 0; 
-  width: 70px;
-  height: 70px; 
-}
 @media (max-width:484px) {
   .background{
     background-image:  url(../project_assets/Blood9.webp);
@@ -274,16 +264,6 @@ form .btn button {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  .logo{
-    float: left;
-    left: 0;
-    list-style: none;
-    overflow:hidden;
-    position: absolute;
-    top: 0; 
-    width: 70px;
-    height: 70px; 
   }
 }
 @media (min-width:768px) {
@@ -415,16 +395,6 @@ form .btn button {
     letter-spacing: 1px;
     cursor: pointer;
   }
-  .logo{
-    float: left;
-    left: 0;
-    list-style: none;
-    overflow:hidden;
-    position: absolute;
-    top: 0; 
-    width: 70px;
-    height: 70px; 
-  }
 }
 @media (min-width:900px) {
   .background{
@@ -554,16 +524,6 @@ form .btn button {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  .logo{
-    float: left;
-    left: 0;
-    list-style: none;
-    overflow:hidden;
-    position: absolute;
-    top: 0; 
-    width: 70px;
-    height: 70px;  
   }
 }
 @media (min-width:1080px) {
@@ -697,15 +657,5 @@ form .btn button {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  .logo{
-    float: left;
-    left: 0;
-    list-style: none;
-    overflow:hidden;
-    position: absolute;
-    top: 0; 
-    width: 70px;
-    height: 70px; 
   }
 }
