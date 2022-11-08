@@ -144,7 +144,7 @@ form .btn button {
   letter-spacing: 1px;
   cursor: pointer;
 }
-header .logo{
+.logo{
   float: left;
   left: 0;
   list-style: none;
@@ -535,7 +535,7 @@ header .logo{
     letter-spacing: 1px;
     cursor: pointer;
   }
-  header .logo{
+   .logo{
     float: left;
     left: 0;
     list-style: none;
@@ -678,7 +678,7 @@ header .logo{
     letter-spacing: 1px;
     cursor: pointer;
   }
-  header .logo{
+  .logo{
     float: left;
     left: 0;
     list-style: none;
