@@ -144,6 +144,16 @@ form .btn button {
   letter-spacing: 1px;
   cursor: pointer;
 }
+header .logo{
+  float: left;
+  left: 0;
+  list-style: none;
+  overflow:hidden;
+  position: absolute;
+  top: 0; 
+  width: 50%;
+  height: 50%; 
+}
 @media (max-width:484px) {
   .background{
     background-image:  url(../project_assets/Blood9.webp);
@@ -525,6 +535,16 @@ form .btn button {
     letter-spacing: 1px;
     cursor: pointer;
   }
+  header .logo{
+    float: left;
+    left: 0;
+    list-style: none;
+    overflow:hidden;
+    position: absolute;
+    top: 0; 
+    width: 50%;
+    height: 50%; 
+  }
 }
 @media (min-width:1080px) {
   .background{
@@ -657,5 +677,15 @@ form .btn button {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
+  }
+  header .logo{
+    float: left;
+    left: 0;
+    list-style: none;
+    overflow:hidden;
+    position: absolute;
+    top: 0; 
+    width: 50%;
+    height: 50%; 
   }
 }
