@@ -26,12 +26,11 @@ h2{
 	min-height: 100vh;
 	
 }
-
 .logo
 {
-	size: 20px;
-    display:block;
-    top: 0;
+  position: fixed;
+  display:block;
+  top: 0;
 	left: 0;
 	float: left;
 }
@@ -128,10 +127,11 @@ html {
 }
 .logo
 {
-    display:block;
-    top: 0;
-	left: 0;
-	float: left;
+  position: fixed;
+  display:block;
+  top: 0;
+  left: 0;
+  float: left;
 }
 .row{
     padding:0px;
@@ -236,12 +236,13 @@ h2{
 		justify-content: flex-end;
 	  }
 	  .logo
-{
-    display:block;
-    top: 0;
-	left: 0;
-	float: left;
-}
+	  {
+		position: fixed;
+		display:block;
+		top: 0;
+		  left: 0;
+		  float: left;
+	  }
 	  .row{
 		  padding:0px;
 	  }
@@ -347,8 +348,9 @@ html {
 }
 .logo
 {
-    display:block;
-    top: 0;
+  position: fixed;
+  display:block;
+  top: 0;
 	left: 0;
 	float: left;
 }

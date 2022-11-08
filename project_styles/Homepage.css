@@ -10,6 +10,14 @@ html {
   background-repeat: no-repeat;
   justify-content: flex-end;
 }
+.logo
+{
+  position: fixed;
+  display:block;
+  top: 0;
+	left: 0;
+	float: left;
+}
 .navbar {
   font-size: 25px;
   list-style: none;
@@ -249,6 +257,14 @@ html {
   font-size: 0.95em;
   font-family: 'Montserrat', sans-serif;
 }
+.logo
+{
+  position: fixed;
+  display:block;
+  top: 0;
+	left: 0;
+	float: left;
+}
 }
 @media (min-width:768px) {
   .bgimg-1,
@@ -362,6 +378,14 @@ html {
   font-weight: 300px;
   font-size: 0.85em;
   font-family: 'Montserrat', sans-serif;
+}
+.logo
+{
+  position: fixed;
+  display:block;
+  top: 0;
+	left: 0;
+	float: left;
 }
 }
 @media (min-width:900px) {
@@ -477,6 +501,14 @@ html {
   font-weight: 300px;
   font-size: 0.85em;
   font-family: 'Montserrat', sans-serif;
+}
+.logo
+{
+  position: fixed;
+  display:block;
+  top: 0;
+	left: 0;
+	float: left;
 }
 }
 @media (min-width: 1080px) {
@@ -594,6 +626,14 @@ html {
   font-size: 0.85em;
   font-family: 'Montserrat', sans-serif;
 }
+.logo
+{
+  position: fixed;
+  display:block;
+  top: 0;
+	left: 0;
+	float: left;
+}
 }
 @media (min-width: 1440px) {
   .bgimg-1,
@@ -709,6 +749,14 @@ html {
   font-weight: 300px;
   font-size: 0.85em;
   font-family: 'Montserrat', sans-serif;
+}
+.logo
+{
+  position: fixed;
+  display:block;
+  top: 0;
+	left: 0;
+	float: left;
 }
 }
 @media (min-width: 2160px) {
@@ -827,6 +875,14 @@ html {
   font-weight: 300px;
   font-size: 0.85em;
   font-family: 'Montserrat', sans-serif;
+}
+.logo
+{
+  position: fixed;
+  display:block;
+  top: 0;
+	left: 0;
+	float: left;
 }
 }
 @keyframes animate{
