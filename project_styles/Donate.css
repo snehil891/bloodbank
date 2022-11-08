@@ -221,7 +221,7 @@ form .btn button {
     font-size: 15px;
   }
   form .data input:focus {
-    border-color: #fff;
+    border-color: rgb(144, 68, 68)
     border-bottom-width: 2px;
   }
   .container form .Gender {
@@ -343,7 +343,7 @@ form .btn button {
     font-size: 35px;
   }
   form .data input:focus {
-    border-color: #fff;
+    border-color: rgb(144, 68, 68)
     border-bottom-width: 3px;
   }
   .container form .Gender {
@@ -473,7 +473,7 @@ form .btn button {
     font-size: 20px;
   }
   form .data input:focus {
-    border-color: #fff;
+    border-color: rgb(144, 68, 68)
     border-bottom-width: 2px;
   }
   .container form .Gender {
@@ -603,7 +603,7 @@ form .btn button {
     font-size: 25px;
   }
   form .data input:focus {
-    border-color: #fff;
+    border-color: rgb(144, 68, 68);
     border-bottom-width: 2px;
   }
   .container form .gend{
