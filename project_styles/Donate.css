@@ -90,7 +90,7 @@ form .data input {
   font-size: 19px;
 }
 form .data input:focus {
-  border-color: #fff;
+  border-color: rgb(144, 68, 68);
   border-bottom-width: 2px;
 }
 .container form .gend{
