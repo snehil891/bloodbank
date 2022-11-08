@@ -213,7 +213,7 @@ html {
 .navbar a {
   display: block;
   color: #000000;
-  padding: 14px 8px;
+  padding: 8px 5px;
   text-decoration: none;
 }
 .navbar a:hover {
