@@ -151,8 +151,8 @@ form .btn button {
   overflow:hidden;
   position: absolute;
   top: 0; 
-  width: 50%;
-  height: 50%; 
+  width: 20px;
+  height: 20px; 
 }
 @media (max-width:484px) {
   .background{
@@ -535,15 +535,15 @@ form .btn button {
     letter-spacing: 1px;
     cursor: pointer;
   }
-   .logo{
+  .logo{
     float: left;
     left: 0;
     list-style: none;
     overflow:hidden;
     position: absolute;
     top: 0; 
-    width: 50%;
-    height: 50%; 
+    width: 20px;
+    height: 20px; 
   }
 }
 @media (min-width:1080px) {
@@ -685,7 +685,7 @@ form .btn button {
     overflow:hidden;
     position: absolute;
     top: 0; 
-    width: 50%;
-    height: 50%; 
+    width: 20px;
+    height: 20px; 
   }
 }
