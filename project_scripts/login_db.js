@@ -11,14 +11,12 @@ import {
   Timestamp,
 } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 const firebaseConfig = {
-  apiKey: "AIzaSyAJ1mrcBYnl_M2bG7vfpSwlcm5NnpzsohQ",
-  authDomain: "blood-bank-25293.firebaseapp.com",
-  databaseURL: "https://blood-bank-25293-default-rtdb.firebaseio.com",
-  projectId: "blood-bank-25293",
-  storageBucket: "blood-bank-25293.appspot.com",
-  messagingSenderId: "422166227123",
-  appId: "1:422166227123:web:801967eb7004a2341a28c6",
-  measurementId: "G-TKT0F7M4WL",
+  apiKey: "AIzaSyC-ib62fjrfWgq7jis-8EngXAfRnEaV2t4",
+  authDomain: "blood-bank-3f5d5.firebaseapp.com",
+  projectId: "blood-bank-3f5d5",
+  storageBucket: "blood-bank-3f5d5.appspot.com",
+  messagingSenderId: "934584022747",
+  appId: "1:934584022747:web:da72b3e3d80a408030befe"
 };
 initializeApp(firebaseConfig);
 const db = getFirestore();
