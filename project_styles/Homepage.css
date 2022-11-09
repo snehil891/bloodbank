@@ -207,8 +207,9 @@ html {
 }
 .navbar {
   font-size: 15px;
-  position: absolute;
+  position: relative;
   font-weight: bold;
+  padding: 13px;
 }
 .navbar a {
   display: block;
@@ -327,7 +328,7 @@ html {
 }
 .navbar {
   font-size: 25px;
-  position: absolute;
+  position: relative;
   font-weight: bold;
 }
 .navbar a {
@@ -448,7 +449,7 @@ html {
 }
 .navbar {
   list-style: none;
-  position: absolute;
+  position: relative;
   font-weight: bold;
 }
 .navbar a {
