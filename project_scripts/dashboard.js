@@ -188,7 +188,7 @@ async function change_request_html(blood_group) {
 async function view_blood_request(blood_group) {
   var docs = new Array();
   if (blood_group == "all") {
-    const request_A_minus = query(collectionGroup(db, "A-_donate"));
+    const request_A_minus = query(collectionGroup(db, "A-_request"));
     console.log("viewing");
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot_A_minus = await getDocs(request_A_minus);
@@ -198,7 +198,7 @@ async function view_blood_request(blood_group) {
       docs.push(doc.data());
       // console.log(doc.id, " => ", doc.data());
     });
-    const request_A_plus = query(collectionGroup(db, "A+_donate"));
+    const request_A_plus = query(collectionGroup(db, "A+_request"));
     console.log("viewing");
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot_A_plus = await getDocs(request_A_plus);
@@ -207,7 +207,7 @@ async function view_blood_request(blood_group) {
     querySnapshot_A_plus.forEach((doc) => {
       docs.push(doc.data());
       // console.log(doc.id, " => ", doc.data());
-    }); const request_O_minus = query(collectionGroup(db, "O-_donate"));
+    }); const request_O_minus = query(collectionGroup(db, "O-_request"));
     console.log("viewing");
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot_O_minus = await getDocs(request_O_minus);
@@ -217,7 +217,7 @@ async function view_blood_request(blood_group) {
       docs.push(doc.data());
       // console.log(doc.id, " => ", doc.data());
     });
-    const request_O_plus = query(collectionGroup(db, "O+_donate"));
+    const request_O_plus = query(collectionGroup(db, "O+_request"));
     console.log("viewing");
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot_O_plus = await getDocs(request_O_plus);
@@ -226,7 +226,7 @@ async function view_blood_request(blood_group) {
     querySnapshot_O_plus.forEach((doc) => {
       docs.push(doc.data());
       // console.log(doc.id, " => ", doc.data());
-    }); const request_B_minus = query(collectionGroup(db, "B-_donate"));
+    }); const request_B_minus = query(collectionGroup(db, "B-_request"));
     console.log("viewing");
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot_B_minus = await getDocs(request_B_minus);
@@ -236,7 +236,7 @@ async function view_blood_request(blood_group) {
       docs.push(doc.data());
       // console.log(doc.id, " => ", doc.data());
     });
-    const request_B_plus = query(collectionGroup(db, "B+_donate"));
+    const request_B_plus = query(collectionGroup(db, "B+_request"));
     console.log("viewing");
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot_B_plus = await getDocs(request_B_plus);
@@ -246,7 +246,7 @@ async function view_blood_request(blood_group) {
       docs.push(doc.data());
       // console.log(doc.id, " => ", doc.data());
     });
-    const request_AB_minus = query(collectionGroup(db, "AB-_donate"));
+    const request_AB_minus = query(collectionGroup(db, "AB-_request"));
     console.log("viewing");
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot_AB_minus = await getDocs(request_AB_minus);
@@ -256,7 +256,7 @@ async function view_blood_request(blood_group) {
       docs.push(doc.data());
       // console.log(doc.id, " => ", doc.data());
     });
-    const request_AB_plus = query(collectionGroup(db, "AB+_donate"));
+    const request_AB_plus = query(collectionGroup(db, "AB+_request"));
     console.log("viewing");
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot_AB_plus = await getDocs(request_AB_plus);
