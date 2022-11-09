@@ -140,7 +140,10 @@ function get_request() {
     document.getElementById("required_date").value
   );
   const date2 = new Date();
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+  const diffTime=(patient_required_date-date2);
+  console.log(diffTime);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  console.log(diffDays); 
   if(patient_required_date=="Invalid Date"){
     document.getElementById("patient_required_error").innerHTML="Kindly fill the required date.";
     document.getElementById("patient_required_error").style.color = "red";;
@@ -148,6 +151,8 @@ function get_request() {
   }
   else if(diffDays<0){
     document.getElementById("patient_required_error").innerHTML="Can't request in past";
+    document.getElementById("patient_required_error").style.color = "red";;
+    return false;
   }
   else{
     document.getElementById("patient_required_error").innerHTML="";
