@@ -145,6 +145,13 @@ form .btn button {
   letter-spacing: 1px;
   cursor: pointer;
 }
+.logo
+{
+  position:absolute;
+  display: block;
+  top: 0;
+	left: 0;
+}
 @media (max-width:484px) {
   .background{
     background-image:  url(../project_assets/Blood9.webp);
@@ -268,6 +275,13 @@ form .btn button {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
+  }
+  .logo
+  {
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
   }
 }
 @media (min-width:768px) {
@@ -400,6 +414,13 @@ form .btn button {
     letter-spacing: 1px;
     cursor: pointer;
   }
+  .logo
+  {
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
 }
 @media (min-width:900px) {
   .background{
@@ -531,6 +552,13 @@ form .btn button {
     letter-spacing: 1px;
     cursor: pointer;
   }
+  .logo
+  {
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
 }
 @media (min-width:1080px) {
   .background{
@@ -539,6 +567,13 @@ form .btn button {
     height: 100%;
     width: 100%;
   }
+  .logo
+{
+  position:absolute;
+  display: block;
+  top: 0;
+	left: 0;
+}
   .show-btn {
     padding: 10px 20px;
     font-size: 25px;

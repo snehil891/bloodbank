@@ -19,6 +19,13 @@ html {
   justify-content: center;
   display: flex;
 }
+.logo
+{
+  position:absolute;
+  display: block;
+  top: 0;
+	left: 0;
+}
 .show-btn {
   padding: 10px 20px;
   font-size: 24px;
@@ -142,6 +149,13 @@ form .btn button {
     position: absolute;
     height: 100%;
     width: 100%;
+  }
+  .logo
+  {
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
   }
   .show-btn {
     padding: 10px 20px;
@@ -276,6 +290,13 @@ form .btn button {
     height: 100%;
     width: 100%;
   }
+  .logo
+  {
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
   .show-btn {
     padding: 10px 20px;
     font-size: 35px;
@@ -409,6 +430,13 @@ form .btn button {
     height: 100%;
     width: 100%;
   }
+  .logo
+  {
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
   .show-btn {
     padding: 10px 20px;
     font-size: 30px;
@@ -538,6 +566,13 @@ form .btn button {
     position: absolute;
     height: 100%;
     width: 100%;
+  }
+  .logo
+  {
+    position:absolute;
+    display: block;
+    top: 0;
+    left: 0;
   }
   .show-btn {
     padding: 10px 20px;
