@@ -28,7 +28,7 @@ h2{
 }
 .logo
 {
-  position: fixed;
+  position: absolute;
   display:block;
   top: 0;
 	left: 0;
@@ -127,7 +127,7 @@ html {
 }
 .logo
 {
-  position: fixed;
+  position: absolute;
   display:block;
   top: 0;
   left: 0;
@@ -237,11 +237,11 @@ h2{
 	  }
 	  .logo
 	  {
-		position: fixed;
+		position: absolute;
 		display:block;
 		top: 0;
-		  left: 0;
-		  float: left;
+		left: 0;
+		float: left;
 	  }
 	  .row{
 		  padding:0px;
@@ -348,11 +348,11 @@ html {
 }
 .logo
 {
-  position: fixed;
+  position: absolute;
   display:block;
   top: 0;
-	left: 0;
-	float: left;
+  left: 0;
+  float: left;
 }
 .row{
     padding:0px;
