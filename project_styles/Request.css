@@ -462,10 +462,10 @@ form .btn button {
   }
   .container {
     display: none;
-    top: 50%;
+    top: 50.5%;
     background: rgb(23, 7, 29);
-    width: 360px;
-    padding: 30px;
+    width: 350px;
+    padding: 22px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 1px;
   }
@@ -600,8 +600,8 @@ form .btn button {
     display: none;
     top: 50%;
     background: rgb(23, 7, 29);
-    width: 460px;
-    padding: 35px;
+    width: 450px;
+    padding: 30px;
     box-shadow: 0 0 8px rgba(147, 140, 140, 0.1);
     border-radius: 10px;
   }
