@@ -159,12 +159,13 @@ html {
 .bgimg-1{
   background-image: url("../project_assets/blood_sample3.webp");
   min-height: 95%;
-  max-width: 100%;
+  width: 110%;
   display: flex;
 }
 .bgimg-2 {
   display: flex;
   min-height: auto;
+  width: 110%;
 }
 /* .bgimg-3 {
   display: flex;
@@ -174,7 +175,7 @@ html {
   position: absolute;
   left: 0;
   top: 75%;
-  width: 100%;
+  width: 110%;
   text-align: center;
   color: #000;
 }
@@ -226,6 +227,7 @@ html {
   background: rgb(0, 0, 0);
   color: #fff;
   height: auto;
+  width: 110%;
 }
 .center {
   text-align: center;
@@ -248,6 +250,7 @@ html {
 
 }
 .bg-about p{
+  text-align: center;
   font-size: 1.15em;   
   font-family: 'Montserrat', sans-serif;
 }
