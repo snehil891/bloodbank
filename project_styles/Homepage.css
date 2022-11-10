@@ -403,9 +403,11 @@ html {
     background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/blood_sample3.webp");
+  background-image: url("../project_assets/Homepage_blood.gif");
   height:auto;
   display: flex;
+  max-width: 100%;
+  position: relative;
 }
 .bgimg-2 {
   min-height: 800px;
@@ -451,15 +453,15 @@ html {
   transform: rotate(45deg) translate(20px,20px);
 }
 .navbar {
-  list-style: none;
-  position: relative;
+  list-style: block;
+  position: absolute;
   font-weight: bold;
 }
 .navbar a {
   font-size: 22px;
   float: right;
   display: block;
-  color: #000000;
+  color: #fdfbfb;
   text-align: center;
   padding: 14px 8px;
   text-decoration: none;
