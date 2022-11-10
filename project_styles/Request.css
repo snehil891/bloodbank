@@ -286,16 +286,16 @@ form .btn button {
 @media (min-width:768px) {
   .background{
     background-image:  url(../project_assets/Blood9.webp);
-    position: absolute;
+    position: fixed;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
   .logo
   {
-    position:absolute;
+    position:relative;
     display: block;
     top: 0;
-    left: 0;
+    left: 30px;
   }
   .show-btn {
     padding: 10px 20px;

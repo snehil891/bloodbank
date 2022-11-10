@@ -147,17 +147,17 @@ form .btn button {
 }
 .logo
 {
-  position:absolute;
+  position:relative;
   display: block;
   top: 0;
-	left: 0;
+	left: 30px;
 }
 @media (max-width:484px) {
   .background{
     background-image:  url(../project_assets/Blood9.webp);
-    position: absolute;
+    position: fixed;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
   .show-btn {
     padding: 10px 20px;
@@ -278,18 +278,18 @@ form .btn button {
   }
   .logo
   {
-    position:absolute;
+    position:relative;
     display: block;
     top: 0;
-    left: 0;
+    left: 30px;
   }
 }
 @media (min-width:768px) {
   .background{
     background-image:  url(../project_assets/Blood9.webp);
-    position: absolute;
+    position: fixed;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
   .show-btn {
     padding: 10px 20px;
@@ -416,18 +416,18 @@ form .btn button {
   }
   .logo
   {
-    position:absolute;
+    position:relative;
     display: block;
     top: 0;
-    left: 0;
+    left: 30px;
   }
 }
 @media (min-width:900px) {
   .background{
     background-image:  url(../project_assets/Blood.gif);
-    position: absolute;
+    position: fixed;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
   .show-btn {
     padding: 10px 20px;
@@ -554,25 +554,25 @@ form .btn button {
   }
   .logo
   {
-    position:absolute;
+    position:relative;
     display: block;
     top: 0;
-    left: 0;
+    left: 30px;
   }
 }
 @media (min-width:1080px) {
   .background{
     background-image:  url(../project_assets/Blood.gif);
-    position: absolute;
+    position: fixed;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
   .logo
 {
-  position:absolute;
+  position:relative;
   display: block;
   top: 0;
-	left: 0;
+	left: 30px; 
 }
   .show-btn {
     padding: 10px 20px;
