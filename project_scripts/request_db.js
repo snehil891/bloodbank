@@ -72,6 +72,11 @@ function get_request() {
     document.getElementById("patient_dob_error").style.color = "red";;
     return false;
   }
+  else if(patient_age==0 || patient_age>100 || patient_age<0){
+    document.getElementById("patient_dob_error").innerHTML="Kindly enter valid age.";
+    document.getElementById("patient_dob_error").style.color = "red";;
+    return false;
+  }
   else{
     document.getElementById("patient_dob_error").innerHTML="";
   }
