@@ -157,8 +157,8 @@ html {
   background-size: cover;
 }
 .bgimg-1{
-  background-image: url("../project_assets/blood_sample3.webp");
-  min-height: 95%;
+  background-image: url("../project_assets/blood-5053771.webp");
+  min-height: 110%;
   width: 110%;
   display: flex;
 }
@@ -210,7 +210,7 @@ html {
   font-size: 15px;
   position: relative;
   font-weight: bold;
-  padding: 13px;
+  padding: 12px;
 }
 .navbar a {
   display: block;
@@ -281,7 +281,7 @@ html {
     background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../project_assets/blood_sample3.webp");
+  background-image: url("../project_assets/blood-5053771.webp");
   height:auto;
   z-index: -1;
   display: flex;
