@@ -1,87 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="../project_styles/Donate.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-      <title>Donate-page</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./project_styles/Donate.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Donate page</title>
    </head>
-   <body>
-
-      <div class="background">
-         <div class="logo">
-            <a href="../Homepage.html"><img alt="GITAM LOGO" width=60px height=60px src="./project_assets/gitam-logo.webp"></a>
-          </div>
-      <video width="100%" height="auto" id="video" preload="metadata">
-      <source src="../Blood.gif" type="video/gif">
-     </video>
-     </div>
-      <div class="center">
-         <input type="checkbox" id="show">
-         <label for="show" class="show-btn">View Donation Form</label>
-         <div class="container">
-            <label for="show" class="close-btn fas fa-times" title="close"></label>
-            <div class="text"><u>
-               Donation Form
-            </u></div>
-            <form action="#">
-               <div class="data">
-                  <input type="text" id="Donator_name" placeholder="Name" required>
-               </div>
-               <p id="donator_name_error"></p>
-               <div class="Dob">
-                  <h2 class="dob">Date Of Birth</h2>
-                  <input type="date" id="Donator_dob" placeholder="DOB" required>
-               </div>
-               <p id="donator_dob_error"></p>
-               <div class="Gender" aria-required="true">
-                <h3 class="gend">Select Donor's Gender</h3>
-                <input type="radio" name="gender" id="male">
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="female">
-                <label for="female">Female</label>
-                <input type="radio" name="gender" id="others">
-                <label for="others">Others</label>
-               </div>
-               <p id="donator_gender_error"></p>
-               <div class="data">
-                <input type="email" id="Donator_email" placeholder="Enter donor's E-mail" required>
-               </div>
-               <p id="donator_email_error"></p>
-               <div class="data">
-                  <input type="tel" id="Donator_phone" placeholder="Enter donor's Phone number" required minlength="10" maxlength="10">
-                 </div> 
-                 <p id="donator_phone_error"></p>
-               <div class="data">
-                <input type="text" id="Donator_address" placeholder="Enter the address" required>
-               </div>
-               <p id="donator_address_error"></p>
-               <div> 
-                <select id="Blood_group" aria-required="true">
-                    <option value="">Select the blood group</option>
-                    <div class="dropup"></div>
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                </select> 
-               </div>
-               <p id="donator_blood_error"></p>
-               <div class="btn">
-                  <div class="inner"></div>
-                  <button id="submit_donate">Submit</button>
-               </div>
-            </form>
+<body>
+  <div class="container">
+    <div class="title">Donate </div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+            <div class="input-box">
+               <span class="details">Full Name</span>
+                  <input type="text" placeholder="Enter your name" required>
          </div>
-      </div>
-      <script src=' https://code.jquery.com/jquery-3.6.1.min.js';></script>
-      <script src="../project_scripts/page_functionality.js"></script>
-      <script type="module" src="../project_scripts/db_transactions.js"></script>
- </body>
+         <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+         </div>
+         <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+         </div>
+         <div class="input-box">
+            <span class="details">DOB</span>
+            <input type="date" placeholder="Date of Birth" required>
+         </div>
+         <div class="input-box">
+               <span class="details">Blood Group</span>
+                  <input type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
+                     <datalist id="blood-group">
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                     </datalist>
+          </div>
+         <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your address" required>
+         </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Others</span>
+            </label>
+          </div>
+        </div>
+        <div>
+         
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
 </html>
