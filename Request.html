@@ -14,40 +14,47 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input id="Patient_name" type="text" placeholder="Enter your name" required>
           </div>
+          <p id="patient_name_error"></p>
           <div class="input-box">
             <span class="details">Age</span>
-            <input type="text" placeholder="Enter your Age" required>
+            <input id="patient_dob" type="text" placeholder="Enter your Age" required>
           </div>
+          <p id="patient_dob_error"></p>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input id="patient_email" type="text" placeholder="Enter your email" required>
           </div>
+          <p id="patient_email_error"></p>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input id="patient_phone"type="text" placeholder="Enter your number" required>
           </div>
+          <p id="patient_phone_error"></p>
           <div class="input-box">
             <span class="details">Required Date</span>
-            <input type="date" placeholder="required date" required>
+            <input id="required_date" type="date" placeholder="required date" required>
           </div>
+          <p id="patient_required_error"></p>
           <div class="input-box">
             <span class="details">No Of Units Required</span>
-            <input type="text" placeholder="Enter No of units required" required>
+            <input id="no_of_units" type="text" placeholder="Enter No of units required" required>
           </div>
+          <p id="patient_units_error"></p>
           <div class="input-box ">
             <span class="details">Hospital</span>
-            <input type="text" placeholder="Hospital Name" required>
+            <input id="Hospital_name" type="text" placeholder="Hospital Name" required>
           </div>
+          <p id="patient_hospital_error"></p>
           <div class="input-box">
             <span class="details">Purpose</span>
-            <input type="text" placeholder="Enter your purpose" required>
+            <input id="purpose_request" type="text" placeholder="Enter your purpose" required>
           </div>
-          
+          <p id="patient_purpose_error"></p>
           <div class="input-box">
             <span class="details">Blood Group</span>
-            <input type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
+            <input id="Blood_group_request" type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
                             <datalist id="blood-group">
                                 <option>A+</option>
                                 <option>A-</option>
@@ -60,6 +67,7 @@
                             </datalist>
 
           </div>
+          <p id="patient_blood_error"></p>
         </div>
         <div class="gender-details">
           <input type="radio" name="gender" id="dot-1">
@@ -81,12 +89,15 @@
             </label>
           </div>
         </div>
+        <p id="patient_gender_error"></p>
         <div class="button">
-          <input type="submit" value="Submit">
+          <input id="submit_request" type="submit" value="Submit">
         </div>
       </form>
     </div>
   </div>
-
+  <script type="module" src="./project_scripts/request_db.js"></script>
+  <script type="module" src="./project_scripts/db_transactions.js"></script>
+  <script type="module" src="./project_scripts/page_functionality.js"></script>
 </body>
 </html>

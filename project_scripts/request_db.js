@@ -35,13 +35,13 @@ initializeApp(firebaseConfig);
 const db = getFirestore();
 
 function get_value_gender() {
-  if (document.getElementById("Male").checked) {
+  if (document.getElementById("dot-1").checked) {
     return "male";
   }
-  if (document.getElementById("Female").checked) {
+  if (document.getElementById("dot-2").checked) {
     return "female";
   }
-  if (document.getElementById("Others").checked) {
+  if (document.getElementById("dot-3").checked) {
     return "others";
   }
 }
@@ -57,15 +57,6 @@ function get_request() {
   else{
     document.getElementById("patient_name_error").innerHTML="";
   }
-  const Hospital_name = document.getElementById("Hospital_name").value;
-  if(Hospital_name.length==0){
-    document.getElementById("patient_hospital_error").innerHTML="Kindly fill the hospital name.";
-    document.getElementById("patient_hospital_error").style.color = "red";
-    return false;
-  }
-  else{
-    document.getElementById("patient_hospital_error").innerHTML="";
-  }
   const patient_age = document.getElementById("patient_dob").value;
   if(patient_age.length==0){
     document.getElementById("patient_dob_error").innerHTML="Kindly enter age.";
@@ -79,15 +70,6 @@ function get_request() {
   }
   else{
     document.getElementById("patient_dob_error").innerHTML="";
-  }
-  const patient_gender = get_value_gender();
-  if(!patient_gender){
-    document.getElementById("patient_gender_error").innerHTML="Kindly select gender.";
-    document.getElementById("patient_gender_error").style.color = "red";;
-    return false;
-  }
-  else{
-    document.getElementById("patient_gender_error").innerHTML="";
   }
   const patient_email = document.getElementById("patient_email").value;
   if (!((patient_email.includes("@") && patient_email.includes(".in"))||(patient_email.includes("@") && patient_email.includes(".com"))||(patient_email.includes("@") && patient_email.includes(".edu")))){  
@@ -107,14 +89,26 @@ function get_request() {
   else{
     document.getElementById("patient_phone_error").innerHTML="";
   }
-  const purpose_request = document.getElementById("purpose_request").value;
-  if(purpose_request.length==0){
-    document.getElementById("patient_purpose_error").innerHTML="Kindly provide purpose.";
-    document.getElementById("patient_purpose_error").style.color = "red";
+  const patient_required_date = new Date(
+    document.getElementById("required_date").value
+  );
+  const date2 = new Date();
+  const diffTime=(patient_required_date-date2);
+  console.log(diffTime);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  console.log(diffDays); 
+  if(patient_required_date=="Invalid Date"){
+    document.getElementById("patient_required_error").innerHTML="Kindly fill the required date.";
+    document.getElementById("patient_required_error").style.color = "red";;
+    return false;
+  }
+  else if(diffDays<0){
+    document.getElementById("patient_required_error").innerHTML="Can't request in past";
+    document.getElementById("patient_required_error").style.color = "red";;
     return false;
   }
   else{
-    document.getElementById("patient_purpose_error").innerHTML="";
+    document.getElementById("patient_required_error").innerHTML="";
   }
   const no_of_units = document.getElementById("no_of_units").value;
   if(no_of_units<=0){
@@ -141,38 +135,52 @@ function get_request() {
   else{
     document.getElementById("patient_units_error").innerHTML="";
   }
-  const patient_required_date = new Date(
-    document.getElementById("required_date").value
-  );
-  const date2 = new Date();
-  const diffTime=(patient_required_date-date2);
-  console.log(diffTime);
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  console.log(diffDays); 
-  if(patient_required_date=="Invalid Date"){
-    document.getElementById("patient_required_error").innerHTML="Kindly fill the required date.";
-    document.getElementById("patient_required_error").style.color = "red";;
-    return false;
-  }
-  else if(diffDays<0){
-    document.getElementById("patient_required_error").innerHTML="Can't request in past";
-    document.getElementById("patient_required_error").style.color = "red";;
+  const Hospital_name = document.getElementById("Hospital_name").value;
+  if(Hospital_name.length==0){
+    document.getElementById("patient_hospital_error").innerHTML="Kindly fill the hospital name.";
+    document.getElementById("patient_hospital_error").style.color = "red";
     return false;
   }
   else{
-    document.getElementById("patient_required_error").innerHTML="";
+    document.getElementById("patient_hospital_error").innerHTML="";
   }
-  const select = document.getElementById("Blood_group_request");
-  const patient_blood = select.options[select.selectedIndex].value;
+  
+  const purpose_request = document.getElementById("purpose_request").value;
+  if(purpose_request.length==0){
+    document.getElementById("patient_purpose_error").innerHTML="Kindly provide purpose.";
+    document.getElementById("patient_purpose_error").style.color = "red";
+    return false;
+  }
+  else{
+    document.getElementById("patient_purpose_error").innerHTML="";
+  }
+  const patient_blood = document.getElementById("Blood_group_request").value;
+  const blood_grp = ["A+","B+","O+","AB+","A-","B-","O-","AB-"]
+  // const patient_blood = select.options[select.selectedIndex].value;
   if(!patient_blood){
     document.getElementById("patient_blood_error").innerHTML="Kindly select blood group.";
-    document.getElementById("patient_blood_error").style.color = "red";;
+    document.getElementById("patient_blood_error").style.color = "red";
     return false;
+  }
+  else if(!blood_grp.includes(patient_blood)){
+    document.getElementById("patient_blood_error").innerHTML="Kindly select a valid blood group.";
+    document.getElementById("patient_blood_error").style.color = "red";
+    return false;  
   }
   else{
 
     document.getElementById("patient_blood_error").innerHTML="";
   }
+  const patient_gender = get_value_gender();
+  if(!patient_gender){
+    document.getElementById("patient_gender_error").innerHTML="Kindly select gender.";
+    document.getElementById("patient_gender_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("patient_gender_error").innerHTML="";
+  }
+  
   return [
     no_of_units, //1
     patient_name, //2
