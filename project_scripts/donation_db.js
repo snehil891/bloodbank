@@ -47,24 +47,6 @@ function get_donation() {
   else{
     document.getElementById("donator_name_error").innerHTML="";
   }
-  const donator_dob = new Date(document.getElementById("Donator_dob").value);
-  if(donator_dob=="Invalid Date"){
-    document.getElementById("donator_dob_error").innerHTML="Invalid DOB.";
-    document.getElementById("donator_dob_error").style.color = "red";;
-    return false;
-  }
-  else{
-    document.getElementById("donator_dob_error").innerHTML="";
-  }
-  const donator_gender = get_value_gender();
-  if(!donator_gender){
-    document.getElementById("donator_gender_error").innerHTML="Select a gender.";
-    document.getElementById("donator_gender_error").style.color = "red";;
-    return false;
-  }
-  else{
-    document.getElementById("donator_gender_error").innerHTML="";
-  }
   const donator_email = document.getElementById("Donator_email").value;
   if (!((donator_email.includes("@") && donator_email.includes(".in"))||(donator_email.includes("@") && donator_email.includes(".com"))||(donator_email.includes("@") && donator_email.includes(".edu")))){  
     document.getElementById("donator_email_error").innerHTML="Enter a valid E-mail.";
@@ -83,14 +65,14 @@ function get_donation() {
   else{
     document.getElementById("donator_phone_error").innerHTML="";
   }
-  const donator_address = document.getElementById("Donator_address").value;
-  if(donator_address.length==0){
-    document.getElementById("donator_address_error").innerHTML="Kindly fill the address.";
-    document.getElementById("donator_address_error").style.color = "red";;
+  const donator_dob = new Date(document.getElementById("Donator_dob").value);
+  if(donator_dob=="Invalid Date"){
+    document.getElementById("donator_dob_error").innerHTML="Invalid DOB.";
+    document.getElementById("donator_dob_error").style.color = "red";;
     return false;
   }
   else{
-    document.getElementById("donator_address_error").innerHTML="";
+    document.getElementById("donator_dob_error").innerHTML="";
   }
   const select = document.getElementById("Blood_group");
   const donator_blood = select.options[select.selectedIndex].value;
@@ -103,6 +85,27 @@ function get_donation() {
   else{
     document.getElementById("donator_blood_error").innerHTML="";
   }
+  const donator_address = document.getElementById("Donator_address").value;
+  if(donator_address.length==0){
+    document.getElementById("donator_address_error").innerHTML="Kindly fill the address.";
+    document.getElementById("donator_address_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_address_error").innerHTML="";
+  }
+  const donator_gender = get_value_gender();
+  if(!donator_gender){
+    document.getElementById("donator_gender_error").innerHTML="Select a gender.";
+    document.getElementById("donator_gender_error").style.color = "red";;
+    return false;
+  }
+  else{
+    document.getElementById("donator_gender_error").innerHTML="";
+  }
+  
+  
+  
   return [
     donator_name,
     donator_dob,

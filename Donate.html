@@ -16,18 +16,25 @@
                <span class="details">Full Name</span>
                   <input id="Donator_name" type="text" placeholder="Enter your name" required>
          </div>
+         <p id="donator_name_error"></p>
          <div class="input-box">
             <span class="details" id="">Email</span>
             <input id="Donator_email" type="text" placeholder="Enter your email" required>
          </div>
+         
+         <p id="donator_email_error"></p>
          <div class="input-box">
             <span class="details">Phone Number</span>
             <input id="Donator_phone" type="tel" minlength="10" maxlength="10" placeholder="Enter your number" required>
          </div>
+         
+         <p id="donator_phone_error"></p>
          <div class="input-box">
             <span class="details">DOB</span>
             <input id="Donator_dob" type="date" placeholder="Date of Birth" required>
          </div>
+         
+         <p id="donator_dob_error"></p>
          <div class="input-box">
                <span class="details">Blood Group</span>
                   <input id="Blood_group" type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
@@ -42,10 +49,14 @@
                         <option>AB-</option>
                      </datalist>
           </div>
+          
+         <p id="donator_blood_error"></p>
          <div class="input-box">
             <span class="details">Address</span>
             <input id="Donator_address" type="text" placeholder="Enter your address" required>
          </div>
+         
+         <p id="donator_address_error"></p>
         <div id="Blood_group" class="gender-details">
           <input type="radio" name="gender" id="dot-1">
           <input type="radio" name="gender" id="dot-2">
@@ -65,6 +76,8 @@
             <span id="others" class="gender">Others</span>
             </label>
           </div>
+          
+         <p id="donator_gender_error"></p>
         </div>
         <div>
         </div>
