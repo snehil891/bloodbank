@@ -24,13 +24,13 @@ initializeApp(firebaseConfig);
 const db = getFirestore();
 
 function get_value_gender() {
-  if (document.getElementById("male").checked) {
+  if (document.getElementById("dot-1").checked) {
     return "male";
   }
-  if (document.getElementById("female").checked) {
+  if (document.getElementById("dot-2").checked) {
     return "female";
   }
-  if (document.getElementById("others").checked) {
+  if (document.getElementById("dot-3").checked) {
     return "others";
   }
 }
@@ -74,8 +74,8 @@ function get_donation() {
   else{
     document.getElementById("donator_dob_error").innerHTML="";
   }
-  const select = document.getElementById("Blood_group");
-  const donator_blood = select.options[select.selectedIndex].value;
+  const donator_blood = document.getElementById("Blood_group").value;
+  // const donator_blood = select.options[select.selectedIndex].value;
   console.log(donator_blood);
   if(!donator_blood){
     document.getElementById("donator_blood_error").innerHTML="Kindly select blood group.";
