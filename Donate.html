@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./project_styles/Donate.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Donate page</title>
+     <title>Donation page</title>
    </head>
 <body>
   <div class="container">
@@ -14,23 +14,23 @@
         <div class="user-details">
             <div class="input-box">
                <span class="details">Full Name</span>
-                  <input type="text" placeholder="Enter your name" required>
+                  <input id="donator_name" type="text" placeholder="Enter your name" required>
          </div>
          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <span class="details" id="">Email</span>
+            <input id="Donator_email" type="text" placeholder="Enter your email" required>
          </div>
          <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input id="Donator_phone" type="tel" minlength="10" maxlength="10" placeholder="Enter your number" required>
          </div>
          <div class="input-box">
             <span class="details">DOB</span>
-            <input type="date" placeholder="Date of Birth" required>
+            <input id="Donator_dob" type="date" placeholder="Date of Birth" required>
          </div>
          <div class="input-box">
                <span class="details">Blood Group</span>
-                  <input type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
+                  <input id="Blood_group" type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
                      <datalist id="blood-group">
                         <option>A+</option>
                         <option>A-</option>
@@ -44,37 +44,38 @@
           </div>
          <div class="input-box">
             <span class="details">Address</span>
-            <input type="text" placeholder="Enter your address" required>
+            <input id="Donator_address" type="text" placeholder="Enter your address" required>
          </div>
-        <div class="gender-details">
+        <div id="Blood_group" class="gender-details">
           <input type="radio" name="gender" id="dot-1">
           <input type="radio" name="gender" id="dot-2">
           <input type="radio" name="gender" id="dot-3">
           <span class="gender-title">Gender</span>
-          <div class="category">
+          <div id="" class="category">
             <label for="dot-1">
             <span class="dot one"></span>
-            <span class="gender">Male</span>
+            <span id="male" class="gender">Male</span>
           </label>
           <label for="dot-2">
             <span class="dot two"></span>
-            <span class="gender">Female</span>
+            <span id="female" class="gender">Female</span>
           </label>
           <label for="dot-3">
             <span class="dot three"></span>
-            <span class="gender">Others</span>
+            <span id="others" class="gender">Others</span>
             </label>
           </div>
         </div>
         <div>
-         
         </div>
         <div class="button">
-          <input type="submit" value="Submit">
+          <input id="submit_donate" type="submit" value="Submit">
         </div>
       </form>
     </div>
   </div>
-
+<script type="module" src="./project_scripts/donation_db.js"></script>
+<script type="module" src="./project_scripts/db_transactions.js"></script>
+<script type="module" src="./project_scripts/page_functionality.js"></script>
 </body>
 </html>
