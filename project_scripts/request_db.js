@@ -155,7 +155,7 @@ function get_request() {
     document.getElementById("patient_purpose_error").innerHTML="";
   }
   const patient_blood = document.getElementById("Blood_group_request").value;
-  const blood_grp = ["A+","B+","O+","AB+","A-","B-","O-","AB-"]
+  const blood_grp = ["A+","B+","O+","AB+","A-","B-","O-","AB-","Others"]
   // const patient_blood = select.options[select.selectedIndex].value;
   if(!patient_blood){
     document.getElementById("patient_blood_error").innerHTML="Kindly select blood group.";
