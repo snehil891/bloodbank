@@ -171,7 +171,7 @@ async function view_blood_donate(blood_group) {
   docs.sort(function(a,b) {
     var date1= new Date(a.Date_of_creation);
     var date2= new Date(b.Date_of_creation);
-    const time = date1-date2;
+    const time = date2-date1;
     return time / (1000 * 60 * 60 * 24);
   });
   // console.log(docs);
