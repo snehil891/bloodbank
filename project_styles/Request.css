@@ -73,8 +73,8 @@ form .input-box span.details{
  }
  form .category{
    display: flex;
-   width: 80%;
-   margin: 14px 0 ;
+   width: 100%;
+   margin: 14px 10px ;
    justify-content: space-between;
  }
  form .category label{
