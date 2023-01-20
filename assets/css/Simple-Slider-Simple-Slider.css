@@ -7,9 +7,11 @@
 }
 
 .simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
-  width: 50px;
+  width: 0px;
   margin-left: 20px;
   margin-right: 20px;
+  color: #ffffff;
+  transition-timing-function: ease-in-out;
 }
 
 @media (max-width:767px) {

@@ -1,5 +1,5 @@
 footer {
-  background-color: #292c2f;
+  background-color: #000000;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -13,12 +13,12 @@ footer {
 
 .footer-navigation h3 {
   margin: 0;
-  font: normal 25px sans-serif;
+  font: normal 20px sans-serif;
   margin-bottom: 20px;
   color: #fff;
 }
 
-.footer-navigation h3 a {
+.footer-navigation a {
   text-decoration: none;
   color: #fff;
 }
@@ -49,12 +49,12 @@ footer {
   display: inline-block;
   color: #ffffff;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .footer-contacts p a {
-  color: #5383d3;
-  text-decoration: none;
+  color: #0060ff;
+  text-decoration: underline;
 }
 
 .fa.footer-contacts-icon {
@@ -74,7 +74,7 @@ span.new-line-span {
   font-weight: normal;
   display: block;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2;
 }
 
@@ -89,7 +89,7 @@ span.new-line-span {
 .footer-about p {
   line-height: 25px;
   color: #fcfcfc;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: normal;
   margin: 0;
 }

@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/4-Column-Team-Block---Circles.css">
     <link rel="stylesheet" href="assets/css/Advanced-NavBar---Multi-dropdown.css">
+    <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
     <link rel="stylesheet" href="assets/css/dh-navbar-inverse-1.css">
     <link rel="stylesheet" href="assets/css/dh-navbar-inverse-2.css">
     <link rel="stylesheet" href="assets/css/dh-navbar-inverse.css">
+    <link rel="stylesheet" href="assets/css/dh-row-text-image-right-responsive-1.css">
     <link rel="stylesheet" href="assets/css/dh-row-text-image-right-responsive.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Image_center-1.css">
     <link rel="stylesheet" href="assets/css/Image_center.css">
     <link rel="stylesheet" href="assets/css/Pretty-Footer--1.css">
     <link rel="stylesheet" href="assets/css/Pretty-Footer-.css">
@@ -24,19 +28,20 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Swipe-Slider-6-styles.min.css">
     <link rel="stylesheet" href="assets/css/Team-icons.css">
+    <link rel="stylesheet" href="assets/css/Team-with-rotating-cards-1.css">
+    <link rel="stylesheet" href="assets/css/Team-with-rotating-cards.css">
     <link rel="stylesheet" href="assets/css/Timeline---Gabriela-Carvalho.css">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div><a class="navbar-brand" style="padding:0px;margin-left:0px;height:78px;" href="Homepage.html"> <img class="img-fluid" src="assets/img/gitam%20bloodbank%20logo.png"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="background-color: #ffffff;"></span></button></div>
+            <div><a class="navbar-brand" style="padding:0px;margin-left:0px;height:78px;" href="#"> <img class="img-fluid" src="assets/img/bloodbank%20logo.png"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background-color: #ffffff;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="background-color: #ffffff;"></span></button></div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto" style="margin-top:13px;">
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" href="Homepage.html">Home </a></li>
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:100" href="Developers.html">DEVELOPERS</a></li>
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:100" href="Donate.html">DOnaTE</a></li>
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" href="Request.html">REQUEST</a></li>
+                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" href="#">Home </a></li>
+                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:100" href="#areas">DOnaTE</a></li>
+                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" href="#diferencial">REQUEST</a></li>
                 </ul>
             </div>
         </div>
@@ -47,9 +52,9 @@
     <div class="simple-slider">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: url(&quot;assets/img/GIMSR(TOP).webp&quot;) center center / cover no-repeat;"></div>
-                <div class="swiper-slide" style="background: url(&quot;assets/img/GIMSR(Front).webp&quot;) center center / cover no-repeat;"></div>
-                <div class="swiper-slide" style="background: url(&quot;assets/img/Gitam(Top0.webp&quot;) center center / cover no-repeat;"></div>
+                <div class="swiper-slide" style="background: url(&quot;assets/img/GIMSR(TOP).webp&quot;) center center / cover no-repeat;width: 100%;"></div>
+                <div class="swiper-slide" style="background: url(&quot;assets/img/GIMSR(Front).webp&quot;) center center / cover no-repeat;width: 100%;"></div>
+                <div class="swiper-slide" style="background: url(&quot;assets/img/Gitam(Top0.webp&quot;) center center / cover no-repeat;width: 100%;"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -60,29 +65,103 @@
         <div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-image: url(&quot;assets/img/earth-4861456.webp&quot;);background-size: cover;height: 400px;background-position: center;">
             <div></div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding:20px;">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding: 15px;">
             <h1>AIM</h1>
             <hr>
-            <p>This Blood Bank is an initiative by a group of GITAM B.Tech CSE students to provide the city with a solution for any issue related with Blood Donation/Acceptance. We aim at making this website reachable enough to anyone who's in need, instantly! GITAM Blood Bank is committed on providing the patients with an online portal where they can request for blood or take an appointment if volunteering for blood donation!</p>
-            <div style="text-align:center"></div>
+            <p style="font-size: 20px;">This Blood Bank is an initiative by a group of GITAM B.Tech CSE students to provide the city with a solution for any issue related with Blood Donation/Acceptance. We aim at making this website reachable enough to anyone who's in need, instantly! GITAM Blood Bank is committed on providing the patients with an online portal where they can request for blood or take an appointment if volunteering for blood donation!</p>
         </div>
     </div>
     <div class="row clearmargin clearpadding row-image-txt">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding:20px;">
             <h1>OBJECTIVE</h1>
             <hr>
-            <p>With this facility being provided to the people, they will no more need to rush to the hospital for searching for blood or when volunteering up for blood donation. People can raise a request for either of the two and we will revert back as soon as possible.</p>
-            <div style="text-align:center"></div>
+            <p style="font-size: 20px;">With this facility being provided to the people, they will no more need to rush to the hospital for searching for blood or when volunteering up for blood donation. People can raise a request for either of the two and we will revert back as soon as possible.</p>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-image: url(&quot;assets/img/Blood5.webp&quot;);background-size: cover;height: 400px;background-position: center;">
+        <div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-image: url(&quot;assets/img/blood-5053771.webp&quot;);background-size: cover;height: 400px;background-position: center;">
             <div></div>
         </div>
     </div>
+    <h1>Meet The Developers Of The Website</h1>
+    <h1>Under the guidance of</h1><img class="center" src="assets/img/YASHWANTSIR.webp">
+    <h1>Yashwanth Amanapu</h1><div class="py-5 team4">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-7 text-center">
+        <h1 class="mb-3">Built By</h1>
+      </div>
+    </div>
+    <div class="row">
+      <!-- column  -->
+      <div class="col-lg-3 mb-4">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/img/snehil.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Snehil Sah</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Row -->
+      </div>
+      <!-- column  -->
+      <!-- column  -->
+      <div class="col-lg-3 mb-4">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/img/shashank.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Shashank Sahay</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Row -->
+      </div>
+      <!-- column  -->
+      <!-- column  -->
+      <div class="col-lg-3 mb-4">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/img/harsha.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">S Harsha Kumar</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Row -->
+      </div>
+      <!-- column  -->
+      <!-- column  -->
+      <div class="col-lg-3 mb-4">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/img/sudheer.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">P Sudheer Varma</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Row -->
+      </div>
+    </div>
+  </div>
+</div>
     <footer>
         <div class="row">
             <div class="col-sm-6 col-md-4 footer-navigation">
                 <h3><a href="#">GITAMBloodBank</a></h3>
-                <p class="links"><a href="Homepage.html">Home</a><strong> · </strong><a href="Developers.html">Developers</a><strong> · </strong><a href="Donate.html">Donate</a><strong> · </strong><a href="Request.html">Request</a><strong>&nbsp;</strong></p>
+                <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Developers</a><strong> · </strong><a href="#">Donate</a><strong> · </strong><a href="#">Request</a><strong>&nbsp;</strong></p>
             </div>
             <div class="col-sm-6 col-md-4 footer-contacts">
                 <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
@@ -92,7 +171,7 @@
                     <p class="footer-center-info email text-start"> +91 98850 96787</p>
                 </div>
                 <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                    <p> <a>gitambloodbank@gmail.com</a></p>
+                    <p> <a style="text-decoration: underline;color: blue;">gitambloodbank@gmail.com</a></p>
                 </div>
             </div>
             <div class="col-md-4 footer-about">
