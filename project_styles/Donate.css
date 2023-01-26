@@ -1,33 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
+ 
 }
-body{
-  height: 100vh;
+body{ 
+  background: linear-gradient(135deg, #ff2424, #ffffff)
+  }
 
-  padding: 10px;
-  background: linear-gradient(135deg, #ff2424, #ffffff);
-}
-.container{
-  top: 50%;
-  bottom: 50%;
-  margin-top: 60px;
-  max-width: 700px;
+
+.formcard{  
+  max-width: 50vw;
+  height: 100%;
   width: 100%;
   background-color: #fff;
-  padding: 25px 30px;
+  padding: 18px 20px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
-.container .title{
+.formcard .title{
   font-size: 25px;
   font-weight: 500;
   position: relative;
 }
-.container .title::before{
+.formcard .title::before{
   content: "";
   position: absolute;
   left: 0;
@@ -59,9 +58,9 @@ form .input-box span.details{
   font-size: 16px;
   border-radius: 5px;
   padding-left: 15px;
-  border: 1px solid rgb(128, 128, 128);
+  border: 1px solid #ccc;
   border-bottom-width: 2px;
-  transition: all 2s ease;
+  transition: all 0.3s ease;
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
@@ -73,8 +72,8 @@ form .input-box span.details{
  }
  form .category{
    display: flex;
-   width: 100%;
-   margin: 14px 10px ;
+   width: 80%;
+   margin: 14px 0 ;
    justify-content: space-between;
  }
  form .category label{
@@ -94,7 +93,7 @@ form .input-box span.details{
  #dot-1:checked ~ .category label .one,
  #dot-2:checked ~ .category label .two,
  #dot-3:checked ~ .category label .three{
-   background: #020145;
+   background: #9b59b6;
    border-color: #d9d9d9;
  }
  form input[type="radio"]{
@@ -102,7 +101,7 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 35px 0;
  }
  form .button input{
   height: 100%;
@@ -124,6 +123,7 @@ form .input-box span.details{
  @media(max-width: 584px){
  .container{
   max-width: 100%;
+  
 }
 form .user-details .input-box{
     margin-bottom: 15px;
@@ -134,7 +134,7 @@ form .user-details .input-box{
   }
   .content form .user-details{
     max-height: 300px;
-    overflow-y: scroll;
+    overflow-y:visible;
   }
   .user-details::-webkit-scrollbar{
     width: 5px;
@@ -144,35 +144,15 @@ form .user-details .input-box{
   .container .content .category{
     flex-direction: column;
   }
-}
- .button{
-  height: 45px;
-  margin: 35px 0
- }
-.button input{
- height: 100%;
- width: 100%;
- border-radius: 5px;
- border: none;
- color: #fff;
- font-size: 18px;
- font-weight: 500;
- letter-spacing: 1px;
- cursor: pointer;
- transition: all 0.3s ease;
- background: linear-gradient(135deg, #ff0000, #fc0909);
-}
-.button input:hover{
- /* transform: scale(0.99); */
- background: linear-gradient(135deg, #ff0000, #ffffff);
- }
- .btn {
-  background-color: #fffafa; /* Green */
-  border-radius: 10px;
-  color: rgb(0, 0, 0);
-  padding: 10px 22px;
-  text-align: center;
-  text-decoration: none;
 
-  font-size: 16px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+
+.formcard{
+ height: 100vh;
+max-width: 100%;
+bottom: 0%;
+top: 0%;
+}
 }
