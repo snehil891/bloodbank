@@ -49,7 +49,7 @@
          <p id="donator_dob_error"></p>
          <div class="input-box">
                <span class="details">Blood Group</span>
-                  <input id="Blood_group" type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
+                  <input id="Blood_group" placeholder="Blood Group" list="blood-group" autocomplete="off" required>
                      <datalist id="blood-group">
                         <option>A+</option>
                         <option>A-</option>
@@ -66,7 +66,7 @@
          <p id="donator_blood_error"></p>
          <div class="input-box">
           <span class="details">Gender</span>
-          <input id="Gender" type="text" name="loggender" class="form-style" placeholder="Gender" id="loggender" list="gender" autocomplete="off" required>
+          <input id="Gender" type="text" placeholder="Gender" list="gender" autocomplete="off" required>
              <datalist id="gender">
                 <option>Male</option>
                 <option>Female</option>  
@@ -75,10 +75,11 @@
          </div>
          
           <p id="donator_gender_error"></p>
-          <div class="input-box col-12">
+          <div class="input-box">
             <span class="details">Address</span>
-     <textarea class="col-12 " placeholder="Enter Your Address"></textarea>
-        <div>
+            <input id="Donator_address" placeholder="Enter Your Address">
+         </div>
+         <p id="donator_address_error"></p>
           <div class="button col-12">
             <input id="submit_donate" type="submit" value="Submit">
           </div>
