@@ -25,13 +25,13 @@ const db = getFirestore();
 
 function get_value_gender() {
   if (document.getElementById("dot-1").checked) {
-    return "male";
+    return "Male";
   }
   if (document.getElementById("dot-2").checked) {
-    return "female";
+    return "Female";
   }
   if (document.getElementById("dot-3").checked) {
-    return "others";
+    return "Others";
   }
 }
 
