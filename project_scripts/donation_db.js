@@ -24,13 +24,17 @@ initializeApp(firebaseConfig);
 const db = getFirestore();
 
 function get_value_gender() {
-  if (document.getElementById("dot-1").checked) {
+  console.log(123);
+  if (document.getElementById("dot-1").value) {
+    console.log(234);
     return "Male";
   }
-  if (document.getElementById("dot-2").checked) {
+  if (document.getElementById("dot-2").value) {
+    console.log(345);
     return "Female";
   }
-  if (document.getElementById("dot-3").checked) {
+  if (document.getElementById("dot-3").value) {
+    console.log(456);
     return "Others";
   }
 }

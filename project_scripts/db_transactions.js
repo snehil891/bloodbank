@@ -31,7 +31,6 @@ if (click_donate_button) {
     const select_b = document.getElementById("Blood_group_request");
     // console.log(select_b);
     const donator_blood = select_b.options[select_b.selectedIndex].value;
-
     console.log(donator_blood);
     console.log(change_donate_html(donator_blood));
     event.preventDefault();
