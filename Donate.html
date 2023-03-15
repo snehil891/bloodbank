@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
    <meta charset="utf-8">
    <link rel="stylesheet" href="./project_styles/Donate.css">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <title>Gitambloodbank</title>
    <link rel="icon" type="images" href="./assets/img/gbblogo.png" style="width: 100%;">
-   </head>
+</head>
 
 <body>
-  
-  <a href="Homepage.html" ><div class="button1">
-    <button class="btn"><i class="fa fa-home"></i></button>
-  </a>
-<center> <div class="formcard col-12 col-md-5 ">
-    <div class="title">Donate </div>
-    <div class="content">
-      <form action="#">
-        <div class="user-details col-12 col-md-12">
-            <div class="input-box ">
-               <span class="details">Full Name</span>
-                  <input id="Donator_name" type="text" placeholder="Enter your name" required>
-         </div>
-         <p id="donator_name_error"></p>
-         <div class="input-box">
-            <span class="details" id="">Email</span>
-            <input id="Donator_email" type="email" placeholder="Enter your email" required>
-         </div>
-         
-         <p id="donator_email_error"></p>
-         <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input id="Donator_phone" type="tel" minlength="10" maxlength="10" placeholder="Enter your number" required>
-         </div>
-         
-         <p id="donator_phone_error"></p>
-         <div class="input-box">
-            <span class="details">DOB</span>
-            <input id="Donator_dob" type="date" placeholder="Date of Birth" required>
-         </div>
-         
-         <p id="donator_dob_error"></p>
-         <div class="input-box">
-               <span class="details">Blood Group</span>
-                  <input id="Blood_group" placeholder="Blood Group" list="blood-group" autocomplete="off" required>
+
+   <a href="Homepage.html">
+      <div class="button1">
+         <button class="btn col-1 mt-3"><i class="bi bi-house-heart"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="red" class="bi bi-house-heart"
+               viewBox="0 0 16 16">
+               <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z" />
+               <path
+                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+            </svg>
+         </button>
+   </a>
+   <center>
+      <div class="formcard col-12 col-md-5 ">
+         <div class="title">Donate </div>
+         <div class="content">
+            <form action="#">
+               <div class="user-details col-12 ">
+                  <div class="input-box col-md-6 ">
+                     <span class="details">Full Name</span>
+                     <input id="Donator_name" type="text" placeholder="Enter your name" required>
+                  </div>
+                  <p id="donator_name_error"></p>
+                  <div class="input-box col-md-6">
+                     <span class="details" id="">Email</span>
+                     <input id="Donator_email" type="email" placeholder="Enter your email" required>
+                  </div>
+
+                  <p id="donator_email_error"></p>
+                  <div class="input-box col-md-6">
+                     <span class="details">Phone Number</span>
+                     <input id="Donator_phone" type="tel" minlength="10" maxlength="10" placeholder="Enter your number"
+                        required>
+                  </div>
+
+                  <p id="donator_phone_error"></p>
+                  <div class="input-box col-md-6">
+                     <span class="details">DOB</span>
+                     <input id="Donator_dob" type="date" placeholder="Date of Birth" required>
+                  </div>
+
+                  <p id="donator_dob_error"></p>
+                  <div class="input-box col-md-6">
+                     <span class="details">Blood Group</span>
+                     <input id="Blood_group" placeholder="Blood Group" list="blood-group" autocomplete="off" required>
                      <datalist id="blood-group">
                         <option>A+</option>
                         <option>A-</option>
@@ -61,42 +79,41 @@
                         <option>AB-</option>
                         <option>Others</option>
                      </datalist>
-          </div>
-          
-         <p id="donator_blood_error"></p>
-         <div class="input-box">
-          <span class="details">Gender</span>
-          <input id="Gender" type="text" placeholder="Gender" list="gender" autocomplete="off" required>
-             <datalist id="gender">
-               <option id="dot-1">Male</option>
-               <option id="dot-2">Female</option>  
-               <option id="dot-3">Others</option>
-             </datalist>
-         </div>
-         
-          <p id="donator_gender_error"></p>
-          <div class="input-box">
-            <span class="details">Address</span>
-            <input id="Donator_address" placeholder="Enter Your Address">
-         </div>
-         <p id="donator_address_error"></p>
-          <div class="button col-12">
-            <input id="submit_donate" type="submit" value="Submit">
-          </div>
-        </div>
-    
-       </div>
-       </div>
-    </form>
-    </div>
-    </div>
-</center>
- 
+                  </div>
 
- 
-<script type="module" src="./project_scripts/donation_db.js"></script>
-<script type="module" src="./project_scripts/db_transactions.js"></script>
-<script type="module" src="./project_scripts/page_functionality.js"></script>
-<script type="module" src="./project_scripts/request_db.js"></script>
+                  <p id="donator_blood_error"></p>
+                  <div class="input-box col-md-6">
+                     <span class="details">Gender</span>
+                     <input id="Gender" type="text" placeholder="Gender" list="gender" autocomplete="off" required>
+                     <datalist id="gender">
+                        <option id="dot-1">Male</option>
+                        <option id="dot-2">Female</option>
+                        <option id="dot-3">Others</option>
+                     </datalist>
+                  </div>
+
+                  <p id="donator_gender_error"></p>
+
+                  <div class="input-box col-12">
+                     <span class="details"> Address</span>
+                     <textarea class="col-12 " placeholder="Enter Address" id="Donator_address"></textarea>
+                     <div>
+                        <p id="donator_address_error"></p>
+                        <div class="button col-12">
+                           <input id="submit_donate" type="submit" value="Submit">
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </center>
+   <script type="module" src="./project_scripts/donation_db.js"></script>
+   <script type="module" src="./project_scripts/db_transactions.js"></script>
+   <script type="module" src="./project_scripts/page_functionality.js"></script>
+   <script type="module" src="./project_scripts/request_db.js"></script>
 </body>
+
 </html>

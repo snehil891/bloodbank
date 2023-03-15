@@ -81,7 +81,7 @@ const donate_button = document.getElementById("submit_donate");
 if (donate_button) {
   donate_button.addEventListener("click", function () {
     console.log("clicked");
-    console.log(add_to_request());
+    console.log(add_to_donation());
     event.preventDefault();
   });
 }
