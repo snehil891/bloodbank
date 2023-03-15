@@ -26,9 +26,9 @@
         <div class="user-details col-12 col-md-12">
             <div class="input-box ">
                <span class="details">Full Name</span>
-                  <input id="Donator_name" type="text" placeholder="Enter your name" required>
+                  <input id="Patient_name" type="text" placeholder="Enter your name" required>
          </div>
-         <p id="donator_name_error"></p>
+         <p id="patient_name_error"></p>
          <div class="input-box">
             <span class="details">Age</span>
             <input id="patient_dob" type="number" placeholder="Enter your Age" required>
@@ -36,15 +36,15 @@
           <p id="patient_dob_error"></p>
          <div class="input-box">
             <span class="details" id="">Email</span>
-            <input id="Donator_email" type="email" placeholder="Enter your email" required>
+            <input id="patient_email" type="email" placeholder="Enter your email" required>
          </div>
          
-         <p id="donator_email_error"></p>
+         <p id="patient_email_error"></p>
          <div class="input-box">
             <span class="details">Phone Number</span>
-            <input id="Donator_phone" type="tel" minlength="10" maxlength="10" placeholder="Enter your number" required>
+            <input id="patient_phone" type="tel" minlength="10" maxlength="10" placeholder="Enter your number" required>
          </div>
-        <p id="donator_phone_error"></p>
+        <p id="patient_phone_error"></p>
         <div class="input-box">
             <span class="details">Required Date</span>
             <input id="required_date" type="date" placeholder="required date" required>
@@ -57,7 +57,7 @@
           <p id="patient_units_error"></p>
          <div class="input-box">
                <span class="details">Blood Group</span>
-                  <input id="Blood_group" type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
+                  <input id="Blood_group_request" type="text" name="loggroup" class="form-style" placeholder="Blood Group" id="logbg" list="blood-group" autocomplete="off" required>
                      <datalist id="blood-group">
                         <option>A+</option>
                         <option>A-</option>
@@ -71,19 +71,19 @@
                      </datalist>
           </div>
           
-         <p id="donator_blood_error"></p>
+         <p id="patient_blood_error"></p>
          <div class="input-box">
           <span class="details">Gender</span>
           <input id="Gender" type="text" name="loggender" class="form-style" placeholder="Gender" id="loggender" list="gender" autocomplete="off" required>
              <datalist id="gender">
-                <option>Male</option>
-                <option>Female</option>  
-                <option>Others</option>
+                <option id="dot-1">Male</option>
+                <option id="dot-2">Female</option>  
+                <option id="dot-3">Others</option>
              </datalist>
          </div>
-          <p id="donator_gender_error"></p>
+          <p id="patient_gender_error"></p>
           <div class="button col-12">
-          <input id="submit_donate" type="submit" value="Submit">
+          <input id="submit_request" type="submit" value="Submit">
           </div>
         </div>
     
