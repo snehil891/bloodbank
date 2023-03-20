@@ -34,17 +34,6 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 const db = getFirestore();
 
-function get_value_gender() {
-  if (document.getElementById("dot-1").value) {
-    return "male";
-  }
-  if (document.getElementById("dot-2").value) {
-    return "female";
-  }
-  if (document.getElementById("dot-3").value) {
-    return "others";
-  }
-}
 
 function get_request() {
   console.log("getting");
@@ -88,6 +77,17 @@ function get_request() {
   }
   else{
     document.getElementById("patient_phone_error").innerHTML="";
+  }
+
+  const patient_blood = document.getElementById("PBlood_group_request").value;
+  if(patient_blood==="Enter Blood Group"){
+    document.getElementById("patient_blood_error").innerHTML="Kindly select blood group.";
+    document.getElementById("patient_blood_error").style.color = "red";
+    return false;
+  }
+  else{
+
+    document.getElementById("patient_blood_error").innerHTML="";
   }
   const patient_required_date = new Date(
     document.getElementById("required_date").value
@@ -135,44 +135,8 @@ function get_request() {
   else{
     document.getElementById("patient_units_error").innerHTML="";
   }
-  // const Hospital_name = document.getElementById("_name").value;
-  // if(_name.length==0){
-  //   document.getElementById("patient__error").innerHTML="Kindly fill the  name.";
-  //   document.getElementById("patient__error").style.color = "red";
-  //   return false;
-  // }
-  // else{
-  //   document.getElementById("patient__error").innerHTML="";
-  // }
-  
-  // const purpose_request = document.getElementById("purpose_request").value;
-  // if(purpose_request.length==0){
-  //   document.getElementById("patient_purpose_error").innerHTML="Kindly provide purpose.";
-  //   document.getElementById("patient_purpose_error").style.color = "red";
-  //   return false;
-  // }
-  // else{
-  //   document.getElementById("patient_purpose_error").innerHTML="";
-  // }
-  const patient_blood = document.getElementById("Blood_group_request").value;
-  const blood_grp = ["A+","B+","O+","AB+","A-","B-","O-","AB-","Others"]
-  // const patient_blood = select.options[select.selectedIndex].value;
-  if(!patient_blood){
-    document.getElementById("patient_blood_error").innerHTML="Kindly select blood group.";
-    document.getElementById("patient_blood_error").style.color = "red";
-    return false;
-  }
-  else if(!blood_grp.includes(patient_blood)){
-    document.getElementById("patient_blood_error").innerHTML="Kindly select a valid blood group.";
-    document.getElementById("patient_blood_error").style.color = "red";
-    return false;  
-  }
-  else{
-
-    document.getElementById("patient_blood_error").innerHTML="";
-  }
-  const patient_gender = get_value_gender();
-  if(!patient_gender){
+  const patient_gender = document.getElementById("PGender").value;
+  if(patient_gender ==="Enter Gender"){
     document.getElementById("patient_gender_error").innerHTML="Kindly select gender.";
     document.getElementById("patient_gender_error").style.color = "red";;
     return false;
@@ -181,17 +145,39 @@ function get_request() {
     document.getElementById("patient_gender_error").innerHTML="";
   }
   
+  const purpose_request = document.getElementById("purpose_request").value;
+  if(purpose_request.length==0){
+    document.getElementById("patient_purpose_error").innerHTML="Kindly provide purpose.";
+    document.getElementById("patient_purpose_error").style.color = "red";
+    return false;
+  }
+  else{
+    document.getElementById("patient_purpose_error").innerHTML="";
+  }
+
+  const Hospital_name = document.getElementById("Hospital_name").value;
+  if(Hospital_name.length==0){
+    document.getElementById("patient_hospital_error").innerHTML="Kindly fill the hospital name.";
+    document.getElementById("patient_hospital_error").style.color = "red";
+    return false;
+  }
+  else{
+    document.getElementById("patient_hospital_error").innerHTML="";
+  }
+  
+  
+ 
   return [
     no_of_units, //1
     patient_name, //2
-    // Hospital_name,//3
-    patient_age,//3
-    patient_gender,//4
-    patient_email,//5
-    // purpose_request,//6
-    patient_blood,//6
-    patient_required_date,//7
-    patient_phone//8
+    Hospital_name,//3
+    patient_age,//4
+    patient_gender,//5
+    patient_email,//6
+    purpose_request,//7
+    patient_blood,//8
+    patient_required_date,//9
+    patient_phone//10
   ];
 }
 
@@ -261,16 +247,16 @@ async function add_to_request() {
     ),
     {
       Name: request_data[1],
-      // Hospital_Name: request_data[2],
-      age: request_data[2],
-      required_date: String(request_data[6]),
-      Gender: request_data[3],
-      Email: request_data[4],
-      // Purpose: request_data[5],
-      Blood_group: request_data[5],
+      Hospital_Name: request_data[2],
+      age: request_data[3],
+      required_date: String(request_data[8]),
+      Gender: request_data[4],
+      Email: request_data[5],
+      Purpose: request_data[6],
+      Blood_group: request_data[7],
       Date_of_creation: time,
       No_of_Units: request_data[0],
-      Phone:request_data[7]
+      Phone:request_data[9]
     }
   )
     .then(async (docRef) => {

@@ -1,83 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-   <meta charset="utf-8">
-   <link rel="stylesheet" href="./project_styles/Request.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REQUEST Page</title>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"></script>
-   <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <title>Gitambloodbank</title>
-   <link rel="icon" type="images" href="./assets/img/gbblogo.png" style="width: 100%;">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./project_styles/Request.css">
 </head>
-
 <body>
-   <a href="Homepage.html">
-      <div class="button1">
-         <button class="btn col-1 mt-3"><i class="bi bi-house-heart"></i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="red" class="bi bi-house-heart"
-               viewBox="0 0 16 16">
-               <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z" />
-               <path
-                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
-            </svg>
-         </button>
-   </a>
 
-   <center>
-      <div class="formcard col-12 col-md-5 ">
-         <div class="title">Request </div>
-         <div class="content">
-            <form action="#">
-               <div class="user-details col-12 col-md-12">
-                  <div class="input-box ">
-                     <span class="details">Full Name</span>
-                     <input id="Patient_name" type="text" placeholder="Enter your name" required>
-                  </div>
-                  <p id="patient_name_error"></p>
-                  <div class="input-box">
-                     <span class="details">Age</span>
-                     <input id="patient_dob" type="number" placeholder="Enter your Age" required>
-                  </div>
-                  <p id="patient_dob_error"></p>
-                  <div class="input-box">
-                     <span class="details" id="">Email</span>
-                     <input id="patient_email" type="email" placeholder="Enter your email" required>
-                  </div>
+    <div class="main">
+        <div class="container mt-0">
+            <div class="signup-content">
+                <div class="signup-img pt-1"> 
+              </div>
+                <div class="signup-form">
+                    <h1 class="heading">REQUEST</h1>
+                    <form method="POST" class="register-form" id="register-form">
+                        <div class="form-row">
+            <div class="form-group">
+                <div class="form-input">
+                    <label for="first_name" class="required">First name</label>
+                    <input  onkeydown="return /[a-z]/i.test(event.key)" id="Patient_name"  name="first_name" placeholder="Enter your name" required />
+                </div>
+                <p id="patient_name_error"></p>
+                <div class="form-input mt-2">
+                    <label for="email" class="required">Email</label>
+                    <input id="patient_email" name="email"  type="email" placeholder="Enter your email" required  />
+                </div>
+                <p id="patient_email_error"></p>
 
-                  <p id="patient_email_error"></p>
-                  <div class="input-box">
-                     <span class="details">Phone Number</span>
-                     <input id="patient_phone" type="tel" minlength="10" maxlength="10" placeholder="Enter your number"
-                        required>
-                  </div>
-                  <p id="patient_phone_error"></p>
-                  <div class="input-box">
-                     <span class="details">Required Date</span>
-                     <input id="required_date" type="date" placeholder="required date" required>
-                  </div>
-                  <p id="patient_required_error"></p>
-                  <div class="input-box">
-                     <span class="details">No Of Units Required</span>
-                     <input id="no_of_units" type="number" placeholder="Enter No of units required" required>
-                  </div>
-                  <p id="patient_units_error"></p>
-                  <div class="input-box">
-                     <span class="details">Blood Group</span>
-                     <input id="Blood_group_request" type="text" name="loggroup" class="form-style" placeholder="Blood Group"
-                        id="logbg" list="blood-group" autocomplete="off" required>
-                     <datalist id="blood-group">
+                <div class="form-select">
+                    <div class="label-flex">
+                        <label for="blood-group" class="required">Blood Group</label>
+                    </div>
+                    
+                        <select name="blood-group" id="PBlood_group_request">
+                        <option>Enter Blood Group</option>
                         <option>A+</option>
                         <option>A-</option>
                         <option>B+</option>
@@ -86,49 +55,93 @@
                         <option>O-</option>
                         <option>AB+</option>
                         <option>AB-</option>
-                        <option>Others</option>
-                     </datalist>
-                  </div>
+                        <option>Others</option>    
+                        </select>
+                    
+                </div>
+                <p id="patient_blood_error"></p>
+                <div class="form-input">
+                    <label for="no_of_units" class="required">No Of Units Required</label>
+                
+                    <input id="no_of_units" type="number" placeholder="Enter No of units required" required>
+                 </div>
+                 <p id="patient_units_error"></p>
+            </div>
 
-                  <p id="patient_blood_error"></p>
-                  <div class="input-box">
-                     <span class="details">Gender</span>
-                     <input id="Gender" type="text" name="loggender" class="form-style" placeholder="Gender"
-                        id="loggender" list="gender" autocomplete="off" required>
-                     <datalist id="gender">
-                        <option id="dot-1">Male</option>
-                        <option id="dot-2">Female</option>
-                        <option id="dot-3">Others</option>
-                     </datalist>
-                  </div>
-                  <p id="patient_gender_error"></p>
-                  <div class="input-box col-12">
-                     <span class="details">Hospital Address</span>
-                     <textarea class="col-12 " style="font-size: 16px;" placeholder="Enter Hospital_name"></textarea>
-                     <div>
-                        <div class="button col-12">
-                           <input id="submit_request" type="submit" value="Submit" onclick="submit3()">
+            <div class="form-group">
+                <div class="form-input">
+                    <label for="first_name" class="required">AGE</label>
+                    <input type ="number" id="patient_dob"  name="first_name" placeholder="Enter your age" required />
+                </div>
+                <p id="patient_dob_error"></p>
+                <div class="form-input mt-2">
+                    <label for="phone_number" class="required">Phone number</label>
+                    <input id="patient_phone" type="tel" onkeypress='return event.charCode >= 48 && event.charCode <= 57' minlength="10" maxlength="10" placeholder="Enter your number" name="phone_number"  required />
+                </div>
+                <p id="patient_phone_error"></p>
+
+
+                <div class="form-input mt-2">
+                    <label for="DOB" class="required">REQUIRED DATE</label>
+                    <input name="DOB" id="required_date" type="date" placeholder="Date of Birth" required />
+                    </div>
+                    <p id="patient_required_error"></p>
+
+            <div class="form-select mt-2">
+            <div class="label-flex ">
+            <label for="payment" class="required" >Gender</label>
+            </div>  
+            <select  id="PGender" >
+            <option>Enter Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>    
+            </select>
+                                  
+            </div>
+            <p id="patient_gender_error"></p>
+
+        
+            </div>
+             
+            <div class="form-input ml-4  col-12">
+                <label for="pur" class="required">Purpose </label>
+         <textarea name="pur"  id="purpose_request" class="col-11" placeholder="Enter Address"></textarea>
+            </div>
+             <p id="patient_purpose_error"></p>
+
+
+             <div class="form-input ml-4  col-12">
+                <label for="ADD" class="required">HOSIPITAL </label>
+         <textarea name="ADD"  id="Hospital_name" class="col-11" placeholder="Enter Address"></textarea>
+            </div>
+             <p id="patient_hospital_error"></p>
+
+             
                         </div>
-                     </div>
+                       
+                        <div class="form-submit mt-3 ">
+                             <input class="submit" id="submit_request" type="submit" value="Submit" />   
+                        </div>
+                    </form>
+                </div>
+            </div>    
+</div>
+</div> 
+<!-- <script>
+function si(){
+window.location="#sec-2";
+document.getElementById("sec-2").style.display = "block";
+}
+</script> -->
+<section class="survival blood" id="sec-2">
+    <h1>THANK YOU FOR DONATION   Redirecting to Home Page</h1> 
+  </section>
 
-                  </div>
-               </div>
-            </form>
-         </div>
-      </div>
-   </center>
-   <!-- 
-<script>
-   function submit3(){
-  
-   window.alert("Request is accepted.Redirecting to Home");
-      }
- </script>
- -->
-   <script type="module" src="./project_scripts/donation_db.js"></script>
-   <script type="module" src="./project_scripts/db_transactions.js"></script>
-   <script type="module" src="./project_scripts/page_functionality.js"></script>
-   <script type="module" src="./project_scripts/request_db.js"></script>
+    <script type="module" src="./project_scripts/donation_db.js"></script>
+    <script type="module" src="./project_scripts/db_transactions.js"></script>
+    <!-- <script type="module" src="./project_scripts/page_functionality.js"></script> -->
+    <script type="module" src="./project_scripts/request_db.js"></script> 
+    
 </body>
-
 </html>
