@@ -241,7 +241,7 @@ async function add_to_request() {
   console.log("adding");
   await setDoc(
     doc(
-      collection(dbRef, time, request_data[7]+ "_request"),
+      collection(dbRef, time, request_data[6]+ "_request"),
       time + "_" + String(request_data[5])
     ),
     {

@@ -203,7 +203,7 @@ async function add_to_donation() {
     console.log("adding");
     await setDoc(
       doc(
-        collection(dbRef, time, donation_data[5] + "_donate"),
+        collection(dbRef, time, donation_data[4] + "_donate"),
         time + "_" + String(donation_data[3])
       ),
       {
@@ -211,11 +211,11 @@ async function add_to_donation() {
         dob: String(donation_data[1]),
         Gender: donation_data[2],
         Email: donation_data[3],
-        Address: donation_data[4],
+        Address: donation_data[6],
         age: age_donor,
-        Blood_group: donation_data[5],
+        Blood_group: donation_data[4],
         Date_of_creation: time,
-        Phone: donation_data[6]
+        Phone: donation_data[5]
       }
     )
       .then(async (docRef) => {

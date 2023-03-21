@@ -158,13 +158,14 @@ async function view_blood_donate(blood_group) {
   else {
     const donation = query(collectionGroup(db, blood_group + "_donate"));
     console.log("viewing");
+    console.log(donation);
     // const querySnapshot = await getDocs(collection(db, view_type));
     const querySnapshot = await getDocs(donation);
     console.log("got");
     console.log(querySnapshot);
-    querySnapshot.forEach((doc) => {
+    await querySnapshot.forEach((doc) => {
       docs.push(doc.data());
-      // console.log(doc.id, " => ", doc.data());
+      console.log(doc.id, " => ", doc.data());
     });
   }
   // console.log(docs);
