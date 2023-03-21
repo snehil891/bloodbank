@@ -242,7 +242,7 @@ async function add_to_request() {
   await setDoc(
     doc(
       collection(dbRef, time, request_data[6]+ "_request"),
-      time + "_" + String(request_data[5])
+      time + "_" + String(request_data[4])
     ),
     {
       Name: request_data[1],
