@@ -199,7 +199,7 @@ async function add_to_donation() {
   if (!donation_data) {
     return 0;
   }
-  const time = String(new Date());
+  const time = new Date();
   console.log(time);
   const dbRef = collection(db, "Donate");
   console.log(typeof donation_data.donator_dob);
@@ -234,7 +234,7 @@ async function add_to_donation() {
     console.log("adding");
     await setDoc(
       doc(
-        collection(dbRef, time, donation_data.donator_blood + "_donate"),
+        collection(dbRef,`${time.getDate()}-${time.getMonth()+1}-${time.getFullYear()}`, donation_data.donator_blood + "_donate"),
         donation_data.donator_name
       ),
       {

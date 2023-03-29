@@ -249,16 +249,17 @@ async function add_to_request() {
   //   alert("Please fill all the fields properly.");
   //   return 0;
   // }
-  const time = String(new Date());
+  const time = new Date();
   console.log(time);
   const dbRef = collection(db, "Request");
   console.log("adding");
-  await setDoc(
-    doc(
-      collection(dbRef, time, request_data.patient_blood + "_request"),
-      request_data.patient_name
-    ),
-    {
+  const docref = doc(
+    collection(dbRef, `${time.getDate()}-${time.getMonth()+1}-${time.getFullYear()}`, request_data.patient_blood + "_request"),
+    request_data.patient_name
+  );
+  const docsnap = await getDoc(docref);
+  if (!docsnap.exists()) {
+    await setDoc(docref, {
       Name: request_data.patient_name,
       age: request_data.patient_age,
       required_date: String(new Date(request_data.patient_required_date)),
@@ -269,22 +270,25 @@ async function add_to_request() {
       Date_of_creation: time,
       No_of_Units: request_data.no_of_units,
       Phone: request_data.patient_phone,
-    }
-  )
-    .then(async (docRef) => {
-      console.log("Document has been added successfully");
-      await sendemail_request(request_data.patient_email);
-      await searchdonor(request_data.patient_blood);
-      alert("We have registered your request. Redirecting to Home.");
-
-      setTimeout(myURL, 100);
-      function myURL() {
-        location.href = "Homepage.html";
-      }
     })
-    .catch((error) => {
-      console.log(error);
-    });
+      .then(async (docRef) => {
+        console.log("Document has been added successfully");
+        await sendemail_request(request_data.patient_email);
+        await searchdonor(request_data.patient_blood);
+        alert("We have registered your request. Redirecting to Home.");
+
+        setTimeout(myURL, 100);
+        function myURL() {
+          location.href = "Homepage.html";
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  } else {
+    alert("Can't Request twice");
+    return 0;
+  }
 }
 async function searchdonor(blood_group) {
   var docs = new Array();
@@ -295,7 +299,7 @@ async function searchdonor(blood_group) {
   console.log("got hit");
   console.log(querySnapshot);
   querySnapshot.forEach(async (doc) => {
-    console.log(doc.data())
+    console.log(doc.data());
     const dateOne = new Date();
     const dateTwo = new Date(doc.data().Date_of_creation);
     const time = Math.abs(dateTwo - dateOne);
