@@ -1,4 +1,4 @@
-.navbar-toggler {
+/* .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
@@ -65,8 +65,24 @@
     align-items: center;
     padding-left: 0px;
   }
-}
+} */
 
+
+
+
+
+.navbar{
+	background-color: #000000 !important;
+  }
+  .navbar img{
+	height:8vh;
+	width: auto;
+  }
+
+  .nav-link{
+padding-left: 50px !important;
+letter-spacing: 1px;
+  }
 .h1, h1 {
   font-size: calc(1.375rem + 1.5vw);
   text-align: center;

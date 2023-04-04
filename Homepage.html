@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="assets/css/4-Column-Team-Block---Circles.css">
     <link rel="stylesheet" href="assets/css/Advanced-NavBar---Multi-dropdown.css">
     <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
-    <link rel="stylesheet" href="assets/css/dh-navbar-inverse-1.css">
-    <link rel="stylesheet" href="assets/css/dh-navbar-inverse-2.css">
-    <link rel="stylesheet" href="assets/css/dh-navbar-inverse.css">
     <link rel="stylesheet" href="assets/css/dh-row-text-image-right-responsive-1.css">
     <link rel="stylesheet" href="assets/css/dh-row-text-image-right-responsive.css">
     <link rel="stylesheet" href="assets/css/divider-text-middle.css">
@@ -35,18 +32,23 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div><a class="navbar-brand" style="padding:0px;margin-left:0px;height:78px;" href="./Homepage.html"> <img class="img-fluid" src="assets/img/bloodbank%20logo.png"></a></div><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background-color: #ffffff;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="background-color: #ffffff;"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto" style="margin-top:13px;">
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" href="./Donate.html">Donate</a></li>
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:100" href="./Request.html">Request</a></li>
-                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:100" href="./aboutus.html">About&nbsp;</a></li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+          <img src="./assets/img/bloodbank logo.png" alt="Logo" class="d-inline-block align-text-top">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="./Homepage.html">Home</a>
+              <a class="nav-link active" href="./aboutus.html">About</a>
+              <a class="nav-link active" href="./Donate.html">Donate</a>
+              <a class="nav-link active" href="./Request.html">Request</a>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
 		<div id="post_carousel" class="carousel slide animate_text post_carousel_wrapper swipe_x ps_easeOutCirc" data-ride="carousel">
 			<ol class="carousel-indicators post_carousel_indicators">
