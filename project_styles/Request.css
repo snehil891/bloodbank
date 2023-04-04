@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+}
+
+
 /* @extend display-flex; */
 display-flex, .signup-content, .form-row, .label-flex, .form-radio-group {
   display: flex;
@@ -95,7 +104,7 @@ h2 {
   color: #fff;
   padding-top: 1vh;
   text-align: center;
-  font-size: 656px;
+  font-size: 56px;
 }
 .clear {
   clear: both; }
