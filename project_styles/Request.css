@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+}
+
+
 /* @extend display-flex; */
 display-flex, .signup-content, .form-row, .label-flex, .form-radio-group {
   display: flex;
@@ -95,7 +104,7 @@ h2 {
   color: #fff;
   padding-top: 1vh;
   text-align: center;
-  font-size: 66px;
+  font-size: 56px;
 }
 .clear {
   clear: both; }
@@ -177,7 +186,7 @@ label.required {
 input {
   box-sizing: border-box;
   border: 1px solid #ebebeb;
-  padding: 14px 20px;
+  padding: 7px 10px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -191,7 +200,7 @@ input {
 select{
     box-sizing: border-box;
     border: 1px solid #ebebeb;
-    padding: 14px 20px;
+    padding: 7px 10px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -629,4 +638,74 @@ section.survival.blood > *:nth-child(2):after {
   100% {
     height: 100%;
   }
+}
+
+
+
+
+.navbar{
+	background-color: #000000 !important;
+  }
+  .navbar img{
+	height:8vh;
+	width: auto;
+  }
+
+  .nav-link{
+padding-left: 50px !important;
+letter-spacing: 1px;
+  }
+
+
+  
+
+.background{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width:100%;
+  height:100vh;
+  background-size: cover;
+  background-image: url("../assets/img/donatebg.png");
+  /* filter: brightness(100%) saturate(100%); */
+ z-index: 10;
+}
+
+.midtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%,-50%);
+  text-align: center;
+  color: white;
+
+}
+
+.midtext h1{
+  font-size: 4rem;
+  /* animation-delay: 0.3s; */
+  width: 200%;
+  height: 200%;
+  padding: 10%;
+  text-align: center;
+  color: #ffffff !important;
+
+ 
+}
+
+
+.btn1{
+  /* color: #d7d7d7; */
+  background: linear-gradient(to right, #ffffff, #000000 );
+  font-size: 20px;
+  color: #000000;
+  border-width: 0px;
+ }
+
+
+ 
+ .main {
+  position: absolute;
+  top: 100%;
+  left: 00%;
 }

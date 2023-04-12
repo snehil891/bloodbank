@@ -26,14 +26,19 @@ const db = getFirestore();
 async function change_donate_html(blood_group) {
   var rows = await view_blood_donate(blood_group);
   console.log(rows);
+  console.log("changing");
   var html =
     "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>E-mail</th><th>Phone Number</th><th>Date of Form Filling</th></tr>";
-  for (var i = 0; i < rows.length; i++) {
+  for (var i = 0; i <rows.length; i++) {
+    console.log("for in");
+    console.log(rows[i])
     const dateOne = new Date();
     const dateTwo = new Date(rows[i].Date_of_creation);
+    console.log(rows[i].Date_of_creation)
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time / (1000 * 60 * 60 * 24));
     if (days > 90) {
+      console.log("days > 90")
       html += "<tr bgcolor=\"green\">";
       html += "<td>" + rows[i].Name + "</td>";
       html += "<td>" + rows[i].Blood_group + "</td>";
@@ -46,7 +51,7 @@ async function change_donate_html(blood_group) {
       html += "</tr>";
 
     }
-    if (days < 90) {
+    if (days < 90) {console.log("days < 90")
       html += "<tr bgcolor=\"red\">";
       html += "<td>" + rows[i].Name + "</td>";
       html += "<td>" + rows[i].Blood_group + "</td>";
@@ -60,6 +65,7 @@ async function change_donate_html(blood_group) {
     }
   }
   html += "</table>";
+  console.log(html)
   document.getElementById("table_div").innerHTML = html;
 }
 

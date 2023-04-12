@@ -18,8 +18,33 @@
     <link rel="stylesheet" href="./project_styles/Donate.css">
 </head>
 <body>
-
-    <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+          <img src="./assets/img/bloodbank logo.png" alt="Logo" class="d-inline-block align-text-top">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="./Homepage.html">Home</a>
+              <a class="nav-link active" href="./aboutus.html">About</a>
+              <a class="nav-link active" href="./Donate.html">Donate</a>
+              <a class="nav-link active" href="./Request.html">Request</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="background ">
+        <div class="midtext">
+            <h1 class="tracking-in-expand">Donate Your Blood a Little <br> With a Smile<br>
+            <button class="btn btn1 col-3" onclick="don()">Donate</button></h1><br>
+        </div>
+        
+        </div>
+    
+    <div class="main" id="section-main">
         <div class="container mt-0">
             <div class="signup-content">
                 <div class="signup-img pt-1"> 
@@ -111,6 +136,12 @@ window.location="#sec-2";
 document.getElementById("sec-2").style.display = "block";
 }
 </script> -->
+
+<script>
+    function don(){
+      window.location="#section-main";
+    }
+  </script>
 <section class="survival blood" id="sec-2">
     <h1>THANK YOU FOR DONATION   Redirecting to Home Page</h1> 
   </section>
@@ -126,7 +157,7 @@ document.getElementById("sec-2").style.display = "block";
 
     <script type="module" src="./project_scripts/donation_db.js"></script>
     <script type="module" src="./project_scripts/db_transactions.js"></script>
-    <!-- <script type="module" src="./project_scripts/page_functionality.js"></script> -->
+    <script type="module" src="./project_scripts/page_functionality.js"></script>
     <script type="module" src="./project_scripts/request_db.js"></script> 
     
 </body>
