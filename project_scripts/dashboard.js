@@ -28,7 +28,7 @@ async function change_donate_html(blood_group) {
   console.log(rows);
   console.log("changing");
   var html =
-    "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>E-mail</th><th>Phone Number</th><th>Date of Form Filling</th></tr>";
+    "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>E-mail</th><th>Phone Number</th></tr>";
   for (var i = 0; i <rows.length; i++) {
     console.log("for in");
     console.log(rows[i])
@@ -46,7 +46,7 @@ async function change_donate_html(blood_group) {
       html += "<td>" + rows[i].Gender + "</td>";
       html += "<td>" + rows[i].Email + "</td>";
       html += "<td>" + rows[i].Phone + "</td>";
-      html += "<td>" + rows[i].Date_of_creation + "</td>";
+      // html += "<td>" + rows[i].Date_of_creation + "</td>";
 
       html += "</tr>";
 
@@ -59,7 +59,7 @@ async function change_donate_html(blood_group) {
       html += "<td>" + rows[i].Gender + "</td>";
       html += "<td>" + rows[i].Email + "</td>";
       html += "<td>" + rows[i].Phone + "</td>";
-      html += "<td>" + rows[i].Date_of_creation + "</td>";
+      // html += "<td>" + rows[i].Date_of_creation + "</td>";
 
       html += "</tr>";
     }
@@ -175,12 +175,12 @@ async function view_blood_donate(blood_group) {
     });
   }
   // console.log(docs);
-  docs.sort(function(a,b) {
-    var date1= new Date(a.Date_of_creation);
-    var date2= new Date(b.Date_of_creation);
-    const time = date2-date1;
-    return time / (1000 * 60 * 60 * 24);
-  });
+  // docs.sort(function(a,b) {
+  //   var date1= new Date(a.Date_of_creation);
+  //   var date2= new Date(b.Date_of_creation);
+  //   const time = date2-date1;
+  //   return time / (1000 * 60 * 60 * 24);
+  // });
   // console.log(docs);
   return docs;
 }
@@ -188,7 +188,7 @@ async function change_request_html(blood_group) {
   var rows = await view_blood_request(blood_group);
   console.log(rows);
   var html =
-    "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>E-mail</th><th>Phone Number</th><th>Purpose</th><th>Units required</th><th>Required Date</th><th>Date of Form Filling</th></tr>";
+    "<table border='1|1' style=\"width:100%\"><tr><th>Name</th><th>Blood Group</th><th>Age</th><th>Gender</th><th>E-mail</th><th>Phone Number</th><th>Purpose</th><th>Units required</th><th>Required Date</th></tr>";
   for (var i = 0; i < rows.length; i++) {
     html += "<tr>";
     html += "<td>" + rows[i].Name + "</td>";
@@ -200,7 +200,7 @@ async function change_request_html(blood_group) {
     html += "<td>" + rows[i].Purpose + "</td>";
     html += "<td>" + rows[i].No_of_Units + "</td>";
     html += "<td>" + rows[i].required_date + "</td>";
-    html += "<td>" + rows[i].Date_of_creation + "</td>";
+    // html += "<td>" + rows[i].Date_of_creation + "</td>";
     // html += "<td>" + "<button onclick=\"issue_mark(this)\">Issued</button>" + "</td>";
 
     html += "</tr>";

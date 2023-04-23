@@ -5,13 +5,11 @@
 	font-weight: bold;
 }
 #tooplate_middle { 
-	/* clear: both;
-	/* width: 100vw; */
- height: 55vh;
+
+ 	height: 55vh;
 	padding: 50px;
 	margin-top: 8vh;
 	margin-bottom: 10px;
-	/* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOETuoRZ-Af8JAZigDG4_8SFRTcGpHDCewjg&usqp=CAU") ; */
 	background-size: cover;
 }
 
@@ -59,11 +57,7 @@
 	color: #000; 
 	margin-bottom: 10px;  
 }
-#tooplate_main_top {
-	width: 100vw;
-	height: 10px;
-	background: url(../img/tooplate_content_top.jpg)
-}
+
 #tooplate_main {
 	clear: both;
 	/* width: 880px; */
@@ -307,8 +301,7 @@
   }
   .gbox5{
 	height: 45vh;
-	
-	background-image: url('https://gimsr.gitam.edu/images/pathology10.jpg');
+	background-image: url('https://gimsr.gitam.edu/imagecol_lasts/pathology10.jpg');
 	background-size: cover;
 	margin: 10px;
   }
@@ -319,8 +312,14 @@
 	margin: 10px;
   }
 
-  .col_fw { width: 880px; }
-.col_allw270 { float: left; width: 270px; margin-right: 35px }
+  .col_fw {
+	 width: auto;
+	 }
+.col_allw270 { 
+	float: left; 
+	/* width: 270px; */
+	 margin-right: 35px 
+	}
 
 .fp_service_box img { 
 	float: left; 
@@ -695,3 +694,13 @@
 padding-left: 50px !important;
 letter-spacing: 1px;
   }
+
+
+  @media screen  and (min-width: 0px) and (max-width: 720px){
+	#mid_slider{
+		display: none;
+	}  
+	#tooplate_main{
+		display: none;
+	} 
+}

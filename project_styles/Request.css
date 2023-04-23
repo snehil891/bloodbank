@@ -709,3 +709,14 @@ letter-spacing: 1px;
   top: 100%;
   left: 00%;
 }
+
+@media screen  and (min-width: 0px) and (max-width: 720px){
+.background {
+		display: none;
+	}  
+  .main {
+    position: absolute;
+    top: 0%;
+    left: 00%;
+  }
+}
